@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Proposed Awards for center3 | 2027</title>
+<meta name="description" content="Proposed awards for center3 in 2027: priorities, deadlines, ceremonies, categories and fees.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#4F008C; --purple-2:#6A1FB0; --ink:#1F1430; --muted:#6B5A80; --line:#E7DEF2;
+  --lilac:#E3D6F2; --lilac-2:#F4EEFA; --lav:#B994D4; --coral:#FF375E; --coral-soft:#FFE6EB;
+  --bg:#FAF8FC; --card:#FFFFFF;
+  --must:#FF375E; --strong:#4F008C; --optional:#8C7BA3;
+  --ok:#0F7B5F; --ok-soft:#E3F4EE; --warn:#B4530A; --warn-soft:#FDF0E3;
+  --radius:14px; --shadow:0 1px 2px rgba(31,20,48,.06),0 4px 16px rgba(31,20,48,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "DM Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.kb b,.kpi b,.rank,.score b,.scorebig b,.ph-s b,.mtile b,.tl-m,.ucard h3,.rp-i b,.hr-i b{font-family:"Outfit",ui-sans-serif,system-ui,sans-serif}
+a{color:var(--purple)}
+button{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+@media(max-width:640px){.wrap{padding:0 16px}}
+
+/* ---------- Header ---------- */
+header.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:56px solid rgba(79,0,140,.55);transform:rotate(45deg)}
+header.hero::before{content:"";position:absolute;right:120px;top:90px;width:40px;height:40px;background:var(--coral);z-index:1}
+.hero-in{position:relative;z-index:2;padding:28px 0 34px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.topbar img{height:30px;display:block}
+.updated{font-size:12.5px;color:#CBBFE0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:6px 12px;border-radius:999px}
+.hero h1{font-size:clamp(28px,4.4vw,46px);line-height:1.08;margin:34px 0 10px;font-weight:800;letter-spacing:-.02em;max-width:720px}
+.hero h1 span{color:var(--lav)}
+.hero p.lead{margin:0;max-width:640px;color:#D9CFEA;font-size:16px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:28px;max-width:820px}
+.kpi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font-size:28px;line-height:1;font-weight:800}
+.kpi span{font-size:12.5px;color:#CBBFE0}
+.kpi.hot b{color:var(--coral)}
+@media(max-width:640px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}header.hero::after{width:260px;height:260px;border-width:36px;right:-110px;top:-110px}header.hero::before{right:40px;top:70px;width:24px;height:24px}}
+
+/* ---------- Recognition strip ---------- */
+.recog{margin-top:-1px;background:linear-gradient(90deg,var(--purple),#3a0068);color:#fff}
+.recog .wrap{display:flex;gap:10px 28px;align-items:center;padding-top:12px;padding-bottom:12px;flex-wrap:wrap;font-size:13px}
+.recog strong{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--lav)}
+.recog .it{display:flex;gap:8px;align-items:baseline}
+.recog .it b{color:#fff}
+.recog .it em{font-style:normal;color:#D9CFEA}
+
+/* ---------- Urgent ---------- */
+section.urgent{margin:28px auto 0}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 0 12px;flex-wrap:wrap}
+.sec-h h2{margin:0;font-size:20px;letter-spacing:-.01em}
+.sec-h p{margin:0;color:var(--muted);font-size:13px}
+.urgent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.ucard{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:12px;padding:14px 16px;cursor:pointer;box-shadow:var(--shadow);text-align:left;width:100%;transition:transform .15s}
+.ucard:hover{transform:translateY(-2px)}
+.ucard.soon{border-left-color:var(--warn)}
+.ucard .st{display:inline-flex;gap:6px;align-items:center;font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--coral)}
+.ucard.soon .st{color:var(--warn)}
+.ucard .st i{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.6s infinite}
+.ucard.soon .st i{animation:none}
+@keyframes pulse{50%{opacity:.3}}
+.ucard h3{margin:6px 0 4px;font-size:16px}
+.ucard .d{font-size:13.5px;color:var(--ink)}
+.ucard .d b{color:var(--coral)}
+.ucard.soon .d b{color:var(--warn)}
+.ucard .n{font-size:12.5px;color:var(--muted);margin-top:4px}
+
+/* ---------- Tabs & toolbar ---------- */
+.nav{position:sticky;top:0;z-index:20;background:rgba(250,248,252,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);margin-top:30px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+@media(min-width:900px){.tabs{flex-wrap:wrap;overflow:visible}}
+@media(max-width:640px){.nav{position:static}.legend{font-size:12px}}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600;cursor:pointer;color:var(--muted);display:inline-flex;gap:8px;align-items:center;white-space:nowrap}
+.tab .c{font-size:11.5px;background:var(--lilac-2);color:var(--purple);border-radius:999px;padding:1px 7px}
+.ic{display:inline-block;flex:none;vertical-align:-3px}
+.ic .ac{fill:var(--coral);stroke:none}
+.tab .ic{color:var(--purple);margin-right:-2px}
+.tab[aria-selected="true"] .ic{color:#fff}
+.group-h .ico{width:42px!important;height:42px!important;border-radius:11px!important}
+.facts4 label{display:flex!important;align-items:center;gap:6px}
+.facts4 label .ic{color:var(--purple)}
+.cat-n{display:flex;gap:10px;align-items:flex-start}
+.cat-i{flex:none;width:32px;height:32px;border-radius:9px;background:var(--lilac-2);color:var(--purple);display:grid;place-items:center;margin-top:-5px}
+.tab[aria-selected="true"]{background:var(--purple);border-color:var(--purple);color:#fff}
+.tab[aria-selected="true"] .c{background:rgba(255,255,255,.2);color:#fff}
+.tab:focus-visible,.ucard:focus-visible,.card:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+.toolbar{display:flex;gap:10px;align-items:center;padding:0 0 12px;flex-wrap:wrap}
+.search{flex:1 1 220px;position:relative}
+.search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 12px 9px 36px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.search input:focus{outline:2px solid var(--lav);border-color:transparent}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.sel{border:1px solid var(--line);border-radius:10px;padding:9px 10px;font:inherit;font-size:13.5px;background:#fff;color:var(--ink)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}
+.legend .lg{display:inline-flex;gap:6px;align-items:center}
+.linkbtn{background:none;border:0;color:var(--purple);font-weight:600;cursor:pointer;padding:0;font-size:12.5px;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- Tab intro ---------- */
+.intro{margin:22px 0 4px;color:var(--muted);font-size:14px;max-width:820px}
+.intro b{color:var(--ink)}
+
+/* ---------- Groups & cards ---------- */
+.group{margin:26px 0 8px}
+.group-h{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.group-h .ico{width:34px;height:34px;border-radius:9px;background:var(--lilac);display:grid;place-items:center;color:var(--purple);flex:0 0 auto}
+.group-h h2{margin:0;font-size:18px}
+.group-h p{margin:0;font-size:13px;color:var(--muted)}
+.group-h .cnt{margin-left:auto;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+@media(max-width:400px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;gap:10px;text-align:left;width:100%;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--lav);transform:translateY(-2px)}
+.card-top{display:flex;gap:12px;align-items:flex-start}
+.rank{flex:0 0 auto;width:34px;height:34px;border-radius:9px;background:var(--lilac-2);color:var(--purple);font-weight:800;font-size:13px;display:grid;place-items:center}
+.card h3{margin:0;font-size:15.5px;line-height:1.3}
+.card .loc{font-size:12.5px;color:var(--muted);margin-top:2px}
+.score{margin-left:auto;text-align:right;flex:0 0 auto}
+.score b{font-size:20px;font-weight:800;line-height:1;color:var(--purple)}
+.score b small{font-size:11px;color:var(--muted);font-weight:600}
+.score .bars{display:flex;gap:2px;margin-top:5px;justify-content:flex-end}
+.score .bars i{width:9px;height:4px;border-radius:2px;background:var(--lilac)}
+.score .bars i.on{background:var(--purple)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:11.5px;font-weight:700;border-radius:6px;padding:3px 8px;letter-spacing:.02em;white-space:nowrap}
+.p-must{background:var(--coral-soft);color:#C4103A}
+.p-strong{background:var(--lilac);color:var(--purple)}
+.p-optional{background:#EFEBF4;color:#5E4E73}
+.c-free{background:var(--ok-soft);color:var(--ok)}
+.c-open{background:var(--coral);color:#fff}
+.c-soon{background:var(--warn-soft);color:var(--warn)}
+.c-tag{background:#fff;border:1px solid var(--line);color:var(--muted);font-weight:600}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px dashed var(--line);padding-top:10px}
+.dates div{font-size:12px;color:var(--muted)}
+.dates b{display:block;font-size:13.5px;color:var(--ink);font-weight:600}
+.est{color:var(--muted)!important;font-weight:500!important}
+.conf{color:#C4103A!important}
+.card .ins{font-size:13px;color:#4A3D5E;margin:0}
+.empty{padding:40px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:var(--radius);margin-top:24px}
+
+/* ---------- Timeline ---------- */
+.tl{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.tl-row{display:grid;grid-template-columns:120px 1fr 1fr;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.tl-row.now{border-color:var(--coral);box-shadow:0 0 0 3px var(--coral-soft)}
+.tl-m{font-weight:800;font-size:15px}
+.tl-m small{display:block;font-size:11.5px;font-weight:600;color:var(--muted)}
+.tl-m .nowtag{display:inline-block;margin-top:4px;font-size:10.5px;background:var(--coral);color:#fff;border-radius:4px;padding:1px 6px;letter-spacing:.05em}
+.tl-col h4{margin:0 0 6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tl-items{display:flex;flex-wrap:wrap;gap:6px}
+.tl-item{border:0;cursor:pointer;font-size:12.5px;font-weight:600;border-radius:7px;padding:4px 9px;display:inline-flex;gap:6px;align-items:center;text-align:left}
+.tl-item.must{background:var(--coral-soft);color:#A50D31}
+.tl-item.strong{background:var(--lilac);color:var(--purple)}
+.tl-item.optional{background:#EFEBF4;color:#4D3F60}
+.tl-item .r{opacity:.7;font-weight:700}
+.tl-item .dd{font-weight:500;opacity:.85}
+.tl-none{font-size:12.5px;color:#B5A9C6}
+.tl-head{display:grid;grid-template-columns:120px 1fr 1fr;gap:12px;padding:0 14px;font-size:12px;color:var(--muted);font-weight:700}
+@media(max-width:720px){.tl-row{grid-template-columns:1fr}.tl-head{display:none}.tl-col h4{display:block}}
+@media(min-width:721px){.tl-col h4{display:none}}
+/* Timeline v2 */
+.tlbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 8px}
+.tlbar .vt button{display:inline-flex;align-items:center;gap:6px}
+.tlbar .chip{font-size:11px}
+.tl2{position:relative;margin-top:6px}
+.tlq{display:grid;grid-template-columns:110px 34px 1fr;margin:18px 0 6px}
+.tlq span{grid-column:3;font-family:"Outfit",sans-serif;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);display:flex;align-items:center;gap:10px}
+.tlq span::after{content:"";flex:1;height:1px;background:var(--line)}
+.tlm{display:grid;grid-template-columns:110px 34px 1fr;align-items:stretch}
+.tlm-date{text-align:right;padding:16px 4px 0 0}
+.tlm-date b{display:block;font-family:"Outfit",sans-serif;font-size:24px;font-weight:800;line-height:1;color:var(--ink)}
+.tlm-date span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.tlm-date em{display:inline-block;margin-top:6px;font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--coral);color:#fff;border-radius:5px;padding:2px 7px}
+.tlm-node{position:relative;display:flex;justify-content:center}
+.tlm-node::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:var(--lav);opacity:.6}
+.tlm-node i{position:relative;margin-top:22px;width:14px;height:14px;background:#fff;border:3px solid var(--purple);transform:rotate(45deg);border-radius:2px}
+.tlm.now .tlm-node i{background:var(--coral);border-color:var(--coral);box-shadow:0 0 0 5px var(--coral-soft)}
+.tlm.blank .tlm-node i{width:10px;height:10px;border-width:2px;border-color:var(--lav);margin-top:14px}
+.tlm-body{padding:8px 0 14px 8px;display:flex;flex-direction:column;gap:6px}
+.tlm-sum{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.03em;padding:8px 2px 2px}
+.tlm-none{font-size:13px;color:#A898BF;padding:8px 2px}
+.tlm.blank .tlm-date{padding-top:6px}.tlm.blank .tlm-date b{font-size:17px;color:#9a8cb0}.tlm.blank .tlm-date span{display:none}
+.tlm.blank .tlm-body{padding:0 0 4px 8px}
+.tlm.now .tlm-body{background:linear-gradient(90deg,var(--coral-soft),transparent 70%);border-radius:14px}
+.tle{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:112px 160px minmax(0,1fr) auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-left:4px solid var(--purple);border-radius:12px;padding:11px 16px;box-shadow:0 1px 2px rgba(31,20,48,.04);transition:transform .15s,border-color .15s}
+.tle:hover{transform:translateX(4px);border-color:var(--lav)}
+.tle.dl{border-left-color:var(--coral)}
+.tle-t{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--coral)}
+.tle.cer .tle-t{color:var(--purple)}
+.tle-d{font-family:"Outfit",sans-serif;font-weight:700;font-size:15px;color:#C4103A}
+.tle-d.est{color:var(--muted)}
+.tle-n b{display:block;font-size:14.5px;font-weight:700;color:var(--ink);line-height:1.3}
+.tle-n small{display:block;font-size:12px;color:var(--muted)}
+@media(max-width:720px){
+  .tlm,.tlq{grid-template-columns:54px 24px 1fr}
+  .tlm-date b{font-size:17px}.tlm-date span{font-size:11px}.tlm-date em{font-size:9px;padding:2px 4px}
+  .tle{grid-template-columns:1fr auto;gap:4px 10px;padding:10px 12px}
+  .tle-t{grid-column:1}.tle-d{grid-column:2;grid-row:1;text-align:right;font-size:13.5px}
+  .tle-n{grid-column:1/-1}.tle .chip{grid-column:1/-1;justify-self:start}
+}
+
+/* ---------- Dialog ---------- */
+:root{color-scheme:light only}
+dialog{border:0;padding:0;border-radius:18px;max-width:760px;width:calc(100% - 32px);max-height:calc(100vh - 48px);background:#fff;color:var(--ink);box-shadow:0 30px 80px rgba(31,20,48,.35)}
+.dlg-b{background:#fff;color:var(--ink)}
+.dlg-b p,.dlg-b .sb,.dlg-b td,.dlg-b .lead-team{color:var(--ink)}
+.dlg-b h4{color:var(--purple)!important}
+.dlg-h{background:linear-gradient(135deg,#3A1670,#5B2697)!important}
+.mg,.fact{background:var(--lilac-2);color:var(--ink)}
+.mg b{color:var(--purple)}
+table.cats{background:#fff}
+table.cats td{background:#fff;color:var(--ink)}
+table.cats tbody tr:nth-child(even) td{background:#FAF7FD}
+.panel,.card,.tle,.ucard,.qchip,.recpop,.hres{background:#fff;color:var(--ink)}
+.vlabel{font-size:12.5px;font-weight:700;color:var(--muted);margin-right:-4px}
+.vt button{display:inline-flex;align-items:center;gap:6px;padding:8px 14px!important}
+dialog::backdrop{background:rgba(31,20,48,.55);backdrop-filter:blur(2px)}
+.dlg-h{background:var(--ink);color:#fff;padding:22px 24px 20px;position:relative}
+.dlg-h .x{position:absolute;right:14px;top:14px;width:34px;height:34px;border-radius:9px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;cursor:pointer;font-size:18px;line-height:1}
+.dlg-h .grp{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--lav);font-weight:700}
+.dlg-h h2{margin:6px 40px 6px 0;font-size:24px;line-height:1.2}
+.dlg-h .meta{font-size:13.5px;color:#D9CFEA}
+.dlg-h .chips{margin-top:12px}
+.dlg-b{padding:20px 24px 24px;display:flex;flex-direction:column;gap:20px}
+.dlg-b h4{margin:0 0 8px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.dlg-b p{margin:0}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fact{background:var(--lilac-2);border-radius:10px;padding:10px 12px;font-size:12px;color:var(--muted)}
+.fact b{display:block;color:var(--ink);font-size:14px;margin-top:2px}
+@media(max-width:560px){.facts{grid-template-columns:1fr}}
+.sbreak{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}
+.sb{font-size:13px}
+.sb .l{display:flex;justify-content:space-between;margin-bottom:4px}
+.sb .l b{color:var(--purple)}
+.sb .bar{height:6px;border-radius:3px;background:var(--lilac);overflow:hidden}
+.sb .bar i{display:block;height:100%;background:var(--purple);border-radius:3px}
+@media(max-width:560px){.sbreak{grid-template-columns:1fr}}
+.scorebig{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
+.scorebig b{font-size:30px;color:var(--purple);font-weight:800}
+.scorebig span{color:var(--muted);font-size:13px}
+table.cats{width:100%;border-collapse:collapse;font-size:13.5px}
+table.cats th{text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--line)}
+table.cats td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.cats td:first-child{font-weight:700;width:38%}
+.note{font-size:12.5px;color:var(--muted);background:#FBF9FD;border:1px dashed var(--line);border-radius:10px;padding:10px 12px}
+.track{display:flex;gap:10px;align-items:flex-start;background:var(--ok-soft);color:#0B5C47;border-radius:10px;padding:10px 12px;font-size:13.5px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:10px}
+.btn.ghost{background:#fff;color:var(--purple);border:1px solid var(--line)}
+
+/* ---------- Method ---------- */
+.method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mg{background:var(--lilac-2);border-radius:10px;padding:12px 14px;font-size:13.5px}
+.mg b{display:block;margin-bottom:2px}
+@media(max-width:560px){.method-grid{grid-template-columns:1fr}}
+
+/* ---------- Full-detail panels ---------- */
+.vt{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.vt button{border:0;background:none;padding:8px 12px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer}
+.vt button[aria-pressed="true"]{background:var(--purple);color:#fff}
+.plist{display:flex;flex-direction:column;gap:16px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:130px}
+.panel-h{display:flex;gap:14px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,var(--lilac-2),#fff);border-left:5px solid var(--strong)}
+.panel-h.must{border-left-color:var(--must)} .panel-h.optional{border-left-color:var(--optional)}
+.panel-h .rank{width:40px;height:40px;font-size:14px;background:#fff;border:1px solid var(--line)}
+.panel-h h3{margin:0;font-size:18px;line-height:1.25}
+.panel-h .loc{font-size:13px;color:var(--muted);margin-top:2px}
+.panel-h .chips{margin-left:auto;justify-content:flex-end}
+.panel-b{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:0}
+.panel-main{padding:18px 20px;display:flex;flex-direction:column;gap:18px}
+.panel-side{padding:18px 20px;background:#FBF9FD;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+.panel h4{margin:0 0 6px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.panel p{margin:0;font-size:14px}
+.kv{display:flex;flex-direction:column;gap:10px}
+.kv div{font-size:12px;color:var(--muted)}
+.kv b{display:block;font-size:14px;color:var(--ink);font-weight:600}
+.kv span.pl{display:block;font-size:12.5px;color:var(--muted)}
+@media(max-width:820px){.panel-b{grid-template-columns:1fr}.panel-side{border-left:0;border-top:1px solid var(--line)}.panel-h{flex-wrap:wrap}.panel-h .chips{margin-left:54px;justify-content:flex-start}}
+.lead-team{display:inline-flex;gap:8px;align-items:center;font-size:13.5px;font-weight:600}
+.lead-team i{width:8px;height:8px;background:var(--coral)}
+
+/* ---------- Motion layer (same feel as the Events 2027 site) ---------- */
+.fx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;--mx:75vw;--my:30vh}
+.fx .dots{position:absolute;inset:0;background-image:radial-gradient(circle,#c9b6ee 1.6px,transparent 1.8px);background-size:26px 26px;-webkit-mask-image:radial-gradient(560px 420px at var(--mx) var(--my),#000 0%,rgba(0,0,0,.3) 45%,transparent 75%);mask-image:radial-gradient(560px 420px at var(--mx) var(--my),#000 0%,rgba(0,0,0,.3) 45%,transparent 75%)}
+.fx .glow{position:absolute;width:560px;height:560px;left:calc(var(--mx) - 280px);top:calc(var(--my) - 280px);border-radius:50%;background:radial-gradient(circle,rgba(255,55,94,.10),rgba(79,0,140,.06) 45%,transparent 70%);transition:left .25s ease-out,top .25s ease-out}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:float 20s ease-in-out infinite alternate}
+.blob.b1{width:380px;height:380px;background:#ffd6e1;top:-80px;right:6%}
+.blob.b2{width:320px;height:320px;background:#e6dcf7;top:45%;left:-80px;animation-duration:24s}
+.blob.b3{width:300px;height:300px;background:#ffe3ea;bottom:-100px;right:28%;animation-duration:28s}
+@keyframes float{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-40px,30px) scale(1.08)}100%{transform:translate(30px,-20px) scale(.95)}}
+main,footer,.site,.hero2,.kband,.recog,.strip{position:relative;z-index:1}
+
+/* Awards background: diamond lattice (center3 logo motif) + rising diamonds */
+.fx .lattice{position:absolute;inset:-50%;background-image:
+  repeating-linear-gradient(45deg,rgba(79,0,140,.11) 0 1px,transparent 1px 44px),
+  repeating-linear-gradient(-45deg,rgba(79,0,140,.11) 0 1px,transparent 1px 44px);
+  animation:drift 60s linear infinite;
+  -webkit-mask-image:radial-gradient(520px 520px at calc(var(--mx) + 25%) calc(var(--my) + 25%),#000 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.12) 80%);
+  mask-image:radial-gradient(520px 520px at calc(var(--mx) + 25%) calc(var(--my) + 25%),#000 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.12) 80%)}
+@keyframes drift{to{transform:translate(44px,44px)}}
+.fx .halo{position:absolute;width:440px;height:440px;left:calc(var(--mx) - 220px);top:calc(var(--my) - 220px);transform:rotate(45deg);border-radius:60px;
+  background:radial-gradient(closest-side,rgba(79,0,140,.10),rgba(255,55,94,.05) 60%,transparent);filter:blur(30px);transition:left .3s ease-out,top .3s ease-out}
+.dmds{position:absolute;inset:0}
+.dmd{position:absolute;bottom:-80px;border:2px solid rgba(79,0,140,.16);transform:rotate(45deg);animation:rise linear infinite;border-radius:3px}
+.dmd::after{content:"";position:absolute;inset:34%;background:rgba(255,55,94,.0)}
+.dmd.c::after{background:rgba(255,55,94,.45)}
+.dmd.f{background:rgba(185,148,212,.10);border-color:transparent}
+@keyframes rise{0%{transform:translateY(0) rotate(45deg);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-115vh) rotate(225deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.fx .lattice,.dmd{animation:none!important}.dmd{display:none}.fx .halo{transition:none}}
+
+/* Site bar */
+.site{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px;max-width:none;padding:0 28px}
+@media(max-width:640px){.site .wrap{padding:0 14px}}
+.card .dates{margin-top:auto}
+.cardbtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:4px;padding:10px 14px;border-radius:10px;background:var(--purple);color:#fff;font-weight:700;font-size:13.5px;transition:background .15s,gap .15s}
+.card:hover .cardbtn{background:#3a0068;gap:12px}
+#vt{display:none!important}
+.opens-row{grid-column:1/-1}
+.verify{display:flex;flex-direction:column;gap:4px;background:#EEF8F3;border:1px solid #C9EBDB;border-radius:10px;padding:10px 12px;font-size:13px;color:#0B5C47}
+.verify b{font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.verify a{color:#0F7B5F;font-weight:700;font-size:12.5px}
+.scorebtn{display:inline-flex;align-items:center;gap:7px;background:var(--purple);color:#fff;border:0;border-radius:10px;padding:9px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(79,0,140,.25);transition:transform .15s,background .15s}
+.scorebtn:hover{background:#3a0068;transform:translateY(-1px)}
+.site img{height:28px;display:block}
+.site nav{display:flex;gap:4px;align-items:center}
+.site nav a,.site nav button{background:none;border:0;cursor:pointer;color:var(--muted);font-weight:600;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:9px}
+.site nav a:hover,.site nav button:hover{color:var(--purple);background:var(--lilac-2)}
+.site nav a.cta{background:var(--purple);color:#fff}
+.site nav a.cta:hover{background:#3a0068;color:#fff}
+@media(max-width:720px){.site nav .hide-m{display:none}}
+.recwrap{position:relative}
+.hside{display:flex;flex-direction:column;gap:12px;animation:drop .7s cubic-bezier(.2,.9,.3,1.15) both}
+/* Quick access v3: transparent glass rows */
+.qgrid{grid-template-columns:1fr!important;gap:8px!important}
+.qt{flex-direction:row!important;align-items:center!important;gap:14px!important;min-height:0!important;padding:13px 16px!important;background:rgba(255,255,255,.08)!important;color:#fff!important;border:1px solid rgba(255,255,255,.16);border-radius:14px!important;backdrop-filter:blur(6px);box-shadow:none!important;transition:background .18s,border-color .18s,transform .18s!important}
+.qt:hover{background:rgba(255,255,255,.16)!important;border-color:rgba(255,255,255,.35);transform:translateX(-4px)!important}
+.qt-i{width:36px!important;height:36px!important;border-radius:10px!important;background:rgba(255,255,255,.12)!important;color:#fff!important;flex:none}
+.qt-i .ac{fill:var(--coral)}
+.qt-t b{color:#fff;font-size:15px!important}
+.qt-t small{color:#D3C5E8!important}
+.qt-n{position:static!important;margin-left:auto;color:#fff!important;font-size:24px!important}
+.qt-a{position:static!important;margin-left:auto;color:#fff!important}
+.qt.hot{background:rgba(255,55,94,.22)!important;border-color:rgba(255,55,94,.55)}
+.qt.hot:hover{background:rgba(255,55,94,.32)!important}
+.qt.hot .qt-i{background:var(--coral)!important}
+.qt.hot .qt-i .ac{fill:#fff}
+.qt.hot .qt-n{font-size:28px!important}
+.hsearch input{background:rgba(255,255,255,.95);padding:15px 16px 15px 44px!important;font-size:15px!important}
+.hsearch>svg{left:17px!important}
+.qgrid{gap:10px!important}
+.qt{padding:17px 20px!important;gap:16px!important}
+.qt-i{width:46px!important;height:46px!important;border-radius:12px!important}
+.qt-i svg{width:22px;height:22px}
+.qt-t b{font-size:17.5px!important}
+.qt-t small{font-size:13.5px!important;margin-top:3px}
+.qt-n{font-size:30px!important}
+.qt.hot .qt-n{font-size:34px!important}
+.qt-a{font-size:22px!important}
+@media(max-width:480px){.qt{padding:14px 16px!important}.qt-i{width:40px!important;height:40px!important}.qt-t b{font-size:16px!important}.qt-n{font-size:26px!important}}
+.hs-h{display:flex;justify-content:space-between;align-items:baseline;padding:0 2px}
+.hs-h span{font-family:"Outfit",sans-serif;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.hs-h em{font-style:normal;font-size:11.5px;color:#D3C5E8}
+.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.qt{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:10px;background:#fff;color:var(--ink);border-radius:14px;padding:14px;position:relative;transition:transform .18s,box-shadow .18s;min-height:118px}
+.qt:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,8,40,.25)}
+.qt:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+.qt-i{width:38px;height:38px;border-radius:11px;background:var(--lilac-2);color:var(--purple);display:grid;place-items:center}
+.qt-t b{display:flex;align-items:center;gap:7px;font-family:"Outfit",sans-serif;font-size:15px;font-weight:700;line-height:1.2}
+.qt-t small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.qt-n{position:absolute;top:14px;right:14px;font-family:"Outfit",sans-serif;font-size:26px;font-weight:800;line-height:1;color:var(--purple)}
+.qt-a{position:absolute;top:16px;right:16px;color:var(--coral);font-size:18px;font-weight:700;transition:transform .18s}
+.qt:hover .qt-a{transform:translateX(3px)}
+.qt.hot{grid-column:1/-1;min-height:0;flex-direction:row;align-items:center;background:linear-gradient(135deg,#FF375E,#E0245F);color:#fff}
+.qt.hot .qt-i{background:rgba(255,255,255,.18);color:#fff}
+.qt.hot .qt-i .ac{fill:#fff}
+.qt.hot .qt-t small{color:rgba(255,255,255,.85)}
+.qt.hot .qt-n{position:static;margin-left:auto;color:#fff;font-size:30px}
+.qt.wide{grid-column:1/-1;min-height:0;flex-direction:row;align-items:center}
+.live{width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.4s infinite}
+.hsearch{animation:none!important}
+@media(max-width:860px){.hside{max-width:520px}}
+@media(max-width:400px){.qt{min-height:104px;padding:12px}.qt-n{font-size:22px}}
+.hero2{z-index:5}
+.hsearch{position:relative;animation:drop .7s cubic-bezier(.2,.9,.3,1.15) .6s both}
+.hsearch>svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--purple);pointer-events:none}
+.hsearch input{width:100%;box-sizing:border-box;border:1.5px solid var(--lav);border-radius:12px;padding:12px 14px 12px 40px;font:inherit;font-size:14px;font-weight:600;background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+.hsearch input::placeholder{color:#9a8cb0;font-weight:500}
+.hsearch input:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 4px var(--lilac-2)}
+.hres{position:absolute;left:0;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 50px rgba(31,20,48,.18);padding:6px;z-index:25;max-height:360px;overflow:auto}
+.hres[hidden]{display:none}
+.hr-i{all:unset;box-sizing:border-box;display:flex;gap:10px;align-items:center;width:100%;padding:9px 10px;border-radius:8px;cursor:pointer}
+.hr-i:hover,.hr-i.act{background:var(--lilac-2)}
+.hr-i .rk{flex:0 0 auto;font-size:11.5px;font-weight:800;color:var(--purple);background:var(--lilac-2);border-radius:6px;padding:2px 6px}
+.hr-i b{display:block;font-size:13.5px;color:var(--ink)}
+.hr-i small{display:block;font-size:12px;color:var(--muted)}
+.hr-i .dt{width:8px;height:8px;border-radius:50%;margin-left:auto;flex:0 0 auto}
+.hr-all{all:unset;box-sizing:border-box;display:block;width:100%;text-align:center;font-size:12.5px;font-weight:700;color:var(--purple);padding:9px;border-top:1px solid var(--line);margin-top:4px;cursor:pointer}
+.hr-all:hover{text-decoration:underline}
+.hr-none{padding:12px;font-size:13px;color:var(--muted);text-align:center}
+.site nav .recbtn{display:inline-flex;align-items:center;gap:7px;color:var(--purple);border:1px solid var(--line);background:#fff}
+.site nav .recbtn[aria-expanded="true"]{background:var(--lilac-2);border-color:var(--lav)}
+.recbtn svg{color:var(--coral)}
+.recbtn .cv{font-size:11px;transition:transform .2s}
+.recbtn[aria-expanded="true"] .cv{transform:rotate(180deg)}
+.recpop{position:absolute;right:0;top:calc(100% + 10px);width:330px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 50px rgba(31,20,48,.18);padding:10px;z-index:40;animation:pop .25s cubic-bezier(.2,.9,.3,1.1)}
+.recpop[hidden]{display:none}
+.rp-h{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted);padding:6px 8px 8px}
+.rp-i{display:flex;gap:12px;align-items:flex-start;padding:10px 8px;border-top:1px solid var(--line)}
+.rp-i b{display:block;font-size:14px;color:var(--ink)}
+.rp-i small{display:block;font-size:12.5px;color:var(--muted)}
+.rp-b{flex:0 0 86px;text-align:center;font-size:11px;font-weight:800;border-radius:6px;padding:4px 6px;background:var(--lilac);color:var(--purple);margin-top:1px}
+.rp-b.win{background:var(--coral);color:#fff}
+@media(max-width:720px){.recbtn .rl{display:none}.recpop{position:fixed;left:16px;right:16px;top:72px;width:auto}}
+.nav{top:64px}
+
+/* Hero */
+.hero2{padding:56px 0 40px}
+.hero2 .wrap{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:40px;align-items:start;max-width:none;padding:0 28px}
+@media(max-width:640px){.hero2 .wrap{padding:0 14px}}
+.hero2 h1{margin:0;font-size:clamp(40px,6.4vw,76px);line-height:1.02;font-weight:800;letter-spacing:-.03em;color:var(--purple)}
+.hero2 h1 em{font-style:normal;color:var(--coral)}
+.hero2 .lead{margin:18px 0 0;max-width:640px;color:var(--muted);font-size:17px;line-height:1.6}
+.hero2 .upd{margin-top:16px;font-size:12.5px;color:#9a8cb0}
+.hero2 .upd i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#18A35B;margin-right:6px;animation:pulse 1.6s infinite}
+.qchips{display:flex;flex-direction:column;gap:10px}
+.qchip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 16px;font-weight:600;font-size:14px;cursor:pointer;box-shadow:var(--shadow);text-align:left;animation:drop .7s cubic-bezier(.2,.9,.3,1.15) both;transition:transform .15s,border-color .15s}
+.qchip:hover{transform:translateX(-4px);border-color:var(--lav)}
+.qchip .dt{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+.qchip .n{margin-left:auto;font-size:12px;background:var(--lilac-2);color:var(--purple);border-radius:999px;padding:1px 8px}
+.qchip .ar{color:var(--coral)}
+.qchip.hot{background:#FFF4F6;border-color:#FFC9D4}
+.qchip:nth-child(2){animation-delay:.12s}.qchip:nth-child(3){animation-delay:.24s}.qchip:nth-child(4){animation-delay:.36s}.qchip:nth-child(5){animation-delay:.48s}
+@keyframes drop{from{transform:translateY(-70px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:860px){.hero2 .wrap{grid-template-columns:1fr;gap:22px}.qchips{flex-direction:row;flex-wrap:wrap}.qchip{flex:1 1 150px}}
+
+/* KPI band */
+.kband{background:rgba(255,255,255,.85);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kband .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+.kb{padding:22px 10px;text-align:center;border-left:1px solid var(--line);cursor:pointer;background:none;border-top:0;border-right:0;border-bottom:0}
+.kb:first-child{border-left:0}
+.kb b{display:block;font-size:44px;line-height:1;font-weight:800;color:var(--coral);font-variant-numeric:tabular-nums}
+.kb span{display:block;margin-top:8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ink)}
+.kb small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.kb:hover b{transform:scale(1.06)} .kb b{transition:transform .2s}
+@media(max-width:860px){.kband .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}.kb:nth-child(4){border-left:0}.kb{border-bottom:1px solid var(--line)}}
+@media(max-width:480px){.kband .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.kb{border-left:0}.kb b{font-size:36px}}
+
+/* Awards strip (marquee) */
+.strip{padding:30px 0 6px}
+.strip-h{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.strip-h h2{margin:0;font-size:clamp(22px,2.6vw,30px);font-weight:800}
+.strip-h h2 em{font-style:normal;color:var(--coral)}
+.strip-h p{margin:0;color:var(--muted);font-size:13.5px}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mtrack{display:flex;gap:14px;width:max-content;animation:scrollx 80s linear infinite;padding-block:6px}
+.marquee:hover .mtrack,.marquee:focus-within .mtrack{animation-play-state:paused}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+.mtile{all:unset;box-sizing:border-box;cursor:pointer;width:220px;height:96px;flex:none;display:flex;flex-direction:column;justify-content:center;gap:5px;padding:12px 16px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);transition:border-color .15s,transform .15s;border-top:3px solid var(--strong)}
+.mtile.must{border-top-color:var(--must)} .mtile.optional{border-top-color:var(--optional)}
+.mtile:hover{border-color:var(--lav);transform:translateY(-3px)}
+.mtile b{font-weight:800;font-size:15px;line-height:1.2;color:var(--purple);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mtile span{font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Scroll reveal + bars */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.sb .bar i{width:0!important;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.in .sb .bar i,.dlg-b.in .sb .bar i{width:var(--w)!important}
+.fade{animation:fadeup .45s ease both}
+@keyframes fadeup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.cd{display:inline-flex;gap:4px;margin-top:8px}
+.cd span{background:var(--ink);color:#fff;border-radius:6px;padding:3px 7px;font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.cd span small{font-weight:500;opacity:.7;margin-left:1px}
+.ucard{position:relative;overflow:hidden}
+.ucard.open::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,55,94,.08) 50%,transparent 70%);background-size:250% 100%;animation:shine 3.2s linear infinite;pointer-events:none}
+@keyframes shine{from{background-position:150% 0}to{background-position:-100% 0}}
+dialog[open]{animation:pop .3s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.blob,.qchip,.mtrack,.ucard::after,.fade,dialog[open],.hero2 .upd i,.ucard .st i{animation:none!important}.fx .glow{transition:none}.rv{opacity:1;transform:none;transition:none}.sb .bar i{transition:none}.mtrack{flex-wrap:wrap;width:auto}.marquee{-webkit-mask-image:none;mask-image:none}}
+
+footer{margin:48px 0 0;padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer img{height:22px}
+.changes{margin-top:8px}
+.changes li{margin:2px 0}
+
+/* ===== Theme v2: awards-night header + soft lavender content ===== */
+:root{--bg:#F3EFF8;--line:#E4DAF0;--night:#160C29;--night-2:#2B0E52}
+body{background:var(--bg)}
+.dz{background:radial-gradient(900px 520px at 88% 8%,rgba(255,55,94,.22),transparent 62%),radial-gradient(700px 500px at 8% 70%,rgba(185,148,212,.28),transparent 65%),linear-gradient(180deg,#3A1670 0%,#4F1F8E 45%,#6A35A8 100%);color:#fff}
+.dzfade{height:110px;background:linear-gradient(180deg,#6A35A8 0%,#9C7AC9 35%,#D9CBEB 70%,var(--bg) 100%);margin-bottom:-60px}
+.fx .lattice{background-image:repeating-linear-gradient(45deg,rgba(185,148,212,.16) 0 1px,transparent 1px 44px),repeating-linear-gradient(-45deg,rgba(185,148,212,.16) 0 1px,transparent 1px 44px)!important}
+.dmd{border-color:rgba(185,148,212,.38)}
+.site{background:rgba(58,22,112,.90);border-bottom:1px solid rgba(255,255,255,.10)}
+.site nav a,.site nav button{color:#CFC3E3}
+.site nav a:hover,.site nav button:hover{color:#fff;background:rgba(255,255,255,.08)}
+.site nav .recbtn{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#fff}
+.site nav .recbtn[aria-expanded="true"]{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}
+.site nav a.cta{background:#fff;color:var(--purple)}
+.site nav a.cta:hover{background:var(--lilac);color:var(--purple)}
+.hero2{padding:64px 0 48px}
+.hero2 h1{color:#fff}
+.hero2 .lead{color:#CFC3E3}
+.hero2 .upd{color:#A797C2}
+.hero2 .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--lav);margin-bottom:18px}
+.hero2 .eyebrow i{width:10px;height:10px;background:var(--coral);transform:rotate(45deg)}
+.qchip{border-color:transparent;color:var(--ink)}
+.panel-f{margin:0}
+.hsearch input{border-color:transparent}
+.kband{background:rgba(255,255,255,.07);border-top:1px solid rgba(255,255,255,.14);border-bottom:0}
+.hero2 .lead{color:#E6DCF3!important}.hero2 .upd{color:#C9B9E0!important}.kb small{color:#D3C5E8!important}
+.kb{border-left-color:rgba(255,255,255,.10)!important;border-bottom-color:rgba(255,255,255,.10)!important;color:#fff}
+.kb span{color:#fff}
+.kb small{color:#A797C2}
+.kb:hover{background:rgba(255,255,255,.04)}
+.nav{background:rgba(243,239,248,.94)}
+.tab{border-color:var(--line)}
+.intro{font-size:14.5px}
+
+/* Professional panel layout */
+.plist{gap:20px}
+.panel{border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 2px rgba(31,20,48,.05),0 10px 30px rgba(31,20,48,.06)}
+.panel-h{display:flex;align-items:center;gap:16px;padding:20px 24px;background:#fff;border-bottom:1px solid var(--line);border-left:6px solid var(--strong)}
+.panel-h.must{border-left-color:var(--must)}.panel-h.optional{border-left-color:var(--optional)}
+.panel-h .rank{width:46px;height:46px;font-size:15px;background:var(--lilac-2);border:0;border-radius:12px}
+.ph-t{min-width:0}
+.ph-t h3{margin:0;font-size:20px;letter-spacing:-.01em}
+.ph-t .loc{margin:2px 0 8px}
+.panel-h .chips{margin:0;justify-content:flex-start}
+.ph-s{margin-left:auto;text-align:center;flex:0 0 auto;background:var(--night);color:#fff;border-radius:14px;padding:10px 16px;min-width:96px}
+.ph-s b{font-size:28px;font-weight:800;line-height:1}
+.ph-s span{font-size:13px;color:#B9A9D3;font-weight:700}
+.ph-s small{display:block;font-size:11px;color:#CFC3E3;margin-top:3px;letter-spacing:.04em}
+.facts4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#FBF9FD;border-bottom:1px solid var(--line)}
+.facts4>div{padding:14px 20px;border-left:1px solid var(--line)}
+.facts4>div:first-child{border-left:0}
+.facts4 label{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:4px}
+.facts4 b{display:block;font-size:15px;font-weight:700}
+.facts4 p{margin:0;font-size:13px;line-height:1.45;color:var(--ink)}
+.facts4 .pl{display:block;font-size:12.5px;color:var(--muted)}
+.panel-b{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}
+.panel-main{padding:20px 24px;gap:16px}
+.panel-main p{line-height:1.6}
+.panel-side{padding:20px 24px;background:#fff}
+.panel-side .scorebig{display:none}
+.panel-cats{padding:4px 24px 20px;display:flex;flex-direction:column;gap:12px}
+.panel h4{color:var(--purple);font-size:11.5px}
+table.cats{border:1px solid var(--line);border-radius:12px;border-collapse:separate;border-spacing:0;overflow:hidden}
+table.cats th{background:var(--lilac-2);border-bottom:1px solid var(--line);color:var(--purple)}
+table.cats td{border-bottom:1px solid var(--line)}
+table.cats tr:last-child td{border-bottom:0}
+table.cats tbody tr:nth-child(even) td{background:#FCFAFE}
+.panel-f{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 24px;border-top:1px solid var(--line);background:#FBF9FD;font-size:12.5px;color:var(--muted)}
+@media(max-width:900px){.facts4{grid-template-columns:repeat(2,minmax(0,1fr))}.facts4>div:nth-child(3){border-left:0}.facts4>div:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:820px){.panel-b{grid-template-columns:1fr}.panel-side{border-top:1px solid var(--line);border-left:0}}
+@media(max-width:560px){.panel-h{flex-wrap:wrap;padding:16px}.ph-s{margin-left:62px;display:flex;gap:6px;align-items:baseline;padding:6px 12px;min-width:0}.ph-s small{margin:0 0 0 6px}.facts4{grid-template-columns:1fr}.facts4>div{border-left:0!important;border-top:1px solid var(--line)}.facts4>div:first-child{border-top:0}.panel-main,.panel-side,.panel-cats,.panel-f{padding-left:16px;padding-right:16px}.ph-t h3{font-size:18px}}
+.group-h h2{font-size:20px}
+.group-h .ico{background:var(--night);color:#fff}
+</style>
+</head>
+<body>
+
+<div class="fx" aria-hidden="true"><span class="halo"></span><div class="dmds" id="dmds"></div></div>
+
+<header class="site">
+  <div class="wrap">
+    <img src="data:image/png;base64,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" alt="center3">
+    <nav>
+      <div class="recwrap">
+        <button class="recbtn" id="recBtn" aria-expanded="false" aria-controls="recPop"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg><span class="rl">2026 Recognition</span><span class="cv">▾</span></button>
+        <div class="recpop" id="recPop" hidden>
+          <div class="rp-h">center3 recognition in 2026</div>
+          <div class="rp-i"><span class="rp-b win">Winner</span><div><b>Datacloud Global Awards</b><small>Best Data Center in MEA, 2nd year in a row</small></div></div>
+          <div class="rp-i"><span class="rp-b">5 finalists</span><div><b>Global Connectivity Awards</b><small>Five shortlisted entries</small></div></div>
+          <div class="rp-i"><span class="rp-b">Finalist</span><div><b>DCS Awards</b><small>Safety &amp; Security Innovation</small></div></div>
+          <div class="rp-i"><span class="rp-b">Listed</span><div><b>Capacity Power 50</b><small>Fahad Alhajeri (CEO at the time)</small></div></div>
+        </div>
+      </div>
+      <a class="cta" href="https://reemaalmud.github.io/center3-events-2027/" target="_blank" rel="noopener">Events 2027 ↗</a>
+    </nav>
+  </div>
+</header>
+
+<div class="dz">
+<section class="hero2">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><i></i>2027 Awards roadmap · Nov 2026 – Dec 2027</div>
+      <h1>Proposed <em>Awards</em><br>for center3</h1>
+      <p class="lead">A guide to the industry, global and Saudi awards center3 should enter in 2027. Each award has a priority label, a strength score out of 20, recommended categories with the story to submit, and its fees and dates.</p>
+      <div class="upd" id="updated"></div>
+    </div>
+    <div class="hside">
+      <div class="qgrid" id="qchips"></div>
+      <div class="hsearch">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="hq" type="search" placeholder="Search awards…" autocomplete="off" aria-label="Search awards" aria-controls="hres">
+        <div class="hres" id="hres" hidden></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="kband"><div class="wrap" id="kpis"></div></div>
+</div>
+<div class="dzfade" aria-hidden="true"></div>
+
+
+
+<main>
+  <section class="strip">
+    <div class="wrap strip-h"><h2>All 30 awards <em>at a glance</em></h2></div>
+    <div class="marquee"><div class="mtrack" id="mtrack"></div></div>
+  </section>
+  <section class="wrap urgent" aria-labelledby="urgent-h">
+    <div class="sec-h">
+      <h2 id="urgent-h">Open now &amp; closing soon</h2>
+      <p>Open registrations, plus deadlines in the next 3 months</p>
+    </div>
+    <div class="urgent-grid" id="urgent"></div>
+  </section>
+
+  <div class="nav">
+    <div class="wrap">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div class="toolbar" id="toolbar">
+        <label class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Search awards, categories, cities…" aria-label="Search awards">
+        </label>
+        <select class="sel" id="sort" aria-label="Sort">
+          <option value="rank">Sort: Priority rank</option>
+          <option value="deadline">Sort: Deadline</option>
+          <option value="score">Sort: Strength score</option>
+        </select>
+        <div class="vt" id="vt" role="group" aria-label="View">
+          <button data-view="full" aria-pressed="true" title="Show every award with all its details"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Detailed view</button>
+          <button data-view="cards" aria-pressed="false" title="Show awards as small cards. Select a card to open its details"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>Card view</button>
+        </div>
+        <div class="legend">
+          <span class="lg"><b class="conf">Date</b> confirmed</span>
+          <span class="lg"><b class="est">~Date</b> estimated from last cycle</span>
+          <button class="scorebtn" id="methodBtn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>How the score works</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="intro" id="intro"></p>
+    <div id="view"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div id="foot-upd"></div>
+      <ul class="changes" id="changes"></ul>
+      <div>Dates marked ~ are estimates based on the last cycle. Check each award's website before you submit.</div>
+    </div>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAABTCAYAAACyL50PAABCJUlEQVR42u19eXycVbn/9znnvO+876SlbFZRkc21ePFi3RGC2iZTiqLoxKvidfvZioJctwu0Sd5MkrII6BVUBK5X8bpcO4qK0CZpQXJVlKvV60LdF64LWKBQmsy7nXOe3x/vTJImM+kkXcF5Pp/5dEkyc3LOe77ne57l+wAHr1E7AgUAnd7AR1d4627J/psJCARa1rKWtaxlBwaci1gvM3Du71npX85n+ldwwV93I8DEYMqAumUta1nLHrsmD74hMbUDcgPOM4XcQL8r2/o0YmthjEttJx+nbn/mm/WpX61+swBGubWMLWtZy1oAvV/cGpCjKOlOf2DQFfnulCOdATGkQaIdyp90grr9WSfrj9+0FZ/gFki3rGUtawH0/nFriA04zxT8gUtcyq9JOdTVMVbdGSQM0tSh/EmhPPLEk/U1X92KT3AAiNEWSLesZS17jBkdPOBcFGWUzQp/3WWKvAtngvNUY+1Qm9I2/Nq26J7Xb8H1GggIKNnWkrasZS17rJg4WJhzGWXT6Q9eocjfDTgDAKmUK6kS/mse5z3lK0uxSgElG7SyO1rWspa1GPTeBucuU/DXXeWQ9/4qOKvmfrzGpKNvcnRvcQjXxFkKXotJt6xlLWsB9F4B5w5v8N9yIn9BypU5gPOEpQ75juZoA4f3nT2Ea+IAgSi1QLplLWsZ9l/2WRFlsQ1318XU0wFbQokB8KMAoJmK6Mp8zt7g1Urkz58nOE9h0nmV2mgojJLXjKIUtUC6ZY+FTd+OvlkD+Yuxlcsom9ZcHTiSCZTR7Bpk9R3Nf/+BAGgKEFAJJdvpDXzCFW3v3jNwnjDtkK80RyMLwgdeXcZHwxZIt6xlLdsXVsR6WUbXBMi+YuElR+QSPslK8TSwOZqZFwBgCHpIWNzDJH5hQmfrJnxoHABq8bLd4RMdKOZc8NZd6wr/XUljcOZZxseNszvySnOyWYcPvHoTrhpvgXTLHnW8GUwE4pW54HhLuVdbshqw0553wYKlY4X5+XCle7j2M63Z238ZZ0uxynm8d8xrAPlPFuZUSfJIQU7dFdWcgsH3ANgkmT93a7T22/WA/gACNFOAPiqhZAve4PWOyL+zMXNmJkhi2AaDFmj0tUkmHX+rEsavGkVprAXSLXs0srMOf/C1eVr0FY0YNG2rMixcakPFbL9pKOp+7e42esv2DoaheggW/MHXEEQgyX0OABhOYGGYQI3WQAlICHJhOQWYb9Ei7R6p9P6kiKJs5PIQ+xucO73Bf3dnBWeyBEXMdjvNPD+YQLBsH6p+bz2nu0q5ohXlXpb3c7e8BB9aWGql4LUMj8YcWJOkHOqUozj7c/KlOY5SDjUTdrZmav+BcwHn51bkL71OIXeTgHxOyqFJOTScgTNVMa3eCxbGag61QcqCnDMVu98v+APnl1E2VXyiAwDQTKgxZ3/gM67IvyPhStrAraFdygtLuoeJb1DkA4Ce8nWjyAcRbrHEqxzyCYAFmGfmSYdaUa59kX/YrQUEh7RAumWPPlfHrBteAVB0cNQy/B2AM9COYAH5R93qwFuVIjIaqSWQJJBEtlbN1J0oAlGK0FgYz6G2qwv+wJUllGw72uV+BuiMOQMlu8Jf91mH2t5aZc51HDWkHfJVbMf+bbjSMwiGWz8jhQHmtpFKzw2JHb9QkScBqgPSUEnGpE+Fn9uwDBcuKqFkiyjK1gPXspa1rHmXU1kE6CPfc77gkPeKmMeTDJjnj58ZqFtOuaJdWvCBTq//4lGM6pqK534A6EDUmHOnP/ifivy3pPWZM2d+Y09pji4fjnreFyAQDBKNeIWtRkGHo54Pa668XyEnATEDpCmrONQO5U5x/EM2nrUoOHTKdaJlLWtZy5qKB9zlyQ+5ou1VCVcSAtxZArwGgGbAMFD7e4P4FxHAMuWKlsK95Axv4LQyusxUkBb7ijkz+hjo44I/+AWX8uekPF6POTNAxiFfpRxdujFce1EB5+dKKFmayYinRja5hJIt4GO5obD3oyniCxS5dUEaoBqTfnESu0MdhwSHt5h0y1rWst1STASijC77ytzAcUSyJ+XQ1L/9A1zFHQeedMhXCq50kKv9XVRBmuuBtIUlYgELXN2OQJVx90SWmtg3zDl794J/yZccyr8xY86k6oOzp1IOB4fCtWvaEaj7ETedbRFiu2lHoIbD7qsNV85XcGdh0qFWIvdCmXhDr1h40RFllM3060TLWtayltXsjgwfORV0niK/jWHqpvcymCUUCUgYTjakXHmvQfIqjfjs1FYuNpzc5SAnqoy5rrtDIzZKeM/xfPdVQMm2I5DYC8Uh9dwaXESXGPNP/qIivytjztOTA5kBYRzyVMJh/3DYHbQjUKMomdrAmrVRlHQ7ArUxDD5e8AeMotwnNac2O7CmOu5JJRxph7znu+nC4fYFQaE81vXAbCkuLWtZy/5ujUZR0mciyKfMXQYxo47blQEroQQz38sCbx0K147Uea/LVuTXvZNYfJxBCjA0PaiY5bATE/NbANx0OmBH9yZAV3ONuYitYqf3nPUOeWdXmfMMtwaDrEueSjHeNxz2lmrgPNc69ekgPRT2XNvpD1iF3KcMZoI0AUoj1Ir8pXlNI8vbgkJ5vLTtsZdDGogiTqRGugCLcSIvwd08H22A/aFbcODHN3sV7NYGcztl3I/1nPtZ56E2F2UULR6lxTO1YhTtOydJyCcbaKYZAM1MmaT+OAu9cqjS++NaH9XFOJEBYBvupsXYyuXK2hs6cgNwhXd9CmtpBhNnaTglAC9ahssWlXDRDtRxO8wbEEoo8VKsUmPeMV92hP+aRsyZIIxCTiW20jMc9Q7uKThPB+nhsOe6zny/UfBuMJxahgVNY9IpIu2QdzIMRl7ednFnebzrb492Jh0gEHcAYhQlDZRseQ5BEAAoo8vuWzAMRDsgRtFnAOJyFkBpZqPIbVhCtZ/b04BPI0CZBJWZB3UWryiijC5TPTSaDC41B1C137H27524V7YjINGEC5KrzZVrP9PEPpnnXssO1eqz0vQ8VJs/y6pYkN2X61fDgbmSlnp6JrX1YMKzBRxtWBvMaHBCWpHrJFz5xEil98dFBG4ZpaRRA+yRuOeGTm/gHYpyL9RIDO3yfkQMw0RisczrE1DBj4ooCrWXmLNdilXO47xjvqKE/6r6zJmZQVZRTqU2WjMc9Vy6t8B5BkhXev+9kO+3ErlPG+gZID3JpL3neOaQkc78mkK5csm9j0YmnR0sS2qszQLAMi94imL3aQQ+zkp7FLE4FEwKZMeJxYNM/H8g+VtViX5VRldlWsR6rwJ1gEBsxVYqo2RGAQuUcEb+w08wJn6mhDjBSPPEyfHxGJgfAtE9kuTvxyoLf1XGeWPZO5XmBHr1bK5rmz3bfVwGGaCMIgJ3rM1/Blv9TGY+joiOAJPHZEMwtoHod2T550Nxz+9qn9XMM1WHGGgAKIjSTuxeqSGugpLet6qTZGqH6pm4Lp/m73+mYnmC5vRYkDicmPJEnDDhYTLirwb8Ry3417eH3X8ZRUmPzkF/Ym+tX21/LKnuj/J8PtTwU121QAGsaOZ5qQgCEqKcuXdPNLNIU9TSNr4iSL2QOOF6CcQSigD9RAA/2oYle8aga+BcwPk58o4qK5F7ZcrjaX2fM1kXnkxtdNFw1H15FZz3+kM1ipJeilXOUKX3PwregJHkfrYeSAOkNGKtKHcS84JNnfnB5eVK172PHiY9UZ2ZbZr85c/VrF8H5g4QL5GkfEHVngdUu1BxlgIDhuEE2s/dswKX3gngqzKMNtbAei+VxlMR60Wpuqk6cpc8VRC9lsieaWxykhLuIYIk5Czj870df1mBS+5i4GYbxd8so2t7s6A33doRKM93uwXTYoa1PKUrPIGYIASTeRjhIaUhXJC0I5Cl7DaCgjfwUkC9aYz4FWzNCYo8QbVHiWjKuC2MiOMV3iU/JhJfGg/Dz5XR9XD1mWp48BW8/gsF3GMtEpMVpxABbNjS8RYaBBaYUeoNYTgBAS/t9AauAUhi1syn7He0HH94OC79sRnd9NpeKKPLtCNY4PveCgF+tcEDpwoWRxM5cMmdMg/VkUmGYAOBZLzgrbubmIagxFdK4xf9bMr7zpkIdHoDayScJ1sklmcUhggA1rKrg5FHStuBogwyYDYAcIZ3xTGWzPOJzdMZ9vEMdgAyUuSU5vinI2HPtVPnpOYDJohNod0RWU6SqUkVBGIGBMMm8ULzS4QlW55FOqPq8mAI3mpZgwHRUGiIJ/FT7Tk4fyxH/thNinJnpBw2BGdFnkxt+KGhqOfKfQXONduC69N2BGoo6rmxw+tnRbkbLYxlmGkgDaURaUXeicR6c8EPOsth6c8HO5POxkemBPAZ+YECs3qfYbvMIU9YaFhoaKQWnHA9AZ2qsI4UkMcIco4B8xus7/16BS69elv4h+tLKKV7NgfZg15Gl1nprHu2VXQhA2c75OYtG4CaHB/JJwlyzgZwtvHo3jNo3WeFTD4yJbjbzCYnAOzjcMnY+R5XLDjSIJ2mbcEQUIh4rHIIwstrrLTgD76IWAZEKEhyYTgFQyPl0DQet8hJUi8SpF6U9/n9K3iwtxx1f65aKkwNUq3e7oq2p2uoXcZl2cAgQb0qNQKERQoB9Qwp3Gc0U5co4CC05vMA/ljEVio3kf/bjmBB3vNWE+FcAecEEGA5hYWZdR4AIgHRJsh5gRDyBdrGF6/wLv2mBV9ZjtZ8bw5EoDZnRMA7XZE/dvo81b6NYRDH0UeA4GGgZEoAVuQHV4DpPEbSruC2kXAnloBh4VAe2kZ3ALi2iBMn5qQ2rqF47W0Abpt1hNEMplyX/wOAsbyDyIAagjmDjIlqoK72BJxfhPf5GTh7haxCsG62hlVwZWIrHxyJeq+a4tbYp1Zj0iNR7+c6vD6jyPu8BTPD8gwmzbFWyC1h5DZ3eGuXl6OuPx2sIJ3lSXbpgh88WSB3BUH9kyCC5hgph7p6MlNW5USN2BRq2gCGNQOAhPN0Rc7HF3vHvaVD9J9brnRtmc9BuovLyz+2l0EflOR6mqPa+IjAIgu47G58mg1rCwCC1FGSvIuNEees8NZdVI7WfnF20Kv78G9POTzUQNtdq8CYBRSB+aHwqDDFvUDBX9dPEGukUFJzxJaNqTIoyqrAGo2bWSNh4sQKyGOk8G8seIMv2Rjh3L5MZrfORuaHUw61RrLLuLK5mq2xM8FC18a2u9+dBTQJkunuATGgMrpMId9/BrFzpSL3WYYTpAhNdlkgAiBmn4cs/SybC1gAjhLe2cTpa1Z4l15biaILSyiNzWWfMfBQyuGTsxLrXfwN1ali7UIR0GM782uOErzwYwKySETIxh8Z4skDJSsqIQnQjt3Fdubn9971yAPKEOQcIaGQwtjpa0sAWWg2Sv4VSQbqap4BQXsmgrz2na8r8pZnbaqmu0tqzNmVCcfvG4l6/21fM+dGTHok6vtCp9dnJfmfZxhYWJ62wCpFaBzyn0FYsPkMb21HOeq652AD6ep4dEdbabkw7o1SuEclHNos+Eqyqs0wFxO1zWSgreXUSso9H4xvd3j9/28k6v3iXNasiPWyhC7TmQuOlcL7vKTcKSlXYCd7TFbH1+woaQKgGJpTNkZAHi0p94UV3roXbozoX6pYR835pbM5qvrqZ2xwIrI774Uo+Ov+y6X86xMe45S1ocmfa27Q2S8oDIy1HFpXtK0u+INtw2HpzfX9/PXHRU1/XFNjYwBkZ8iWzqgBA0C24A+uk+yuYTCqbegaAnIzcwGAUw4tAcIRbe/O+3hJhwzeUB7r+uUc9tks6wcCINOc+3ABAycIdoYluSckPG6qh0a98RMAOdshODW2syc2GZw0zyXKgXjGIc0ERZb1fV5e/R4VoIz1VsyVHQEluxwfaDN+7maH/OX19ZxrzDknU44vGAm79zs4T2fSw1HflwzHbyAICBBNL78kCKk51gT1dKYFmztzwbHTyy4PAuZsCt7Am5TNbQThqJRDTfPbOPV2pqj65Q1gfZf8LxTyA++oBV6bC1Z2mWVu/7Ok8P5bkHNKwuNpdfOo3eBNE+l0GRAZGJsiNI7Iv3eFN7g+++wusWfSuVTleyw8X33dgff6JMtCwp7MbZUEqJjH0hwtOKfTK62pPlPiYE2dC9BHK/zBz7uUX6ORmCxdFaqJojbePVhnokIJj6cS6h+V9m5f5nT/QzYne1bZS9nZMk5x5SQIsUlAnpDwuJ4UMzqw7f0W40SuBkmLhvWMIkEGrCTFBGy5+cELd2bfSyzmenVtR7BA+kd8U1HuFRlA7Mqcs5JHwQquTBGdNxx2X32gwHk6kx6OetdbJK8nSCsgiMHTT0ZlEGlJ8qlSeJtX5oLjDwaQLqIoR1HSnW7pLEnu5xlGGGg7O3NintQFYFP7++zaAFlVkwVbjcQKdm7ozJU6R1HSs2+gQJRRNstzA8c5wtlEkEfr7Nlw6m+MqWPLktWr7G36/9cFPQLJhMdSR7S9rtNbd121KnRPQI8sDASJJym4r0gQ2jqHCte0Faa+uAl2RZncgBHk9J3h9j+rjK6DTVmxGtAt2e/n1GccWvCmmMdTytilaIDGE5oTUwn/5P9zw+wsAjkakSaSRzmq7daCf9mTs3jCvOeEGAwmlkT0JQl1XIrI0F5LI8Ye5PsX5RIEThld5vu+OM8hf4lBYuodeAQiAq0HJqoYmyv1LqIoSyjZl+BDC/N+7haHci9rxJwJwkq4IkH07uGw5xO7A2cGiBGI2ut0QDCCmh8VDV409XsnX41PyYnsjrD3KwZhF0EYAUkzNxgpzYkmyBOs8DZ35IKnVoMl6sDpAZRNYcG6JVK6n7cwbDOXhpgNmAmKHPKlQ76q/ikd8lRNGyD7vsYgyFVSK0h97oz8h59QxvpGG4iK2EpnIshLEjdJoZ5kEOtGOfbZ2CTVxqPgiKl+4NqYJZTINnmjzARyEh5PXeG/s5DrX7U3DlLOQoAz/NPZmIkU3Np8Vl9edZywuwFqApgV5RwjRS8A3ooTqc4Not6rSffs7l7U8P1qzZs7vdKanFzwzwnvTAnUQHMik/ednIucrKafWQKhpj/hwJNV4GwkFKQMYq3IORrQ/xkgoCK20h6Js0L4ROIJNRnQBmRgYk5ock72Uf4/cRllsxWlpNMbeIOAe6Xm2E7fu7VqxMSGf3HanK9VqxhNU1kcVeZsCggOIT93i6LcqSlX6jJngmAJR6YUrh6p9F7fDHPOnF67JL0nJQCn0bqUQEjrRGsjkprQY2vfO2cmHZZu6vQHXyehygJQNqvsEbtmd8RGIXccRG7zMrd/+eak9zcH4CZQ06FV0PYzgtwFVWYgG4GfhJISjkw5+ptm+x0I/hmM/ZMlRCBxuGB+GkCnCFJLCZI04rrvl2UJGO2I/OKEx68A6M3ZRq5fcdXp9V+WE/l/jHlM12cuGdC68GXK0Q6NaJiAb8Hyr42k7YrYWKMXWU6fDIgXgbDCgfd0gxR11qf2nkpzYkHyymVeMFSOin9qJn2sCbfErvNJrkw5DDWSH7PlnwpB94E5x6CnEPiFCrmncpbXYBsfnJApR0zAWcu84CnlqOv/pmQxOARJBCEnsxMYk9qNu7vcE+3+Bs9EkOBpPuhsDF2m4A++SEANVH22DQ9XhZzMflf93RTxiGD6MWDuk0KFKYscdLyYBU4CUQdAL1PICd3wmc00chxqO/37fuW84bB89Z7FfRjVJIAJAiIgpSJXZo0+DBhmAo0ZVmWVgOzsi83bcUhwOMXqJAh6h4Q6h2GQneXTs3LYSsopAzN484MX7pw6B6oJ5myW4bJF8O2tinKnJHXAuVryyBJKaIreOVLp/fdmmDMBzHjNYsBbBEgGgAdg1JGIk3O5cuROSFTLH6dEUwRcEy36Fs4+/gHk3CMhq59hCBAh4Qt/bsonHXZ/Y7lfeq2D3FcE4E4HgQkBE+SOcSQ2d7r9HcNJ76/2J0jX8ohX+APnKmp7QVp37ic3jwNfak7+whRfal3/SyOPfGB7o/cueOvaibjkkN+ecmQaBEpUyhUj4bxpuV/6eDnsumtqnnjt7x3+4AsE1HsSHm+wEZkJgigTk/lYDnzVN8KeP83yq/9XO4KL/By9iQR9WMI53MyM3Neqr4wj/IVgWwLobfUOkXlsdGYQu9l8/llzdC2Yvzwc9/xuxjziYzntj62UwKUOck9PETcCacp6Znq+Ba8EcG31GmuN1OcIG7dZWGYYEuwIQTZl5tMluVfUyVoAA8ahnEw52kigXsvCsZTOiuYOAITOzwGgmqI4Ed9gttcQCVG7LdR9vsiXhpM7jeXukXjtt2b5qI0ALi/4lzyfkV7mkP/yWZ4xmbFKBIUF675UHut6YGprqXkcscRgKyCFQ65Mbbw95XBUQHzXEv8WLLYxWcMwRJCcciyEVdunVNPOK6Nt2cL+p0lNN1eDqcxgogSHCuEsFqSgOeLJbMFd59WlNpXw+Ogh4TNuqMZy7G7zoGvMeeWiiw6ziblVkffi2ZmzFKmN3z4S935mKVY5oyjtJp2nXQKjGsj1AM67gEQDkIcDBOTsx6LfK5s9k3JaFBcE7gByvzgcLLKbCyygJKC/DeDl3Eg2ahqT3hQG3+zMl85WnPsqgNwsIP0UEti8zO3v2Jz0/mI/gTSV0WULCA5hxhqDmBslt08B541CxG/fUCndh3BmCfHUct+haO0ogJet8C65yiHvfSnCRsycJSmynL4fwOunfmEJlnB2kbMDUiiRclpvczNBMkHEDH3Oxqj7q1PLdmv6FQCwFVsJKGIb7qZRlCLE+PQZC/rvZINhCXX0zPS4GjONLUG8oZAbGCzHXb/bMxbNDBAUXJFycl3qYO1tO9c+WPtV2tEnp5WGxwhx05kLgv/WmjYqkXtevWvs1A8QoHYA19b0GjaNl35e9xDNDxxerafhemhPECDQfRvD7h/O5xetZd2s8AaKUvjPq+Y1y3r+Zge+NBzfuC28551bcH3KYDodfTL7HcoTz0JNn+N0wJbCNT8AguUrfP60C++tSd1nrHrIUv7wRI+/E8Al7ehTo/OsjGSwUZST1urtKUcfZoHPDVd67p2Dq2h+ZuFJOM+cmp/NZGGRsuGay2XGVrQSSmiOf8GMN2fAHOySNqpmY84dhwSH29jdqETuBUmDgGDGnKVIOHnrprjnxip4pXOYUgUIVcUeWXuqXTAayzUQAeSKyeugBYSYS+HNZFl4cOtyt/QaR+ZuEoBnYXbZXBMgTe6THUGbOp3+zuG09+59DdLtCOQoShp5VXSQf2LClQabh60DT2rEm++P7jmrdviMomRmq4gsYr1cgru5FK15f8EfPNQh/20NNqjUHDNDnFnwgyeXw9KfgUAEyFKQCvn+k4mdZVVQqre5rYKSmuN3DUU9X830CqAbX2PLU3zbgVMe6/3Fcr9UVMj9d/b88XTJRwKsUeTnUlTeAqA30/yYV2oUA4IFJFlKVw2Fa29AlDHM7P3I1gEOWoXr1PVjqx9Y5va/kYi2EMSCOuMEA8KyITCfWHMtTC2Hn3L0ySWA/h/mfBOA5GQ/DwVsNbsvl54s7sl0hwNhgfcJtnVDOBlz9qS28cahaO1bs0PqKEWgWcvLR6fokWwM+95R8PkZCrkXz9SgmKiKZCK8rYDzrxrK9CxoroDJgHXJl5qTOzWbczbFPX+YqnVSO0ym25JJqYR5mwSsgda1lMIMpLI8/UZpfNkDIk2KcO2mKPjTUlznbMHqXbBTNawgWhAcKRNvgxTO8xtlawhIFhBCc/jPm6K+/2yOOdcJwII5A9ldk/Rn86tNE/S31b5hdj7aHZuSYGMhN3AWCfV1Cembukw6MYrcJ5F0Ni1Dd+fmtPSzfQnSNYBhxpst2UYPqhVwYDjdlkicswXX1yoAdXO6BoEIEIgtYXqe9umlAs7xFjoBeNoGYu2Q72mDTgCfbgfEHdXPJ0v/rIQrarmymNFj0lOJDW8ZjnpubEfgASemRZQJTaRVLQF0OwJvUxjc1en1f9oVbedWP0dNd5dZ1mDCq4solsrzLIRiwDpwZWKjVSNxzw3ZhlmlRzMwavhj12N1uhSrnM1J7286vf7PuqLt/HrjpCqnAmjxDxd5i7ADDwFMJZCdtgdRQpftRP9u82AJxFkDivVmLr937Wreke9fKli+wGSdw+XM4hYpDKfjzMm7iyjKw3C9OAowi5tav7u5iLudJYD+LtL3C6g7611uCRAG2ko4T7Xe4ucjwnfm6ovOiIAjNCff2RE+dMaduGJnbf3KjTtt720TNAWgdxcXIIAMUqGQ+3SnP7B4OFx93fQKWVUvl7V9QXBkXueGpXCem3JU1+csIEmQpMTGb94U9X2+iMBdAugzEYhSU8InW0V2ev+yVlJGUxlHE+HcaSxq15+fs1Rp3DPSkSudJUXu6xKUz67TVA+kj3Jk20iH010YqZR+si9AurZ5OnPBsQTxQssJUV0tWmaHHJkgXHf7ePffalWGzX9Syd6Rjb9S4P5eVyz4kkEiZ+o+WOnAQyqiNwL4dE31bRWuc+6hbWdkJdD13C8kDKcpWXFhda6jeUxHVI3RX6o5fhtAuensNNvgKQSJZ+1w//FpSMq/nKueSM3Hqjn87CQ4r06B1U39/PF4yG4Bk8AlXzacnF8/Q6rKIQhtJqE2AA8BfYQDIKla838LQ2cpmaN6BwpARlFOxVz55Ehc+mN1584V7JJqd43vF/yBEQWvs17QkAAryREMvRzAd3anWlev5baFsWzi1Xfiip3Zvmx+/Q6QZZ4q2MNc5D/V6Q8cXQ57uqdiiprOnJe3BYuVzg1J4Z6s6zDnasAHBBEaTt+0Ker9Wga4dWX2Gto/VRdOzAlQsM+KWTI5wGDT8tzAKx2hbhZQbbYxSD+BbNvI8nzQualS+t+9DdK1zUMkX6Qo59V3PTBLKJnYyv2HRM6NANPoPJhCNZ2H7o8e/9UjvW3/DEE5mryRTNxyIpNKFtheY0YAcI/z0NMJ4gQLzVQv8R5SGOh7SOKQgj/4oj2ZEwPBDPsnAfW0qi+apuXBGkWeYhEuBfDL2hw263fOboLxTgnqBgJxJv5qtmAuSmtlCxC7ueDuOFbbBanDLTSjbsCtuRbQ+/aZ7zNACSxwGrNpMCaWmSCT+F3BH3yRZRaCyM5dEM5Ihxxt2f6WBDrrHUcMJmYLBr8QmBQrmltw0Bgr1M5sL/QdCE3u2lV3gkDQrgSyATkwnCI0OWpbW/AHeSjs7qnhsZrKnF/edvHjlc0NS3KfozlqkMtKDJJsbNxnpf1uR+6SpxLiOYPT46Hlb8jT26NfLTr8INBkn3B3xD23d+YGzpRC3SyhFjZi0pLcxY71RzrzQWG4UvrRPnF3kHwuZWlU9QR2jCRHGZjbyrhoRxHHy2Y1lusFRrZgdYoI/9nMD0zk8Mr0JAVPpvUZkciU2HAsQX5vT6dCVeUYq+8p6qu1EUDixPlRGUGW9SNJ5D0MdNsSmIDSnN/nH3fgkbt8uhcQhzOI6cBWsM1GOHnZYRcuQohnWjJ1FfOyfnkaAuJTgIAkzOeSCkWiWpCfacY0SLkjCwMGPbWIwC1N+qHnVk/IqczcpsF+nXcDCBdK0YzbJ4Nha6mitproQHWqZGXCoXbI617hDfy8HHV9uYj1UtWQujM/eJQ0YlgI9x90XW2NST+L5dQS5IXCygES1jboozirPQgFQZKH1OHmjfo+GCglDzBQTwQO4547lnvBmYq8WxqBtEFiJDmPk+yNLPODwuaw9MO9BdKLsbWaBMvP4GqNFNV9VgkEvhMAzfFKiEbl5LOPK3Nt1D6LBD2dIDBVgKZ+kMHw3swLny0LlsHHTe1oMdccaIkxOe9KCYBKKNkCD45V5Uj54Gzu0EclgJ3xRY9naR9nJ4o5G0R7sloO3pfrl+XVWRD4CeN5HI4K7ptCRJs2SeqAzLmSVDFGb5maZleF3kMBPE7BXSBIiJRjMLheNhIxWBhOLZP45Bn5YLRcKf5N1cBZsNgsyFnSmDnvAguCSBxOe/D8ZQoqAnaqWN9BYBNMOir9d8ELziDyb1FwF2kkvKvoP0mD1Eg4R7jsDy33Sys3hcFde1ooMTVHlcGLmetvniwjQIPJ/hoAzweQ5qfKtUto9qgm2w7vczaTbQgGmB+XuWGK85oPF/lHZYumuVgtY0S75gmOcYRF2ozXZX+sIRjkaY1DAdxXO0gO5rmckCV9pOd3AJ6HOnnyrh8dkZjoH62QrwXRORLSNUiZZvQlhLDQ2qUFhyeM9wP0r2Kle/nThMWQIneJRqSbTVVjWOasjHKPXgcjy5gIHEal71hOz7Sw94mskGZ6t3BpkBoQjlDsbFjhrTsF6OM91FmgLEe1KIlo4aRa20zGYaFBjO3T0tP2uU0cBoRDq6z1ILjGUy2F2cs2Dh7zQIs9KIGq5e5W3aN8kATMWEAII8XCqQfJo9mGcEF8c3jhX4eS3g0bo7XvsLCnAvZ3Eg41kAeQmiNmtm9euejSw4SWyXWuWHBSwmEyxx6FtJdeB6WNoqQL+FhuKOr5jkbcJ+GKeroCVXdHqih3OJP9/PLHX5nvQx9jD0GrWmCiZrtOMyxLrcKpRSP7eU810zPP1sSa9uULQPXP/ZZS9ag3IsHNVe7s+/WbqpdBkPKxMsW1TI0i1suluM4ZCbv/x4jKWQCPi1ox9bRVMTCsyH2CjXWHUsZdnYixr7jCPymd3fe896puHgXWjkAN4YK44A28lKD6DBLbINXNSLiO5ng7QZyz6W8frPShj/bUzXE6YO+qpSg1YNkESVqmC5EeKLZhQ5poGV//EVFwBdG+328Mli48GPvwghb0NoselpsJnipy9xdgVj+nEh840rGXH8vqLFYD+GYVrnOuH199d6fX/7lGef3Z3hYMULu6NbnwN535wYLmZLOCt0RnGRmqmYXDHvqgCfMMC+8HcB5FSRe84KWCnFsINMMHPQnOjgTjQU1p1Qed7Gk/PwaQ5UFj4JFqLKFeWyGr4Egj9BFTOzbsD5sMSNL9jZcvU6cznG4B0t8zs9iXhzoTLLN1AL4LmAyEtWAYdQtIqpO2PRPwqbuInGW2mPsZ0R3MoH05nUTExCBLrB1p/pS5qfp4Ppk02Iv1CGjSB92s/Qp/ZSAQIAwx23MbJAAQwxITTsyyOCpd93bmB5eRTYeV8HaXxZFpPrN9iAkLaJ7dBqrJJyzmlxq2z8F5uRecRuTdAvBCXUelbAKcwQ8mFO3VLI4i1lMZXSDQX2jiFkQz08pIQFh6NoBb90YWR6b53Ajoi1iCu6eXxM4iTEVGUk5ZrpSHwu7LcYCCNy2rNzc1FEi3WahQQPg87SFjgAUkEZm/DYXdXQeI4/OBJHD74hnK8rtLlhHcl/XGhGzQPgLMfJiqdTMoV7rvfXnbxctzduGwgv+cRgHDrADBIUPptVboq0njEJqHsMkR0HI7ebqgtw8A3pslUr0nTWz3Jjh35gZOl6RuBjAjxW6KW0OC+X4josLmvZwHXQNbBn7ZKA+akbV6Y9CpAC6be2I/6mWPmMYsvDwjSEgGv7LS1K0izMZnAHA7EFyxCk+UD+Ewuz/YYQucdws9DAALQ2zb6dOfCeppFukuOdu1IDQgnr7S7X9aPnnm73+Ph8Tx+2END2ybuSxHvH1RcKiXqGsFy4XVNFGadrsQTLwDfvquoe2lR5pV4JtwRbJS1aL3WQ4hzlhytSOFLI93/W15W9ABgyElvJPrMelMT8CwhPOvZPCbobjnxvlMQ63M63B07QD8g4c55wZeLoW6mYEZlYSTmriuZLbbUhHtk0rCGgBamB9mGrYzAZBAIqvyotNW+oNPKoVr/5pN67zAidoRSN8Tp1hWop6vUsIlK9JwKOz+fhnFrJGrxE81kooA5XlG+TUJwykAemHHITj0+kdWPzQR29xHedB/D7GRvYVCWXFaKSnwwM+EkE+znE7v80cMa1zy3VSFp5WTrt+2I6AyVpt9mct+MK0fMc5yhOdb1vVusDDQsOPcA+CR5l1q2Q1Vklgs4KCq+9Oo+W4ipp5aRRTlpvHStoqKO4xNfqTIVzyDHRMBlhhGKfI+W/AH3519bOBmPpvmXv+FoptpcRzotjST4NyRKy1XwvkmdgPOlu19Wox37AtwztYiA0Ap1fcNJzsEhKhTKEAW1jjCW6DB5wPES3GvnGdxCuc8+UZXHHKHEuJ2JdQuLyHUtxyZux3gSyZ7ADLdGnb/Bcw/FXDqdWchC2Mc4R1OqSpmVLpP7qE/sInOIX9nSDvPbKEJGVqi22iWIhXLFsx4257n2nNVd+JgX79sLk7fgUdAuCfl2KSI0xSRmfpKEKaAsCTp6QDTtA45TdyOeSmRrOvYz5iOAEB/FdOvuEWsl6NjpQcqKu40Nv2BQ54CWM+se7fQSIxC7hOd/sB7yigld0wwuN2/ithmgZIVu7admXg1sYp7ZYEnAoK5gQ4p3G8QbN5MkxydxpzvTc14x0hl8Cf7Ts2OOEAghsbW3g/wtyW5XC99jEBCc2wF1PnL24Jnb8H16VJc58wF9EYBuxxXtEmSJc2xtTDaIrW7vkxioJlBX69t7gmwFXSzINlAf5vIsGaC+NczEeRPB+bVd67Wcq0JBkYHS5Pf/QgoZj5zOqGWaOWGhMO42ll8Wp4/pEFiHcqd0umXziqjyyzFKmd+hytV2241HCsdJOvHqAltMe6RUBLVjuDTXiRJCrb2LIC4yRgQLcZWLqIoGXy2rYqM1W9wQWCiu1U9/08RRVkeKz3QcUhQQGI3OsJ/QcKRpl18xESAFRqJccj7eMEfEENhzzVzBy2uth8ksesVeTa8pWmdCVhU/y3m5dZwSyuEcG5iWG82cLZs/2JN2rk5HdznetATYj9E/wHwmY2ivRaWFZy8sl65Mz/48uHK6nuXYpVzJo4ys/hiqR2BLNUUs/zBf5fkHVsVZaqT8gNHc5yS5VtrgY6J2LqRX0pF1EugHNdXmTMu+ccnPn+yFHa/NdMTRlNzV9PxLWdxgWVSOFdapHImUBOY2QiS/iP2V+9GjM171jrpoFHMsODGzDmrMuWnACV7GK5z2pvQn6iKYzFQsgECUYov/mOHN7DZEd4ZKYd1Nb0tGxbsfLLgB1uGwtKfazKeu3dXMS3FalVCKV2OD7Qp74gvgPjpFoM60/7YtSmAQk49wr+6HRHOn6sa4d69UWd64kzih0Sig7juKkjNEROpN57hDVy6Ieq5ZylWOVtwfdpoLgp4r1vGNXFnbmC1Q/6SRg0SJnVs+LuqUbAoQCBKj5S2r1x0UUEnuNUl/8UpV6b5pKsgzYlR8K8u+INyKOz+t7mBF2nAVl+wFiABsgmg7KR+/wwt6Bw4tWAhMhS3gJWYQ7ByIiCYL61UnPuqha12VKkHzjnJrP+cWt2xOd0/HVWyjcS0MOy79RGPf67IPVEjnSF2ToCo3mSeCeZvrfAHz9kYdv9wyxSVwqmnewauJVutlvR83/mkJO+fGj0sAIwiT6UIh4fjnt/VmjlMiGzFF/+xw+8v56jtzfWaCmQduEPjwn/LCu+SSiXqe29t7mraH1OvzrWxjqKkaw0HCt4lbyHCtQLSx2R65i4ZQZIUEo7uN3nnB4hBNTfRo9PKVdEberiKgVT39oTESjinFHKlV1wfr75tviRAsvoIw65scDkRBsYqcp9ogeEz3P7XbUhW/wJYPU0If9drfPackd0CpGe4/c9iIT+jRO6FhlOoutIFFopyMEj6gCmCXAfAJn4fazdbodc26GSUuRjJW2jAn12KVR01PfbpbDrTsCEzBMQrcuuWkxBXGU4a9dmspaf+TeWc76jZUkyKKMryjsseWobLVrAf3+pQvk5PwhqTjowi76MdXr8ciXqv2j2IjVbZTTwA0NVAJnKyvdqT8ALvWT07aeFbDUdmStsrIyknXROO/Efy83dvn9GTUIaTjWgbW62xwHK/9ErJua9YWLdeY9IaOFvo/7NWd2zevz0JuYiyLKOUdNK6gEh+lTht1MZeasRWwX2GAb5b8Aauh+D/GKr0/O90sfJRAGctCg6NY79AsBdLck+aBZyzdtBsABZXTM+3rhYSEKzq1yIuEqRTVVykGSCN0LjCP7fNw8mdPNgXxeltu5lHWuGtewlAHxCkXmORIkVkMFO/AAzWkhwXZNdsfuiiHRl7fvRWFNYKNITiB7WZOJTrdZIBg1wS6hsFb+DTzPRjQRyioXQKBLv54WqvShpFSVdZ9O0Ff2DYhd9Zry1VRgJiq+AusQJ3rvDWDUqVu7E89sEHZuuocoY3cIwl8Q4GXSCgDkk51PWv9NAKrhPzI98ZCnu+AgTiQN5+stZTTBRf/T3j7/yNhHpqvXZrBJIpR9ZB7vTF/nGbCmLde8vjXT+t955nLrjySKuT1UzUy2A3ywypp39SS081X791x8UPqd2lXWVXjYt2FMLgDO3jFpfyp9Zn0iw0R8al/JWdXr8YjnqvmA3MaEJk4mvbAGyb/vXTaN0DbeQi3VUJjR1yEUreQbjp93sQEEw7/cGzJFSZYdVuwPme1OgD0tV7wt0Urr2p0xv4pivyr5w591MZVWoJ5Doif17K4Xs6vcGfEw3+nJnvI0IEpkMAnBDH/BxF8igGYTZwzjqi+CrmyvqRqOfbNVnaXQ/x9bIcd/12hVcacMUh6xIeSwFy6h0iCYdGUe5FiuyQ7+PnBR64gxg/Zcl/YUMVltIjY59MxP9AoFOJxMkCClkjVqYGDWm1A99NObzjkPBnn5nedBOPyjzlLA1ufOzoP/j+X/4qII+2M1O9ahrIIIg2R+TfW5MbauQUceAgTsKXAPherRt7Ne2L2PAFWqY/EpC5euBRe74EiUMVvCu1Di8s+IN3gPl/BKnfWGvHGJZIiEOZ+Flk6cWW8FKHvIWaI+isma6qk47JBCkZJpWkzgfAAUClA7sE3I4+NYRS3MkDn5LCvcpyaupJGxBIpIitQq7dWvvDgrduhAXfxdbeI5kkSxwNi5NSHZ3mkv+4FFGt8zg16qWtObZk7CfQTN7xBJNG6ZGXhB9aucg/7JsO5dvrM2kWGpFxRP7DBW9QDEXdl9f64zVyKGetrSZ9Z32A6gP0CraOQzP90A4YzEYxAlH73qn5nbOx5xpz7vSDsyXUlxlWWliuc9XQCjllYf5gbNyxOSn9dn+D8yRIr7cAyJWXvDM18RZJzpMyV0d93xXAnHJoAChF7j8Ikv+QPVdclaOxsNBIEdnMWdCQOVsJqTTH9xPRvwBMZfRx/UNkvVwS3X3ZXf7YMof8lyV1Gz1MaGlbApOE+2wh1LM5U6ADCwtiAcgs89uyhkHK1Tx02ahfnoKrDCd/lYRzaoTiMZDNwVUfelTA4GZJ7tssh7ZRlxaeXPOGWR1ZCoUhol3dgBMptknXrzpy/e/LybbrUg5T1NEQJkAwDCeoWEHycYrcIhEVGQwStqbvkYngkoVBgsztBVG/iS4zQRiHcirGznNHKn0/mepCw4HV4jFAIKJIX0/++PkCzjENmhZXD6/YEshRlFtJECtZ1PTECCwySf4EFUNZwJEadfVxKa9iO/6pkbT3Z0Wsl6LZAoYAgbgTV+yshPGZKcffcimvUDcFL2PSSniXrfAG1lR9nbJR9D17cEq29roDsISS5dkzOXjq906+Gm/MdgRqC65PC37/6yT89Rk4mzrgzFqRqxjmd8JGy0bi0m+LWC8PBDjXMjqK6BLfHF/7N0v2bAaPSziyKi7TKIKqALBGalOOdMoVnXKYvRCZrAMKCWoQVM0EawQAYS2lbx6udN+bpdbVD9qUcTeX0MeQ4vWak1855CkGp400lwGibGyhTjk0KSKjkdoUsUk5NCmHWiO12QPViN2zzmIDdhsLfeatYfdfDmRgaV+VYyvCxw0nXPW7827WXNXJNpDVOZQEkhaW6h2yWUeh3usTrlzlUt4BkNbXgCYikGQYrq1VyqHRSKxGYif+D5HJ2DHJBl1lsg405KvUjveNVPpuyFq2lc3Bc0ieSKMojYH4PVmmEtlGa1A9gDhFNDEnU+eHsz3XEAerN3aVcuW3NnIuChCIMopWzKXsMUvLKo2Z8MFXao5vc8hXXCcFD4AwHGsl8us6vYHu3YH0vrYqc9adXn+XgPtlhhEZc55xqmsJTxk2vzU2WnZrXPr9wZANUGM5I2H3/6Q2ehUzHlKUk9X0R56l9Xmt07mauoFn0/5lsBEQQpIUlpO3D1eC4d1vnJIN0EdDY2vvJzadlvXW6ibXjYTea2ObBBEIqoJI9v+ND4+sf2BeMczvEpMuG6r0/nhaKh4e/eXY2c31lkr3jwz0RxxqU9wQNPcOYyxivRwOez6YcOUj2foRGhMBosm1mlg/MfX/Gml8AKwllJBwRGrHPjgU9ZYO1A119y7G9XKo0rtBm2igSkrNLGswbU6mzsVsetusM9JldxhCcTMu2lEjZ2LutemB2ISrxmUYvyrlcFN9Jg1iWJlypF2RHyjkB4MDBdI15tzp9b1BUu5LWfsZrtNDzxpFOcXQvyYeWzYcl/54MKVq1VjOprh0eyrH2i3bnzjUpmr9+Pb0Wj8JfJ4kiB2G07OHsk7cTW2c2gG+Ieq5Z1xG7dpGGxzKK8oaJek9BZZqIYyWUMIhXxobfz0Sj5yyuXoVPIiY1948mG0RRRmF+qKEx9bnqM3NRMoyWc697MrhMrpsEUU5FHZ/ILJjHxRQRlFOZnKg2MPDj7mKE5QdrnxPSsmKjVHvVQf2hrr7gGER6+VQ3NMbY+yTDuUVIHiWG+yc50RlN84HDMcrNlW6/3cq2ZiHsHy2EW9BqfJw+OBZmqMhh/y6xSwAy5Qj7cDvW+EPlvY3SNeYc4fX9yZJ3hctNFkYqudzduBLw+mvNI8t2xCtu+dgzKMdRUkXsV5uHh/8mQ7vPyXl6CoBGbuUlwSiSV3dphoh1Kr/dK1lvQNfak5vtzJ8yVDY/bW5bpyJW9ZY6YGN0dqVhsP3E2i7Q74iyCnjawpcdhlfFZgVg3+vbfLWDdGa19w+funfpgcud/OWpnpY1NWS5r0l3EVU/Rw00KxuenNzGWU7ipIZCrtfr22lhyAecchXCo7IgoTN6W1nzA9aYFYNaM5ua0U5EvVeZTg+jdl+z4UvFRxRzXNv9nBgTBkbQVL1OUiMjT8hZfS8kUrP0Nz2Ge1m/Xhf7Fcuo8sGCMRwpec9qa1cJCBZoXZwzZkcTTzXBEUOfGU4vTMx0SnDUfC96WRDzPf6FSAQ38dHQw4XvFpzxpYyv9UMF7NMOdKK/N6CPziwv0C6xpw7vP5/VuR/3sLarOfZ9KsGa0U5ZaG3MuJlI9G6Px3MRQ5ldJmgeosZCtd80Ar7gpTjzzGw06W8dOBJAUVTmLWe+qqxIQKRgiNqm92y/YFh/aahcM0rhsZKW+c7B9nJzwSANoRrPyqYTk45vgrM21zypUO+FFCiKsphpo+x0fgY/POU4/el4cPPHYrW3JhVpDHNhTkT06EOeUqR5zjVsTjkS0WecsiXBByWoEJ7gRgtyj4n59b7HEFqoeam915t89OGaO1gbKOTNceDlvWPAUTZHHly6ufUe2Wf7Snm3ScG1Fxqw1HwvQ3hRadom7yd2f5QwqXaelT3ka3/jMFk3RykcMiXLvmSmR8yNrkBIn3ehmjNebeMlR6Y6zNGwKzrpyiXkwyxL0C6hBIXUZRDUfflhuOXWZg7HfKkA2+CHE15fk12cMJOfcarf04812D81XD4r5VwuP22pPTrevOh9sRHlgVlLogL4flna++osiP8V6ZcmZ5mNcmkye8u+ANyKOxZUx2M3RcR91q2RsEbeIsk97MG2jIs1YmeagVPGU7vtmSXD1dK986NkR1QGUQqYr2o5l2+pcO7slsjeRWzLQD8XBA90UFOgqha2MGT9fFsoJGE4PQ3hvV/E4uvbYwv/lYt/poJv+zJHGTVFUWsl+Wo6/8AfLB9QXDZAk2dhuiVAL+AQEdLOEpMFJBOPgaGDQzSClj/xrD+NjFuXhAno+Ws0zMmH+RS0wC3EEfpnbTjPbEZX1RlPrSreBcREcaPxhPDqb/DfATarbAXRWbn4xt9DhOnFHkPTlWWa+Z9qymNvwfQA6DnlbkrjtPQxzHpJ4KNa3czZoFEOE7uN1P7Xu6OCJRQshvjNZ8B8NkzcutOT8mcBfCpTPxMCZUXNLXshCaa4RkkxsL+mW3yAzA2CJls3FAp3Te5fkXbZK46T0n5eF9kxo6sN6+AhCBjx2J9/xzmdY5MuprxEnV9G8BLC/661xKL/8fEpznk+wQCs6012Z0MH1YzWwBGypGxrLcw7H9VVPSfo2OlB4CsHL7enqO9IWpdQskuxSrncd4xX3GE/6oMpOu2+tYO+UpzdPnGcO1F9VLwJir8vIGPuiL/L9M6DmiHPJXY8KvDUc/r6vlHJ7Q18v1vl5z7dGNwZq3gKcv6p0bsLAxXLrn30VgeHCAQW3EiTR33q3D5QpO3xxs2TwHZo5iFl0mWWhCLBw3rey3Z322OSn+aOvf75vcPRHHa+NoReG2ufxwrfSwbHMUCCwjMDCJi8SCz+QsJ57dD4UV/nrm2feYg6aF3wNb7DkDsT59tveei4F/2ZMHp8RbiiSD7OK7uL2FRsRL3kqY/LEy8P5TxgXDq+zwW5GCnZwutzF16vCH9YgKeB4gTLOwTCORneekYI4i/AfaPgPwxG/3D4bT37mlzO0t2yF7ahECJl2KVWuwd82Ul/NekPF6voIIBMhlIV67cGHZ/aPoA9wSgJ8u3+/+fgneD4bQuODOgHXjKcPKTWO7snPRlPpoDTYFoB8Tp1VLuubiCFmMrVxkV70tliXb0yazstflDIBvfibw3blv1ynAxoyR3zw+o3X3OvDqoz3I4z6VZw2w1Cbu7FhVRFNuwhOYy9tpc7I2DdX/Na/PzsV5kkgI0T5G23c8J7eVThYsoip3ec9Y7In/27Ew6r1KufGQo7P5A7coDEM8XoCd+zh9YrZD7lEFqAUuoy5x9ZTj5sZZxYdN4adtjQVhnOhgG6KNGmzcDoru5eg08EGyUAgQH8/ha1tTNaCtNyJZOW78qU/67WL/arQaY0LqZKrpJAfpo2tebJlBq7/pFA1FGny1GXV1j/slfdCjf1YBJq5Qr2qH8+wveoCxHXf+SgeT8Unkm3Br+wLmKcp/UXB+cM+bsK8PxlopKCqNjpQceDT7n+fiAD/J+fLXN27JHrZVsuTUJU2NCtqZB0mAvNvj6fgLo2qIBEGWstwjxTwX/Enao7fUNmHQG0iJ/wQpvUJSjrvcWUZS/xxNpPuC8wi+dJ+FdozkxgBX1mLNLvtI2/UHi7FwxuvOyBx97zLllLWvZY8nEvjhZa6HXoXDNG1KufNGhvDMzT3oSpJXIn7/CW/eJufqAfRwuM7fG4Hsl5a/RqA/ODM6Ckza+y7hR4badlz342GTOLWtZy1oA3UzGKfoI6KOhsPtNCVc+X616SxuDtP/ugrfu2i1YnQJMNMvYOPNhiiFcEBf8/vc5yH1sduacV5rj77m5pDDySGl7VudeboFzy1rWsr9HgK4x6T4OEIjhsPvNmsMbnQl9hvog7Qj/XQV/8D8AYhCljeKaour36fQG/lVR/iMa8SzMOa9Sjr+bho+s+MaO0sOPNc2GlrWsZY9dk/vafT6KOwBA/Fb3fu149dJjHWp7rkWa1vlsYZHqHC1Yeqx66QICkyTnJRZ6qsyileQKC/3D492XHZmjtqs1h2ZKyyvsqmWcV5rjbyOMV45g3SMBAvFJfLIFzi1rWcseFUb7M+0rY72D/54T+XckXNENgpRWQAnLegxEC6YlIzCByDI/RITDshzCei2BMuasOR7dET70yjtxxc7HkhRly1rWshaD3utMOgDEp3XwjePkqU9yRP75Fqmu42YhhrVElKuTKZZVK5HwpwAz1cux1hx/qxLGr/wOLhlrgXPLWtayFoNugkkX0SXKKJuCt+5aV/jvmoVJ8yzja/C1GnNONuvwgVdvwlXjLXBuWctahlaQsLnsjjLKNkAghqK158Z2vKqvWjdwSHM8WKrgHI0sCLe9qgXOLWtZy9BycWAeusZ3oIit8mb98VtOkKce4Yj8ixu4O5pl5lm2ho2Gwih59QZcFrXAuWUtaxlaLo49FRvpMh3e4L/lRP6CtLG7YzZLHfIdzdEGDu87ewjXxC1wblnLWtYC6L0I0gV/3VUOee+fJo7UBHNuU9pG3+To3uIQromrynotcG5Zy1qGlotjD20ryihivbxZnzt0nDptgUv5l1bdHbSbAyR1qM1JbeXm+6N7XvdtXJtUm9q2wLllLWtZC6D3LkgX5c3648MnqNN8h/zTLLRpDNKsHWpztA2/dn/0f11bcL1GC5xb1rKWtQB6X4H0VhSxXn5Dn7vpeHVqzqF8ez2QZiB1qc1JbfjVhdH/dm3G50wAUAucW9aylrUAeh8z6XYE6jYdbDpOneq4lD/dwkwBadYutTmaK+sXRj95QxnrLdDXAueWtaxlLYDeH3YP7uB2QN2mg83Hi1OlI/yXWWgGYFxaoFIOvzwUrn3DVhQZ6KNWQLBlLWtZy7DfszskAHR6/T0r/cv5TP8KLvjrbgSYso6+07v6tqxlLWtZy/YbSLcjUBlID3x0hbfuFtT0khCI1vS0rGUte6zb/wfXcZNUrC35HQAAAABJRU5ErkJggg==" alt="center3">
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title"></dialog>
+
+<script>
+/* =====================================================================
+   MONTHLY UPDATE GUIDE
+   ---------------------------------------------------------------------
+   1. Change LAST_UPDATED to today's date (YYYY-MM-DD).
+   2. Add a line to CHANGES describing what changed this month.
+   3. Edit the award entries in AWARDS below:
+      - status:   "open" when registration is open now, otherwise ""
+      - deadline: { d:"2027-03", est:true }   -> shows "~Mar 2027"
+                  { d:"2027-06-16" }          -> shows "16 Jun 2027" (confirmed)
+                  null                        -> shows "TBA"
+                  add label:"..." to override the text shown
+      - ceremony: same format, plus place:"City"
+      - When a 2027 date is announced, remove est:true so it shows as confirmed.
+   Everything else (tabs, counts, timeline, "Open now") updates automatically.
+   ===================================================================== */
+
+const LAST_UPDATED = "2026-11-16";
+const CHECKED_ON = "16 Nov 2026";   /* date the award details were last checked against sources */
+const CHANGES = [
+  "Nov 2026: First web version, built from the 2027 Awards Opportunities deck and Abu Layla's feedback.",
+  "16 Nov 2026: Checked all 30 awards against official or published sources. Fixed the cycle for MENA Stevie (final deadline 26 Nov 2026), Great Place to Work KSA (certification deadline 30 Nov 2026), Effie KSA, Tech Capital, IABC and Gulf CX; corrected several award website links; added when submissions open and a source for each award.",
+  "Nov 2026: GLOMO 2027 deadline confirmed as 20 Nov 2026, 5pm GMT (the 'How to enter' page says 18 Nov, so plan to submit by 18 Nov)."
+];
+
+/* Groups */
+const GROUPS = {
+  industry:{name:"Top-tier industry awards", desc:"Specialist data center, subsea, connectivity and telecom awards",
+    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/><path d="M8 6.5h.01M8 17.5h.01"/></svg>'},
+  global:{name:"Global awards", desc:"Business, marketing, communications and CX awards across all industries",
+    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>'},
+  local:{name:"Local awards & recognition", desc:"Saudi national awards linked to Vision 2030",
+    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>'}
+};
+const PRI = {must:"Must-enter", strong:"Strong", optional:"Optional"};
+
+/* center3-style line icons (24px grid, coral square = logo accent) */
+const IC = {
+  dc:'<rect x="4" y="3.5" width="16" height="7" rx="1.5"/><rect x="4" y="13.5" width="16" height="7" rx="1.5"/><path d="M8 7h4M8 17h4"/><rect class="ac" x="15" y="5.8" width="2.4" height="2.4"/><rect class="ac" x="15" y="15.8" width="2.4" height="2.4"/>',
+  conn:'<circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="6.5" r="2.5"/><path d="M7.5 16c3-1 3.5-7.5 9-8.2"/><rect class="ac" x="10.8" y="10.8" width="2.4" height="2.4" transform="rotate(45 12 12)"/>',
+  ix:'<rect x="8.5" y="8.5" width="7" height="7" rx="1" transform="rotate(45 12 12)"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6"/><rect class="ac" x="10.8" y="10.8" width="2.4" height="2.4"/>',
+  subsea:'<path d="M3 8c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M3 13c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M4 19.5h16"/><rect class="ac" x="10.8" y="18.3" width="2.4" height="2.4"/>',
+  globe:'<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.3 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.3-3.8-8.5S9.4 5.9 12 3.5z"/>',
+  star:'<rect x="6" y="6" width="12" height="12" rx="1"/><rect x="6" y="6" width="12" height="12" rx="1" transform="rotate(45 12 12)"/><rect class="ac" x="10.8" y="10.8" width="2.4" height="2.4"/>',
+  mega:'<path d="M4 10v4a1 1 0 0 0 1 1h2l6 4V5L7 9H5a1 1 0 0 0-1 1z"/><path d="M16.5 9a4 4 0 0 1 0 6"/><rect class="ac" x="18.8" y="10.8" width="2.4" height="2.4"/>',
+  leaf:'<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-7 10-9"/>',
+  people:'<circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.3"/><path d="M15.8 14.2c2.4.2 4.2 1.8 4.7 4.8"/>',
+  user:'<circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.8 3.6-6 7-6s6.2 2.2 7 6"/><rect class="ac" x="10.8" y="16.3" width="2.4" height="2.4"/>',
+  chip:'<rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/><rect class="ac" x="10.8" y="10.8" width="2.4" height="2.4"/>',
+  trophy:'<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M16 5.5h3V7a3 3 0 0 1-3 3M8 5.5H5V7a3 3 0 0 0 3 3M12 13v4M8.5 20h7"/><rect class="ac" x="10.8" y="6" width="2.4" height="2.4"/>',
+  cal:'<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><rect class="ac" x="14" y="13.5" width="3" height="3"/>',
+  coin:'<rect x="4" y="6" width="16" height="12" rx="2"/><path d="M4 10h16"/><rect class="ac" x="14" y="13" width="3" height="2.4"/>',
+  flag:'<path d="M5 21V4M5 4h11l-2 4 2 4H5"/><rect class="ac" x="8.5" y="6.8" width="2.4" height="2.4"/>',
+  tag:'<path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9z"/><rect class="ac" x="7" y="7" width="2.6" height="2.6"/>',
+  clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.2 2"/>',
+  grid:'<rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect class="ac" x="14.5" y="14.5" width="4.5" height="4.5" transform="rotate(45 16.75 16.75)"/>',
+  diamond:'<rect x="6.5" y="6.5" width="11" height="11" rx="1.5" transform="rotate(45 12 12)"/><rect class="ac" x="10.8" y="10.8" width="2.4" height="2.4"/>',
+  shield:'<path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><rect class="ac" x="10.8" y="10.3" width="2.4" height="2.4"/>',
+  quality:'<circle cx="12" cy="10" r="5.5"/><path d="M8.5 14.5 7 21l5-2.5 5 2.5-1.5-6.5"/><rect class="ac" x="10.8" y="8.8" width="2.4" height="2.4"/>'
+};
+function ic(n,s){ return `<svg class="ic" width="${s||16}" height="${s||16}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]||IC.diamond}</svg>`; }
+function catIcon(c){
+  const t=(c[0]+" "+c[1]).toLowerCase();
+  const rules=[[/local content/,"star"],[/subsea|submarine|cable/,"subsea"],[/exchange|interconnect/,"ix"],[/project|build/,"dc"],[/security|safety/,"shield"],[/sustainab|energy|esg|climate|renewable/,"leaf"],
+    [/\bai\b|ai-|hpc/,"chip"],[/marketing|campaign|effective|\bpr\b|communication|brand|reputation|b2b|in-house|marcom/,"mega"],[/ceo|leader|alhajeri|aldahmashi/,"user"],
+    [/local content/,"star"],[/talent|\bhr\b|work environment|workplace|localization|skills|training|employee|people|customer/,"people"],
+    [/quality|excellence/,"quality"],[/data center|datacenter|cloud|campus|infrastructure/,"dc"],[/connectivity|wholesale|carrier|network|optical|transport|operator/,"conn"],
+    [/innovation|tech/,"chip"],[/of the year|company/,"trophy"]];
+  const nm=c[0].toLowerCase();
+  for(const [r,n] of rules) if(r.test(nm)) return n;
+  for(const [r,n] of rules) if(r.test(t)) return n; return "diamond";
+}
+const TAB_IC={all:"grid",must:"flag",strong:"trophy",optional:"diamond",free:"tag",open:"clock",saudi:"star",mkt:"mega",infra:"dc",timeline:"cal"};
+
+/* Tags: infra = Data center, subsea & connectivity | mkt = Marketing & comms | saudi = Saudi & Vision 2030
+   Scores (1–5): prestige, relevance (to center3), chance (of winning), cost (5 = low cost/effort) */
+const AWARDS = [
+{ rank:1, name:"Datacloud Global Awards", group:"industry", priority:"must", place:"Cannes", web:"https://datacloudglobalcongress.com",
+  deadline:{d:"2027-02",est:true}, ceremony:{d:"2027-06-01",est:true,label:"~1 Jun 2027",place:"Cannes"}, opens:{d:"2027-01",est:true},
+  src:"https://capacityglobal.com/news/datacloud-global-awards-2026-entries-now-open/", checked:"Last cycle: entries closed 19 Feb 2026; ceremony 1 Jun 2026, Palais des Festivals, Cannes. 2027 dates not announced yet.",
+  fee:"Entry fee not published. Ceremony seats and tables are paid separately.", free:false, tags:["infra","mkt"],
+  scores:{prestige:5,relevance:5,chance:4,cost:3},
+  overview:"The flagship awards of the European-led data center industry, presented at Datacloud Global Congress in Cannes.",
+  insight:"center3 won Best Data Center in MEA in 2025 and 2026. The next step is the global title.",
+  track:"Won Best Data Center in Middle East & Africa in 2025 and 2026.",
+  cats:[
+    ["Best Data Center in Middle East & Africa","Go for a third win in a row: capacity added in 2026 and the new AI-ready halls."],
+    ["Best Global Data Center (Global Providers)","The 1 GW by 2030 expansion plan (US$10bn) and the footprint across KSA, Bahrain and other markets."],
+    ["Best Marketing Campaign","center3's strongest 2026 B2B campaign, with measurable results."]]},
+
+{ rank:2, name:"Global Connectivity Awards", group:"industry", priority:"must", place:"London", web:"https://globalconnectivityawards.com",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-10-20",est:true,label:"~20 Oct 2027",place:"London"},
+  src:"https://capacityglobal.com/news/142-companies-shortlised-for-gcas/", checked:"Last cycle: ceremony 14 Oct 2026 at Indigo at The O2, London, during Capacity Europe. Capacity Europe 2027 is confirmed for 19–21 Oct 2027 (InterContinental London – The O2); the awards night date is not announced yet.",
+  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra","mkt"],
+  scores:{prestige:4,relevance:5,chance:4,cost:5},
+  overview:"Global awards for subsea, data center and interconnection operators.",
+  insight:"stc also competes here, so agree on categories with stc before submitting.",
+  track:"Won Best Subsea Operator in 2025. Had 5 finalists in 2026. CMC Networks (owned by center3) won African Connectivity Provider of the Year in 2026.",
+  cats:[
+    ["Subsea Operator","EMC West, the subsea and terrestrial system linking KSA to Europe (with ASN), plus the 2Africa Pearls landing."],
+    ["Data Center Operator","Hyperscaler-ready capacity growth, with a target of 300 MW installed by 2027."],
+    ["Internet Exchange Provider","center3's interconnection and internet exchange platform in KSA (confirm scope with the product team)."],
+    ["Marketing Team","The MarCom team's full 2026 program and results."]]},
+
+{ rank:3, name:"DCD Global Awards", group:"industry", priority:"must", place:"London", web:"https://www.datacenterdynamics.com/en/awards/global-awards",
+  deadline:{d:"2027-09",est:true}, ceremony:{d:"2027-12",est:true,place:"London"},
+  src:"https://datacenterdynamics.com/en/awards/global-awards/2025-global-2025/venue", checked:"Last cycle (2025): entries closed 19 Sep; ceremony in December, London.",
+  fee:"Free to enter. Ceremony tables are paid separately.", free:true, tags:["infra"],
+  scores:{prestige:5,relevance:5,chance:3,cost:4},
+  overview:"The leading global data center industry awards, run by DatacenterDynamics.",
+  insight:"No Saudi project won the MEA category in 2025. center3 can aim to be the first Saudi winner.",
+  cats:[
+    ["MEA Data Center Project of the Year","The newest center3 data center completed in 2026–27 (AI-ready build)."],
+    ["Energy Impact","Renewable energy and energy-efficient cooling in the expansion program."],
+    ["Mission Critical Tech Innovation","High-density AI and HPC design for training and inference."]]},
+
+{ rank:4, name:"King Khalid Sustainability Award", group:"local", priority:"must", place:"Riyadh", web:"https://kka.kkf.org.sa",
+  deadline:{d:null,label:"TBA (check KKA channels)"}, ceremony:{d:"2027-11",est:true,place:"Riyadh"}, opens:{d:"2027-01",est:true,label:"~Jan 2027 (Level 1)"},
+  src:"https://kka.kkf.org.sa/en/rci/Pages/faqs.aspx", checked:"KKA FAQ: free to enter; 2-year cycle; Level 1 applications open mid-January, gala in November; closing dates are announced on KKA social media.",
+  fee:"Free to enter.", free:true, tags:["saudi"],
+  scores:{prestige:4,relevance:4,chance:2,cost:4},
+  overview:"King Khalid Foundation's national award for corporate sustainability and ESG performance. It runs every two years, and the next round is in 2027.",
+  insight:"Confirm eligibility first. 1st-place winners can't apply in the next round, and stc won 1st place in 2025.",
+  organizer:"King Khalid Foundation",
+  cats:[["Sustainability Award (ESG performance)","center3's ESG record: renewable energy, efficient cooling, Saudization and community impact."]]},
+
+{ rank:5, name:"Great Place to Work KSA", group:"local", priority:"strong", place:"KSA", web:"https://www.greatplacetowork.me", status:"open",
+  deadline:{d:"2026-11-30",label:"30 Nov 2026 (certification)"}, ceremony:{d:"2027-04-01",label:"1 Apr 2027 (list published)"}, opens:{d:null,label:"Open now"},
+  src:"https://greatplacetowork.me/list-application-deadlines-2027/", checked:"Official 2027 deadlines page: Best Workplaces in KSA™ certification deadline 30 Nov 2026, list published 1 Apr 2027.",
+  fee:"Paid certification. Price on request.", free:false, tags:["saudi"],
+  scores:{prestige:4,relevance:3,chance:3,cost:2},
+  overview:"Certification and Best Workplaces list, based on an employee survey.",
+  insight:"Strengthens center3's employer brand. The certification deadline for the April 2027 KSA list is 30 Nov 2026, so HR needs to start the employee survey now.",
+  cats:[["Best Workplaces in KSA™","Employee survey results plus center3's culture and people story, led by HR."]]},
+
+{ rank:6, name:"MENA Effie Awards", group:"global", priority:"strong", place:"Riyadh", web:"https://menaeffie.com",
+  deadline:{d:"2027-06",est:true,label:"~mid-2027"}, ceremony:{d:"2027-11",est:true,place:"Riyadh"},
+  src:"https://communicateonline.me/news/mena-effie-awards-mark-16th-edition-with-grand-celebration-in-riyadh/", checked:"Last cycle: 16th edition ceremony held in Riyadh in late Nov 2025 (Riyadh Season). 2027 entry deadline not published yet.",
+  fee:"Tiered pricing, so earlier submissions cost less. 2027 fees not announced yet.", free:false, tags:["mkt"],
+  scores:{prestige:4,relevance:3,chance:2,cost:2},
+  overview:"The region's main award for marketing effectiveness, judged on measurable results.",
+  insight:"Mobily and du won Silver in 2025. center3 needs a campaign with proven results.",
+  cats:[
+    ["B2B","A center3 campaign with proven business results, such as leads, pipeline and awareness lift."],
+    ["Corporate Reputation","center3's brand building since its launch as a standalone company."]]},
+
+{ rank:7, name:"Local Content Award (LCGPA)", group:"local", priority:"strong", place:"Riyadh", web:"https://lcaward.lcgpa.gov.sa",
+  deadline:{d:null,label:"TBA (next edition)"}, ceremony:null, opens:{d:null,label:"TBA (last edition opened in Sep)"},
+  src:"https://amlak.net.sa/en/69517/", checked:"Last edition (3rd): submissions opened 29 Sep 2024 and closed 31 Dec 2024; ceremony in Riyadh in 2025. 4th edition dates not announced.",
+  fee:"Not published.", free:false, tags:["saudi"],
+  scores:{prestige:4,relevance:4,chance:3,cost:3},
+  overview:"Run by the Local Content and Government Procurement Authority. The 3rd edition was held in Riyadh in 2025, and the next dates aren't announced yet.",
+  insight:"A core Vision 2030 award. In 2025, stc won the top Local Content Preference award and TAWAL (stc Group) won in the private sector.",
+  organizer:"Local Content and Government Procurement Authority",
+  cats:[["Private sector – large enterprises","Local content in center3's data center builds: Saudi suppliers, local supply chain spend and national talent."]]},
+
+{ rank:8, name:"Effie Awards Saudi Arabia", group:"local", priority:"strong", place:"Riyadh", web:"https://effiesaudi.com",
+  deadline:{d:"2027-02",est:true,label:"~Feb 2027 (final)"}, ceremony:{d:"2027-06",est:true,place:"Riyadh"}, opens:{d:"2026-11",est:true,label:"~mid-Nov 2026"},
+  src:"https://effie.org/bs/news/marketing-effectiveness-to-be-recognized-and-redefined-in-ksa-with-effie-awards-saudi-arabia/", checked:"Last cycle: portal opened 17 Nov 2025; deadlines 21 Jan, 4 Feb and final 11 Feb 2026; ceremony 11 Jun 2026 in Riyadh. Check effiesaudi.com for the 2027 call.",
+  fee:"Not published.", free:false, tags:["mkt","saudi"],
+  scores:{prestige:3,relevance:3,chance:3,cost:3},
+  overview:"Saudi marketing effectiveness award run by Effie Worldwide with NordStella. The first edition was held in Riyadh in June 2026.",
+  insight:"Mobily won Most Effective Brand in 2026. Entering early helps center3 establish itself in a new Saudi award.",
+  organizer:"Effie Worldwide with NordStella",
+  cats:[["Marketing effectiveness (Saudi campaigns)","A Saudi-market center3 campaign with measurable results."]]},
+
+{ rank:9, name:"World Communication Awards", group:"industry", priority:"strong", place:"London", web:"https://www.terrapinn.com/awards/world-communication-awards/index.stm",
+  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"London"},
+  src:"https://totaltele.com/world-communication-awards-2026-your-chance-to-celebrate-excellence/", checked:"Last cycle: entries closed 19 Jun 2026; ceremony 25 Nov 2026 at the Grand Connaught Rooms, London.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:4,relevance:4,chance:3,cost:3},
+  overview:"Long-running global telecom industry awards organised by Terrapinn.",
+  insight:"No Saudi company won in 2025. center3 has an opening to lead in subsea and wholesale.",
+  cats:[
+    ["Submarine Networks","EMC West and the 2Africa Pearls landing in KSA."],
+    ["Infrastructure Award","The 1 GW by 2030 data center and connectivity expansion program."],
+    ["Best Wholesale Operator","Growth in center3's international wholesale and carrier services."]]},
+
+{ rank:10, name:"Labor Award (MHRSD)", group:"local", priority:"strong", place:"Riyadh", web:"https://hrsd.gov.sa/node/5581764", status:"open",
+  deadline:{d:null,label:"Open now · closing date TBA"}, ceremony:{d:"2027-01",est:true,place:"Riyadh"}, opens:{d:"2026-09-14",label:"Opened 14 Sep 2026"},
+  src:"https://hrsd.gov.sa/node/5581764", checked:"HRSD announcement: registration for the 6th edition opened 14 Sep 2026. Closing date not published.",
+  fee:"Not published.", free:false, tags:["saudi"],
+  scores:{prestige:4,relevance:3,chance:3,cost:3},
+  overview:"The Ministry of Human Resources' national award. Registration for the 6th edition opened 14 Sep 2026, with 34 awards across 5 tracks.",
+  insight:"Tied to Vision 2030 employment goals. Employees at nominated companies fill in a questionnaire, so HR should lead the entry.",
+  organizer:"Ministry of Human Resources and Social Development",
+  cats:[
+    ["Localization","Saudization in technical and data center operations roles."],
+    ["Work Environment","Employee wellbeing, inclusion and workplace programs."],
+    ["Skills & Training","Graduate and technical training programs for Saudi talent."],
+    ["CEO","Leadership of Abdullah Aldahmashi, CEO."]]},
+
+{ rank:11, name:"W.Media Global Cloud & Datacenter Awards", group:"industry", priority:"strong", place:"Regional (Middle East region)", web:"https://w.media/awards",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-11",est:true,place:"Regional"}, opens:{d:"2027-06",est:true},
+  src:"https://w.media/awards/", checked:"Last cycle: entries 1 Jun–31 Jul 2026; Asia gala 27 Nov 2026 in Bangkok. w.media says the gala dinner does not apply to the South Asia & Middle East region, so confirm the Middle East format with w.media.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:5,chance:3,cost:3},
+  overview:"w.media's regional cloud and data center awards, focused on AI-ready and sustainable infrastructure. The Middle East is covered as a region.",
+  insight:"The categories focus on AI-ready and sustainable data centers, which matches center3's positioning.",
+  cats:[
+    ["AI-Ready Data Center Design","High-density halls designed for AI training and inference."],
+    ["Sustainable Data Center Campus","Renewable energy and efficient cooling at a center3 campus."],
+    ["Data Center Operations","center3's uptime and operational excellence record."]]},
+
+{ rank:12, name:"Carrier Community Global Awards", group:"industry", priority:"strong", place:"Berlin", web:"https://carriercommunity.com",
+  deadline:{d:"2027-03",est:true}, ceremony:{d:"2027-06",est:true,place:"Berlin"},
+  src:"https://www.acepeak.com/events/ccga-berlin/", checked:"Last cycle: 10th CC-Global Awards held 16 Jun 2026 at Metropol Berlin. Nomination deadline not published.",
+  fee:"Entry fee not published. Ceremony seats are paid separately.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:5,chance:3,cost:3},
+  overview:"Awards from the global wholesale carrier community.",
+  insight:"Regional competitors e& (2024) and Zain Omantel (2025) have won here. center3 can compete directly in wholesale and subsea.",
+  cats:[
+    ["Subsea Cable Operator","EMC West and 2Africa Pearls."],
+    ["Regional Data Center Operator","center3's carrier-neutral data centers in KSA and Bahrain."],
+    ["Middle East Connectivity","KSA as the digital hub between Europe, Africa and Asia."]]},
+
+{ rank:13, name:"The Tech Capital Global Awards", group:"industry", priority:"strong", place:"London", web:"https://events.thetechcapital.com",
+  deadline:{d:"2027-01",est:true}, ceremony:{d:"2027-05",est:true,place:"London"}, opens:{d:"2026-10",est:true,label:"~Oct 2026 (likely open)"},
+  src:"https://thetechcapital.com/submissions-open-for-the-tech-capital-global-awards-2026-marking-5th-anniversary/", checked:"Last cycle: launched 22 Oct 2025; deadline 30 Jan 2026; shortlist 17 Feb; gala 11 May 2026 with the International Finance Forum.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:4,chance:3,cost:3},
+  overview:"Awards for digital infrastructure investment and leadership, followed closely by investors.",
+  insight:"Raises center3's profile with investors. Khazna's CEO won EMEA Digital Infrastructure Leader in 2026.",
+  cats:[
+    ["Digital Infrastructure Project","A flagship center3 data center or cable project."],
+    ["AI Infrastructure Investment","The US$10bn plan for 1 GW of capacity by 2030."],
+    ["EMEA Digital Infrastructure Leader","Abdullah Aldahmashi, CEO."]]},
+
+{ rank:14, name:"MEPRA Awards", group:"global", priority:"strong", place:"Dubai", web:"https://www.mepra.org/awards",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-11",est:true,place:"Dubai"}, opens:{d:"2027-04",est:true},
+  src:"https://www.mepra.org/knowledge/news/mepra-celebrates-25-years-of-industry-excellence-as-2026-awards-entries-open/", checked:"Last cycle: entries opened 23 Apr 2026; gala 26 Nov 2026 in Dubai. Deadline listed on mepra.org/awards.",
+  fee:"Not published. The 2026 deadline was 16 Jul.", free:false, tags:["mkt"],
+  scores:{prestige:3,relevance:3,chance:3,cost:3},
+  overview:"The region's leading PR and communications awards.",
+  insight:"Recognizes the MarCom team's own work.",
+  cats:[
+    ["In-house team","The center3 MarCom team and its 2026–27 output."],
+    ["PR campaign","PR for the expansion announcements and award wins."]]},
+
+{ rank:15, name:"MENA Stevie Awards", group:"global", priority:"strong", place:"UAE", web:"https://mena.stevieawards.com", status:"open",
+  deadline:{d:"2026-11-26",label:"26 Nov 2026 (final)"}, ceremony:{d:"2027-04",label:"Apr 2027 (venue TBA)"}, opens:{d:"2026-09-23",label:"Opened 23 Sep 2026"},
+  src:"https://mena.stevieawards.com/About/Calendar", checked:"Official 2027 calendar: entries opened 23 Sep 2026; first deadline 29 Oct; final deadline 26 Nov 2026; winners announced 18 Feb 2027; banquet April 2027 (venue TBA).",
+  fee:"No entry fee. Winners pay US$555–595 per win (latest published fees).", free:true, tags:["mkt"],
+  scores:{prestige:2,relevance:3,chance:4,cost:4},
+  overview:"Regional edition of the Stevie Awards, with 150+ categories.",
+  insight:"No entry fee, so it's a low-cost way to get recognition for marketing and CSR work.",
+  cats:[["Marketing, sales, innovation and CSR","Choose 2–3 of the strongest 2025–26 campaigns and initiatives (deadline 26 Nov 2026)."]]},
+
+{ rank:16, name:"King Abdulaziz Quality Award", group:"local", priority:"strong", place:"Riyadh", web:"https://www.saso.gov.sa",
+  deadline:{d:null,label:"8th cycle · dates TBA"}, ceremony:null, checked:"No 8th-cycle dates found on SASO's site. Ask SASO directly.",
+  fee:"SAR 1,800 (last published fee). 2027 fee TBA.", free:false, tags:["saudi"],
+  scores:{prestige:4,relevance:3,chance:2,cost:2},
+  overview:"Saudi Arabia's national business excellence award, run by SASO. The 8th round is being prepared.",
+  insight:"Linked to Vision 2030. center3 has to apply as a standalone entity.",
+  organizer:"SASO",
+  cats:[["Private sector – large organizations","center3's quality and excellence management system as a standalone company."]]},
+
+{ rank:17, name:"DCS Awards", group:"industry", priority:"optional", place:"London", web:"https://dcsawards.com",
+  deadline:{d:"2027-02",est:true}, ceremony:{d:"2027-05-13",place:"London"},
+  src:"https://dcsawards.com/categories", checked:"Official site: 2027 (17th) DCS Awards ceremony 13 May 2027, London. Nomination dates not listed yet.",
+  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra"],
+  scores:{prestige:2,relevance:4,chance:4,cost:4},
+  overview:"UK-based data center solutions awards.",
+  insight:"center3 was a finalist in 2026 (Safety & Security Innovation), which is a strong basis to go for a win in 2027.",
+  track:"Shortlisted for Safety & Security Innovation at the 2026 DCS Awards.",
+  cats:[
+    ["Data Center of the Year","center3's flagship facility."],
+    ["Safety & Security Innovation","An updated version of the 2026 finalist entry, with new results."]]},
+
+{ rank:18, name:"Telecom Review Excellence Awards", group:"industry", priority:"optional", place:"Dubai", web:"https://www.telecomreview.com/summit",
+  deadline:{d:"2027-11",est:true}, ceremony:{d:"2027-12",est:true,place:"Dubai"},
+  src:"https://mail.telecomreview.com/articles/reports-and-coverage/8545-telecom-review-excellence-awards-5-days-left-to-nominate", checked:"Last published cycle (2024): nominations closed 8 Nov; winners at the Leaders' Summit gala on 11 Dec.",
+  fee:"US$1,500 per category entered.", free:false, tags:["infra"],
+  scores:{prestige:2,relevance:4,chance:3,cost:2},
+  overview:"Regional telecom awards presented at the Telecom Review Leaders' Summit.",
+  insight:"Regional competitors Mobily, du and Zain have won here. Useful for regional visibility.",
+  cats:[
+    ["Best Data Center Provider – Middle East","center3's data center portfolio."],
+    ["Best Subsea Cables","EMC West and 2Africa Pearls."]]},
+
+{ rank:19, name:"GSMA GLOMO Awards (MWC)", group:"industry", priority:"optional", place:"Barcelona", web:"https://www.mwcbarcelona.com/mobile-awards", status:"open",
+  deadline:{d:"2026-11-20",time:"17:00:00Z",label:"20 Nov 2026 · 5pm GMT"}, ceremony:{d:"2027-03",label:"MWC week, 1–4 Mar 2027",place:"Barcelona"}, opens:{d:null,label:"Open now"},
+  src:"https://mwcbarcelona.com/mobile-awards/glomos-how-to-enter/rules-of-entry", checked:"Official rules of entry: 2027 entries close 20 Nov 2026, 5pm GMT (the How-to-enter page says 18 Nov).",
+  fee:"£550 per entry for non-GSMA members (£500 for members). Tech4Good category: £170.", free:false, tags:["infra"],
+  scores:{prestige:5,relevance:3,chance:2,cost:3},
+  overview:"Global mobile industry awards presented at MWC Barcelona.",
+  insight:"2027 entries close 20 Nov 2026. If center3 misses this, target the next cycle (deadline ~Nov 2027).",
+  notes:"The official rules say 20 Nov 2026, 5pm GMT, but the 'How to enter' page says 18 Nov. Plan to submit by 18 Nov. Payment must be made by the deadline. Check the 2027 category list in the rules before you submit.",
+  cats:[
+    ["Best Cloud Solution","center3 cloud and colocation platform for hyperscalers in KSA."],
+    ["Best AI-Powered Network Solution","AI-ready infrastructure for training and inference workloads."],
+    ["Mobile Innovation for Climate Action","Energy-efficient cooling and renewable energy in data centers."]]},
+
+{ rank:20, name:"Leading Lights Awards (Light Reading)", group:"industry", priority:"optional", place:"Online", web:"https://leading-lights.secure-platform.com/a",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-09",est:true,label:"~Sep 2027 (winners announced)"},
+  src:"https://www.lightreading.com/network-platforms/leading-lights-deadline-extended-to-july-3", checked:"Last cycle: final deadline 3 Jul 2026; winners announced in September 2026.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:3,chance:2,cost:3},
+  overview:"Light Reading's telecom innovation awards.",
+  insight:"stc and e& were finalists in 2026, and no Middle East company won. Sustainability and optical transport are the openings.",
+  cats:[
+    ["Energy Efficiency & Sustainability","Renewable energy and efficient cooling across the portfolio."],
+    ["High-Capacity Transport & Optical Innovation","Subsea and terrestrial capacity (EMC West)."]]},
+
+{ rank:21, name:"Network X Awards", group:"industry", priority:"optional", place:"Europe (Vienna in 2026)", web:"https://www.networkxevent.com",
+  deadline:null, ceremony:{d:"2027-10",est:true,place:"Europe"},
+  src:"https://www.businesswire.com/news/home/20260804403965/en/", checked:"Last cycle: winners announced 14 Oct 2026 at MAK, Vienna. Entry deadline not published.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:3,chance:2,cost:3},
+  overview:"Operator awards at the Network X event, run by Informa.",
+  insight:"stc won 2 operator awards in 2026, so agree on categories with stc.",
+  cats:[
+    ["AI-Native Infrastructure Innovation","AI-ready data center infrastructure."],
+    ["Outstanding Optical Transport Telco","Subsea and terrestrial transport capacity."]]},
+
+{ rank:22, name:"Stevie International Business Awards", group:"global", priority:"optional", place:"Venue TBA", web:"https://iba.stevieawards.com",
+  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-10",est:true,place:"TBA"}, opens:{d:"2027-02",est:true,label:"Feb 2027"},
+  src:"https://iba.stevieawards.com/enter/how-to-enter", checked:"Official site: the 2027 (24th) IBAs open for entries in February 2027. Exact deadlines and ceremony date not published yet.",
+  fee:"Paid per entry. 2027 fees not published yet.", free:false, tags:["mkt"],
+  scores:{prestige:3,relevance:2,chance:3,cost:3},
+  overview:"Global business awards with a simple entry process. Winners are announced 1 Sep 2027.",
+  insight:"Entries open in February 2027. Earlier entries usually cost less, so prepare the story in advance.",
+  cats:[
+    ["Company of the Year – Telecoms","center3's growth story, from stc spin-off to a regional platform."],
+    ["Marketing","The strongest campaign of the year."]]},
+
+{ rank:23, name:"Fierce Network Innovation Awards", group:"industry", priority:"optional", place:"Online", web:"https://awards.fierce-network.com",
+  deadline:{d:"2027-10",est:true}, ceremony:{d:"2027-11",est:true,place:"USA (Broadband Nation Expo)"}, opens:{d:"2027-07",est:true},
+  src:"https://www.fierce-network.com/broadband/enter-2026-fierce-network-innovation-awards-oct-2-deadline", checked:"Last cycle: entries opened 22 Jul 2026; final deadline 2 Oct 2026; winners honoured 19 Nov 2026 at Broadband Nation Expo, New Orleans.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:3,chance:2,cost:3},
+  overview:"US-based network innovation awards. Winners are announced online.",
+  insight:"A new Data Center & AI Infrastructure category was added in 2026.",
+  cats:[
+    ["Data Center & AI Infrastructure Innovation","AI-ready, high-density data center design."],
+    ["Energy-Efficient Network Design","Cooling and power efficiency."],
+    ["Carrier of the Year","center3's connectivity business."]]},
+
+{ rank:24, name:"Gulf Business Awards", group:"global", priority:"optional", place:"Dubai", web:"https://gulfbusiness.com/en/awards/",
+  deadline:{d:"2027-08",est:true}, ceremony:{d:"2027-09",est:true,place:"Dubai"}, opens:{d:"2027-07",est:true},
+  src:"https://gulfbusiness.com/en/2026/awards/gulf-business-awards-2026-nominations-open-ahead-of-september-event/", checked:"Last cycle: nominations opened July 2026; ceremony 23 Sep 2026 in Dubai.",
+  fee:"Not published.", free:false, tags:[],
+  scores:{prestige:3,relevance:2,chance:3,cost:3},
+  overview:"Well-known regional business awards.",
+  insight:"There's no telecom or data center category, so center3 would enter as a technology company.",
+  cats:[
+    ["Technology Company of the Year","center3's growth and expansion plan."],
+    ["Sustainability Company of the Year","ESG and energy efficiency work."],
+    ["Technology Leader of the Year","Abdullah Aldahmashi, CEO."]]},
+
+{ rank:25, name:"MEED Projects Awards", group:"global", priority:"optional", place:"Dubai", web:"https://events.meed.com/event/meedprojectsawards",
+  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"Dubai"}, opens:{d:"2027-04",est:true},
+  src:"https://www.meed.com/entries-now-open-for-meed-projects-awards-2026", checked:"Last cycle: entries opened 21 Apr 2026. Sector categories (Building, Energy, Industrial, etc.); no dedicated data center/ICT category listed.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:2,chance:2,cost:3},
+  overview:"Regional awards for completed projects, across sectors.",
+  insight:"Only completed projects qualify, and there is no dedicated data center category, so a center3 build would enter a sector category such as Building or Industrial.",
+  cats:[["Sector project categories (e.g. Building, Energy)","A new center3 data center completed before the deadline."]]},
+
+{ rank:26, name:"Gulf Customer Experience Awards", group:"global", priority:"optional", place:"Dubai", web:"https://gulfcxawards.com",
+  deadline:{d:"2027-03",est:true}, ceremony:{d:"2027-06",est:true,place:"Dubai"}, opens:{d:"2026-12",est:true,label:"Late 2026"},
+  src:"https://cxm.world/customer-experience/the-gulf-customer-experience-awards-2026-winners-are-revealed/", checked:"Last cycle: ceremony 10 Jun 2026 in Dubai. Entries for the next edition open later in 2026; register interest at gulfcxawards.com.",
+  fee:"Not published.", free:false, tags:[],
+  scores:{prestige:2,relevance:2,chance:2,cost:3},
+  overview:"Customer experience awards open to all industries.",
+  insight:"Regional competitor e& won 2 Gold awards in 2026. Only relevant if center3 has a strong customer experience story.",
+  cats:[["Customer experience categories","Customer onboarding and service experience for enterprise and hyperscale clients."]]},
+
+{ rank:27, name:"IABC Gold Quill Awards", group:"global", priority:"optional", place:"TBA", web:"https://www.iabc.com",
+  deadline:{d:"2027-01",est:true,label:"~Jan 2027 (early-bird ~Dec)"}, ceremony:null, opens:{d:"2026-09",est:true,label:"~Sep 2026 (likely open)"},
+  src:"https://insights.telummedia.com/pr-news/iabc-gold-quill-awards-open-for-entries", checked:"Last cycle: entries open by late Sep 2025; early-bird 7 Dec 2025; final deadline 18 Jan 2026.",
+  fee:"Not published.", free:false, tags:["mkt"],
+  scores:{prestige:3,relevance:2,chance:2,cost:3},
+  overview:"Global award for excellence in communication.",
+  insight:"Recognizes the MarCom team's strongest campaign.",
+  cats:[["Communication management and campaign categories","The MarCom team's strongest 2026 campaign."]]},
+
+{ rank:28, name:"HRSE KSA Awards", group:"local", priority:"optional", place:"Riyadh", web:"https://informaconnect.com/hrse-saudi/awards",
+  deadline:null, ceremony:{d:"2027-06",est:true,label:"~15–16 Jun 2027 (HRSE KSA)",place:"The Arena Riyadh"},
+  src:"https://informaconnect.com/hrse-saudi/awards-faqs/", checked:"HRSE KSA 2027 event: 15–16 Jun 2027, The Arena Riyadh (awards are presented at HRSE; confirm the awards night).",
+  fee:"Not published.", free:false, tags:["saudi"],
+  scores:{prestige:2,relevance:2,chance:3,cost:3},
+  overview:"Saudi HR excellence awards.",
+  insight:"Strengthens center3's employer brand. HR should lead the entry.",
+  cats:[["HR excellence categories","HR programs for Saudi talent, training and engagement."]]},
+
+{ rank:29, name:"SAMENA LEAD Awards", group:"industry", priority:"optional", place:"TBA", web:"https://www.samenacouncil.org",
+  deadline:null, ceremony:{d:"2027-04",est:true,place:"Dubai"},
+  src:"https://www.wam.ae/en/article/bzecj3u-samena-council-leaders’-summit-2026-set-for-april", checked:"Last cycle: SAMENA Leaders' Summit held 1 Apr 2026 in Dubai. LEAD Awards 2027 dates not published.",
+  fee:"Not published.", free:false, tags:[],
+  scores:{prestige:3,relevance:3,chance:2,cost:3},
+  overview:"Awards from the SAMENA Telecommunications Council.",
+  insight:"stc Kuwait and stc Bahrain have won before. 2027 dates aren't confirmed yet.",
+  cats:[
+    ["Business Excellence","center3's growth as a standalone digital infrastructure company."],
+    ["Innovation Excellence","AI-ready data center infrastructure."]]},
+
+{ rank:30, name:"DCCI Saudi Awards", group:"local", priority:"optional", place:"Riyadh", web:"https://saudi.dccisummit.com",
+  deadline:null, ceremony:{d:"2027-09",est:true,place:"Riyadh"},
+  src:"https://www.saudi.dccisummit.com/awards-2025/", checked:"Last cycle: DCCI Saudi 2025 held 3 Sep 2025 in Riyadh (run by Tradepass). 2026/2027 dates not published.",
+  fee:"Not published.", free:false, tags:["infra","saudi"],
+  scores:{prestige:2,relevance:3,chance:3,cost:3},
+  overview:"Saudi data center industry awards, run by Tradepass (an industry event, not government). Held every September in Riyadh.",
+  insight:"Builds visibility with local regulators and customers.",
+  organizer:"Tradepass",
+  cats:[
+    ["Data Center Design & Build Project","The newest center3 build in KSA."],
+    ["Digital Leader of the Year","Abdullah Aldahmashi, CEO."]]}
+];
+
+/* Suggested lead team for each award (by rank) */
+const LEAD = {1:"MarCom + Data Center Operations",2:"MarCom + Connectivity (align with stc)",3:"Data Center Engineering + Sustainability",
+ 4:"Sustainability / ESG",5:"Human Resources",6:"MarCom",7:"Procurement & Supply Chain",8:"MarCom",9:"Connectivity & Wholesale",
+ 10:"Human Resources",11:"Data Center Engineering",12:"Connectivity & Wholesale",13:"Strategy + CEO Office",14:"MarCom (PR)",
+ 15:"MarCom",16:"Quality & Excellence",17:"Data Center Security",18:"MarCom",19:"Product (Cloud & AI)",20:"Network Engineering",
+ 21:"Network Engineering (align with stc)",22:"MarCom",23:"Data Center Engineering",24:"MarCom + CEO Office",25:"Projects & Construction",
+ 26:"Customer Experience",27:"MarCom",28:"Human Resources",29:"Strategy",30:"Data Center Engineering + CEO Office"};
+
+/* ===================== Do not edit below this line ===================== */
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+const TL_START = new Date(2026,10,1);           // timeline starts November 2026
+const SOON_MONTHS = 3;
+
+function parseD(o){ if(!o||!o.d) return null; const p=o.d.split("-").map(Number);
+  return {y:p[0], m:p[1]?p[1]-1:null, day:p[2]||null}; }
+function endDate(o){ const p=parseD(o); if(!p) return null;
+  if(p.day) return new Date(p.y,p.m,p.day);
+  if(p.m!==null) return new Date(p.y,p.m+1,0);
+  return new Date(p.y,11,31); }
+function fmt(o){ if(!o) return "TBA"; if(o.label) return o.label; const p=parseD(o); if(!p) return "TBA";
+  const s = p.day? `${p.day} ${MON[p.m]} ${p.y}` : p.m!==null? `${MON[p.m]} ${p.y}` : `${p.y}`;
+  return (o.est?"~":"")+s; }
+function isEst(o){ return !o || !o.d || !!o.est; }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function total(a){ const s=a.scores; return s.prestige+s.relevance+s.chance+s.cost; }
+
+function urgency(a){
+  if(a.status==="open") return "open";
+  const e=endDate(a.deadline); if(!e || e<TODAY) return "";
+  const lim=new Date(TODAY.getFullYear(),TODAY.getMonth()+SOON_MONTHS+1,0);
+  return e<=lim ? "soon" : "";
+}
+AWARDS.forEach(a=>{ a.urg=urgency(a); a.total=total(a); });
+
+const TABS = [
+  {id:"all", label:"All awards", f:()=>true, intro:"All <b>30 awards</b>, grouped into three categories. Each award has a priority label. Select <b>Full details</b> on any card to see everything about it."},
+  {id:"must", label:"Must-enter", f:a=>a.priority==="must", intro:"The <b>4 awards center3 should definitely enter</b> in 2027, based on prestige, relevance and our track record."},
+  {id:"strong", label:"Strong", hidden:true, f:a=>a.priority==="strong", intro:"<b>Strong</b> awards: recommended entries that add clear value for center3 after the must-enter list."},
+  {id:"optional", label:"Optional", hidden:true, f:a=>a.priority==="optional", intro:"<b>Optional</b> awards: worth entering if the team has capacity and a strong story ready."},
+  {id:"free", label:"Free to enter", f:a=>a.free, intro:"Awards with <b>no entry fee</b>. Ceremony seats, or a fee charged only if we win, may still apply. Details are on each card."},
+  {id:"open", label:"Open now", f:a=>!!a.urg, intro:"Awards with <b>registration open now</b>, or a deadline in the next 3 months. Estimated deadlines (~) should be confirmed on the award's website."},
+  {id:"saudi", label:"Saudi & Vision 2030", f:a=>a.tags.includes("saudi"), intro:"<b>Saudi national awards</b> and recognition linked to Vision 2030: sustainability, local content, Saudization, quality and digital infrastructure."},
+  {id:"mkt", label:"Marketing & comms", f:a=>a.tags.includes("mkt"), intro:"Awards where the <b>MarCom team's campaigns and communications</b> can be submitted."},
+  {id:"infra", label:"Data center, subsea & connectivity", f:a=>a.tags.includes("infra"), intro:"Awards for center3's <b>core business</b>: data centers, subsea cables and connectivity."},
+  {id:"timeline", label:"Timeline", f:()=>true, intro:"Month by month from <b>November 2026</b>: submission deadlines and award ceremonies."}
+];
+
+let state={tab:"all", q:"", sort:"rank", view:"cards"};
+try{ const h=location.hash.slice(1); if(TABS.some(t=>t.id===h)) state.tab=h; }catch(e){}
+
+function priChip(p){ return `<span class="chip p-${p}">${PRI[p]}</span>`; }
+function extraChips(a){
+  let h="";
+  if(a.urg==="open") h+=`<span class="chip c-open">Open now</span>`;
+  else if(a.urg==="soon") h+=`<span class="chip c-soon">Closing soon</span>`;
+  if(a.free) h+=`<span class="chip c-free">Free to enter</span>`;
+  return h;
+}
+function scoreBlock(a){
+  const on=Math.round(a.total/4); // 0–5
+  return `<div class="score" title="Strength score ${a.total}/20"><b>${a.total}<small>/20</small></b>
+    <div class="bars">${[1,2,3,4,5].map(i=>`<i class="${i<=on?"on":""}"></i>`).join("")}</div></div>`;
+}
+function dateHtml(o){ return `<b class="${isEst(o)?"est":"conf"}">${esc(fmt(o))}</b>`; }
+
+function card(a){
+  const cer=a.ceremony? fmt(a.ceremony)+(a.ceremony.place&&!/TBA/.test(fmt(a.ceremony))?"":"") : "TBA";
+  return `<button class="card" data-id="${a.rank}">
+    <div class="card-top">
+      <div class="rank">#${a.rank}</div>
+      <div><h3>${esc(a.name)}</h3><div class="loc">${esc(a.place)} · ${GROUPS[a.group].name.replace(" & recognition","")}</div></div>
+      ${scoreBlock(a)}
+    </div>
+    <div class="chips">${priChip(a.priority)}${extraChips(a)}</div>
+    <p class="ins">${esc(a.insight)}</p>
+    <div class="dates">
+      <div>Submission deadline${dateHtml(a.deadline)}</div>
+      <div>Ceremony${dateHtml(a.ceremony)}</div>
+      ${a.opens?`<div class="opens-row">Submissions open${dateHtml(a.opens)}</div>`:""}
+    </div>
+    <span class="cardbtn">Full details<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </button>`;
+}
+
+const SCR=[["Prestige","prestige"],["Relevance to center3","relevance"],["Chance of winning","chance"],["Cost & effort (5 = low)","cost"]];
+function scoreDetail(a){
+  return `<div class="scorebig"><b>${a.total}/20</b><span>${a.total>=16?"High":a.total>=13?"Medium":"Lower"} strength</span></div>
+    <div class="sbreak" style="grid-template-columns:1fr">${SCR.map(([l,k])=>`<div class="sb"><div class="l"><span>${l}</span><b>${a.scores[k]}/5</b></div><div class="bar"><i style="--w:${a.scores[k]*20}%"></i></div></div>`).join("")}</div>`;
+}
+function catsTable(a){
+  return `<table class="cats"><thead><tr><th>Category</th><th>Project / story to submit</th></tr></thead>
+    <tbody>${a.cats.map(c=>`<tr><td><span class="cat-n"><span class="cat-i">${ic(catIcon(c),18)}</span>${esc(c[0])}</span></td><td>${esc(c[1])}</td></tr>`).join("")}</tbody></table>`;
+}
+function panel(a){
+  const cer=a.ceremony? `${dateHtml(a.ceremony)}${a.ceremony.place&&!/TBA/.test(a.ceremony.place)?`<span class="pl">${esc(a.ceremony.place)}</span>`:""}` : dateHtml(null);
+  return `<article class="panel" id="award-${a.rank}">
+    <header class="panel-h ${a.priority}">
+      <div class="rank">#${a.rank}</div>
+      <div class="ph-t"><h3>${esc(a.name)}</h3><div class="loc">${esc(a.place)}${a.organizer?" · "+esc(a.organizer):""}</div>
+        <div class="chips">${priChip(a.priority)}${extraChips(a)}</div></div>
+      <div class="ph-s"><b>${a.total}</b><span>/20</span><small>${a.total>=16?"High":a.total>=13?"Medium":"Lower"} strength</small></div>
+    </header>
+    <div class="facts4">
+      <div><label>${ic("cal",15)}Submission deadline</label>${dateHtml(a.deadline)}</div>
+      <div><label>${ic("trophy",15)}Ceremony</label>${cer}</div>
+      <div><label>${ic("coin",15)}Entry fee</label><p>${esc(a.fee)}</p></div>
+      <div><label>${ic("people",15)}Suggested lead team</label><p class="lead-team"><i></i>${esc(LEAD[a.rank]||"MarCom")}</p></div>
+    </div>
+    <div class="panel-b">
+      <div class="panel-main">
+        <section><h4>Overview</h4><p>${esc(a.overview)}</p></section>
+        <section><h4>Why it matters for center3</h4><p>${esc(a.insight)}</p></section>
+        ${a.track?`<div class="track"><span>🏆</span><span><b>Track record:</b> ${esc(a.track)}</span></div>`:""}
+      </div>
+      <aside class="panel-side"><h4>Strength score</h4>${scoreDetail(a)}</aside>
+    </div>
+    <div class="panel-cats">
+      <h4>Recommended categories &amp; what we could submit</h4>${catsTable(a)}
+      ${a.notes?`<div class="note"><b>Note:</b> ${esc(a.notes)}</div>`:""}
+    </div>
+    <footer class="panel-f"><span>Suggested stories: confirm each one, and its supporting data, with the project owner before submitting.</span>
+      <a class="btn" href="${a.web}" target="_blank" rel="noopener">Award website ↗</a></footer>
+  </article>`;
+}
+
+function sorted(list){
+  const l=[...list];
+  if(state.sort==="score") l.sort((a,b)=>b.total-a.total||a.rank-b.rank);
+  else if(state.sort==="deadline") l.sort((a,b)=>{
+    const x=a.urg==="open"?new Date(2000,0,1):endDate(a.deadline), y=b.urg==="open"?new Date(2000,0,1):endDate(b.deadline);
+    return (x?x.getTime():9e15)-(y?y.getTime():9e15)||a.rank-b.rank; });
+  else l.sort((a,b)=>a.rank-b.rank);
+  return l;
+}
+function matchQ(a){
+  if(!state.q) return true;
+  const hay=[a.name,a.place,a.overview,a.insight,a.fee,PRI[a.priority],...a.cats.flat()].join(" ").toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).every(w=>hay.includes(w));
+}
+
+function renderTabs(){
+  document.getElementById("tabs").innerHTML = TABS.filter(t=>!t.hidden||t.id===state.tab).map(t=>{
+    const c = t.id==="timeline" ? "" : `<span class="c">${AWARDS.filter(t.f).length}</span>`;
+    return `<button class="tab" role="tab" aria-selected="${t.id===state.tab}" data-tab="${t.id}">${ic(TAB_IC[t.id],15)}${t.label}${c}</button>`;
+  }).join("");
+}
+
+function renderView(){
+  const t=TABS.find(x=>x.id===state.tab);
+  document.getElementById("intro").innerHTML=t.intro;
+  const v=document.getElementById("view");
+  const list=AWARDS.filter(t.f).filter(matchQ);
+  document.getElementById("sort").style.display = document.getElementById("vt").style.display = state.tab==="timeline"?"none":"";
+  document.querySelectorAll("#vt button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===state.view));
+  v.classList.remove("fade"); void v.offsetWidth; v.classList.add("fade");
+  if(state.tab==="timeline"){ v.innerHTML=timeline(list); reveal(v); return; }
+  if(!list.length){ v.innerHTML=`<div class="empty">No awards match your search.</div>`; return; }
+  v.innerHTML = Object.keys(GROUPS).map(g=>{
+    const items=sorted(list.filter(a=>a.group===g)); if(!items.length) return "";
+    const G=GROUPS[g];
+    return `<section class="group"><div class="group-h"><div class="ico">${ic({industry:"dc",global:"globe",local:"star"}[g],22)}</div>
+      <div><h2>${G.name}</h2><p>${G.desc}</p></div><span class="cnt">${items.length} award${items.length>1?"s":""}</span></div>
+      ${state.view==="full"?`<div class="plist">${items.map(panel).join("")}</div>`:`<div class="grid">${items.map(card).join("")}</div>`}</section>`;
+  }).join("");
+  reveal(v);
+}
+
+/* Scroll so the selected category's list starts right under the sticky bars */
+function jumpToList(){
+  const n=document.querySelector(".nav"), intro=document.getElementById("intro");
+  const stickyH = getComputedStyle(n).position==="sticky" ? n.offsetHeight : 0;
+  scrollTo({top:intro.getBoundingClientRect().top+scrollY-64-stickyH-8,behavior:REDUCED?"auto":"smooth"});
+}
+
+function timeline(list){
+  const f=state.tlf||"all";
+  const months=[]; let d=new Date(TL_START);
+  while(d<=new Date(2027,11,1)){ months.push(new Date(d)); d.setMonth(d.getMonth()+1); }
+  const key=(o)=>{ const p=parseD(o); if(!p) return "tba"; if(p.y>=2028) return "2028";
+    if(p.m===null) return "tba"; const dt=new Date(p.y,p.m,1); return dt<TL_START?"past":`${p.y}-${p.m}`; };
+  const bucket={};
+  const add=(k,type,a,o)=>{ if(f!=="all"&&f!==type) return; (bucket[k]=bucket[k]||[]).push({a,o,type}); };
+  list.forEach(a=>{
+    if(a.urg==="open" && !(a.deadline&&a.deadline.d)) add(`${TODAY.getFullYear()}-${TODAY.getMonth()}`,"dl",a,{label:"Open now"});
+    else add(key(a.deadline),"dl",a,a.deadline);
+    add(key(a.ceremony),"cer",a,a.ceremony);
+  });
+  const dayOf=o=>{ const p=parseD(o); return p&&p.day?p.day:99; };
+  const short=o=>{ if(!o) return "TBA"; const s=fmt(o).replace(/ ?20\d\d/g,""); return s.length>16? s.slice(0,16)+"…" : s; };
+  const row=x=>`<button class="tle ${x.type}" data-id="${x.a.rank}">
+      <span class="tle-t">${x.type==="dl"?ic("flag",15)+"Deadline":ic("trophy",15)+"Ceremony"}</span>
+      <span class="tle-d ${isEst(x.o)?"est":""}">${esc(short(x.o))}</span>
+      <span class="tle-n"><b>${esc(x.a.name)}</b><small>#${x.a.rank} · ${esc(x.type==="cer"&&x.o&&x.o.place?x.o.place:x.a.place)}</small></span>
+      ${priChip(x.a.priority)}</button>`;
+  const block=(label,sub,items,cls,q)=>{
+    items=(items||[]).sort((p,r)=>(p.type===r.type?0:p.type==="dl"?-1:1)||dayOf(p.o)-dayOf(r.o)||p.a.rank-r.a.rank);
+    const nd=items.filter(x=>x.type==="dl").length, nc=items.length-nd;
+    const sum=[nd?`${nd} deadline${nd>1?"s":""}`:"",nc?`${nc} ceremon${nc>1?"ies":"y"}`:""].filter(Boolean).join(" · ");
+    return `${q?`<div class="tlq"><span>${q}</span></div>`:""}<div class="tlm ${cls||""} ${items.length?"":"blank"}">
+      <div class="tlm-date"><b>${label}</b><span>${sub}</span>${cls==="now"?'<em>This month</em>':""}</div>
+      <div class="tlm-node"><i></i></div>
+      <div class="tlm-body">${items.length?`<div class="tlm-sum">${sum}</div>${items.map(row).join("")}`:'<div class="tlm-none">No deadlines or ceremonies</div>'}</div></div>`;
+  };
+  const nowKey=`${TODAY.getFullYear()}-${TODAY.getMonth()}`;
+  let h=`<div class="tlbar"><div class="vt" role="group" aria-label="Timeline filter">
+      <button data-tlf="all" aria-pressed="${f==="all"}">All dates</button><button data-tlf="dl" aria-pressed="${f==="dl"}">${ic("flag",14)} Deadlines</button><button data-tlf="cer" aria-pressed="${f==="cer"}">${ic("trophy",14)} Ceremonies</button></div>
+      <div class="legend"><span class="lg"><span class="chip p-must">Must-enter</span></span><span class="lg"><span class="chip p-strong">Strong</span></span><span class="lg"><span class="chip p-optional">Optional</span></span><span class="lg">~ = estimated</span></div></div><div class="tl2">`;
+  months.forEach(m=>{
+    const k=`${m.getFullYear()}-${m.getMonth()}`, mo=m.getMonth();
+    const q = (k===`${TL_START.getFullYear()}-${TL_START.getMonth()}` || mo%3===0) ? `Q${Math.floor(mo/3)+1} ${m.getFullYear()}` : "";
+    h+=block(MON[mo],m.getFullYear(),bucket[k],k===nowKey?"now":"",q);
+  });
+  if(bucket["2028"]) h+=block("2028","Next year",bucket["2028"],"later","Later");
+  if(bucket["tba"]) h+=block("TBA","Not announced",bucket["tba"],"tba",bucket["2028"]?"":"Later");
+  return h+`</div>`;
+}
+
+function timelineOld(list){
+  const months=[]; let d=new Date(TL_START);
+  while(d<=new Date(2027,11,1)){ months.push(new Date(d)); d.setMonth(d.getMonth()+1); }
+  const key=(o)=>{ const p=parseD(o); if(!p) return "tba"; if(p.y>=2028) return "2028";
+    if(p.m===null) return "tba"; const dt=new Date(p.y,p.m,1); return dt<TL_START?"past":`${p.y}-${p.m}`; };
+  const bucket={};
+  const add=(k,type,a,o)=>{ (bucket[k]=bucket[k]||{dl:[],cer:[]})[type].push({a,o}); };
+  list.forEach(a=>{
+    if(a.urg==="open" && !(a.deadline&&a.deadline.d)) add(`${TODAY.getFullYear()}-${TODAY.getMonth()}`,"dl",a,{label:"Open now"});
+    else add(key(a.deadline),"dl",a,a.deadline);
+    add(key(a.ceremony),"cer",a,a.ceremony);
+  });
+  const chip=(x)=>`<button class="tl-item ${x.a.priority}" data-id="${x.a.rank}"><span class="r">#${x.a.rank}</span>${esc(x.a.name)}<span class="dd">${esc(fmt(x.o).replace(/ 20\d\d/,""))}</span></button>`;
+  const col=(arr,h)=>`<div class="tl-col"><h4>${h}</h4><div class="tl-items">${arr&&arr.length?arr.sort((p,q)=>p.a.rank-q.a.rank).map(chip).join(""):'<span class="tl-none">—</span>'}</div></div>`;
+  const nowKey=`${TODAY.getFullYear()}-${TODAY.getMonth()}`;
+  let h=`<div class="tl"><div class="tl-head"><div>Month</div><div>Submission deadlines</div><div>Ceremonies</div></div>`;
+  months.forEach(m=>{
+    const k=`${m.getFullYear()}-${m.getMonth()}`, b=bucket[k]||{};
+    h+=`<div class="tl-row ${k===nowKey?"now":""}"><div class="tl-m">${MON[m.getMonth()]}<small>${m.getFullYear()}</small>${k===nowKey?'<span class="nowtag">THIS MONTH</span>':""}</div>${col(b.dl,"Submission deadlines")}${col(b.cer,"Ceremonies")}</div>`;
+  });
+  ["2028","tba"].forEach(k=>{ const b=bucket[k]; if(!b) return;
+    h+=`<div class="tl-row"><div class="tl-m">${k==="2028"?"2028":"Dates TBA"}<small>${k==="2028"?"Results next year":"Not announced"}</small></div>${col(b.dl,"Submission deadlines")}${col(b.cer,"Ceremonies")}</div>`; });
+  return h+`</div>`;
+}
+
+function renderUrgent(){
+  const u=AWARDS.filter(a=>a.urg).sort((a,b)=>(a.urg==="open"?0:1)-(b.urg==="open"?0:1)||((endDate(a.deadline)||9e15)-(endDate(b.deadline)||9e15)));
+  document.getElementById("urgent").innerHTML = u.length? u.map(a=>{
+    const e=endDate(a.deadline); let days="";
+    const ms=deadlineMs(a); if(ms && ms>Date.now()) days=`<div class="cd" data-cd="${ms}"></div>`;
+    return `<button class="ucard ${a.urg}" data-id="${a.rank}">
+      <span class="st"><i></i>${a.urg==="open"?"Open now":"Closing soon"}</span>
+      <h3>${esc(a.name)}</h3>
+      <div class="d">Deadline: <b>${esc(fmt(a.deadline))}</b>${days}</div>
+      <div class="n">${PRI[a.priority]} · ${esc(a.place)}</div></button>`;
+  }).join("") : `<div class="empty" style="margin:0">Nothing open right now.</div>`;
+}
+
+function renderKpis(){
+  const cnt=f=>AWARDS.filter(f).length;
+  const k=[[AWARDS.length,"Total awards","Nov 2026 – Dec 2027","all"],[cnt(a=>a.priority==="must"),"Must-enter","top priority","must"],
+    [cnt(a=>a.priority==="strong"),"Strong","recommended","strong"],[cnt(a=>a.priority==="optional"),"Optional","if capacity allows","optional"],
+    [cnt(a=>a.free),"Free to enter","no entry fee","free"],[cnt(a=>a.urg==="open"),"Open now","register today","open"]];
+  document.getElementById("kpis").innerHTML=k.map(x=>`<button class="kb" data-tab="${x[3]}" data-jump><b data-count="${x[0]}">0</b><span>${x[1]}</span><small>${x[2]} →</small></button>`).join("");
+  const nOpen=cnt(a=>a.urg==="open"), nSoon=cnt(a=>a.urg==="soon");
+  const q=[["open","Open now",`${nOpen} open · ${nSoon} closing soon`,cnt(a=>!!a.urg),"clock",1],
+    ["must","Must-enter","Top priority",cnt(a=>a.priority==="must"),"flag"],
+    ["free","Free to enter","No entry fee",cnt(a=>a.free),"tag"],
+    ["saudi","Saudi awards","Vision 2030",cnt(a=>a.tags.includes("saudi")),"star"],
+    ["timeline","Timeline","Month by month","","cal"]];
+  document.getElementById("qchips").innerHTML=q.map(x=>`<button class="qt ${x[5]?"hot":""}" data-tab="${x[0]}" data-jump>
+      <span class="qt-i">${ic(x[4],20)}</span>
+      <span class="qt-t"><b>${x[1]}${x[5]?'<i class="live"></i>':""}</b><small>${x[2]}</small></span>
+      ${x[3]!==""?`<span class="qt-n">${x[3]}</span>`:'<span class="qt-a">→</span>'}</button>`).join("");
+  const ld=new Date(LAST_UPDATED+"T00:00:00"); const ls=`${ld.getDate()} ${MON[ld.getMonth()]} ${ld.getFullYear()}`;
+  document.getElementById("updated").innerHTML=`<i></i>Last updated ${ls}. Updated monthly. Dates marked ~ are estimates from the last cycle.`;
+  document.getElementById("foot-upd").innerHTML=`<b>Last updated ${ls}.</b> What changed:`;
+  document.getElementById("changes").innerHTML=CHANGES.map(c=>`<li>${esc(c)}</li>`).join("");
+}
+const REDUCED=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function countUp(){
+  document.querySelectorAll("[data-count]").forEach(el=>{
+    const to=+el.dataset.count; if(REDUCED){el.textContent=to;return;}
+    const t0=performance.now(), dur=1400;
+    const step=t=>{const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,3); el.textContent=Math.round(to*e); if(p<1) requestAnimationFrame(step);};
+    requestAnimationFrame(step);
+  });
+}
+function renderStrip(){
+  const tiles=[...AWARDS].sort((a,b)=>a.rank-b.rank).map(a=>`<button class="mtile ${a.priority}" data-id="${a.rank}" aria-label="${esc(a.name)}"><b>${esc(a.name)}</b><span>#${a.rank} · ${PRI[a.priority]} · Deadline ${esc(fmt(a.deadline))}</span></button>`).join("");
+  document.getElementById("mtrack").innerHTML=tiles+tiles.replace(/<button /g,'<button tabindex="-1" aria-hidden="true" ');
+}
+/* Reveal on scroll */
+const IO = ("IntersectionObserver" in window) ? new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); IO.unobserve(e.target);} }),{rootMargin:"0px 0px -8% 0px",threshold:.08}) : null;
+function reveal(root){
+  root.querySelectorAll(".card,.panel,.group-h,.tlm,.ucard").forEach((el,i)=>{
+    if(!IO||REDUCED){ el.classList.add("in"); return; }
+    el.classList.add("rv"); el.style.transitionDelay=(i%3)*70+"ms"; IO.observe(el);
+  });
+}
+/* Live countdown */
+function deadlineMs(a){ const d=a.deadline; if(!d||!d.d||d.est||d.d.length<10) return null;
+  return d.time? Date.parse(d.d+"T"+d.time) : new Date(d.d+"T23:59:59").getTime(); }
+function tick(){
+  document.querySelectorAll("[data-cd]").forEach(el=>{
+    let ms=+el.dataset.cd-Date.now(); if(ms<=0){ el.innerHTML="<span>Closed</span>"; return; }
+    const d=Math.floor(ms/864e5); ms%=864e5; const h=Math.floor(ms/36e5); ms%=36e5; const m=Math.floor(ms/6e4); const s=Math.floor(ms%6e4/1e3);
+    el.innerHTML=`<span>${d}<small>d</small></span><span>${String(h).padStart(2,"0")}<small>h</small></span><span>${String(m).padStart(2,"0")}<small>m</small></span><span>${String(s).padStart(2,"0")}<small>s</small></span>`;
+  });
+}
+/* 2026 recognition dropdown */
+(function(){const b=document.getElementById("recBtn"), p=document.getElementById("recPop"); if(!b) return;
+  const set=o=>{p.hidden=!o; b.setAttribute("aria-expanded",o);};
+  b.addEventListener("click",e=>{e.stopPropagation(); set(p.hidden);});
+  document.addEventListener("click",e=>{ if(!p.hidden && !p.contains(e.target)) set(false); });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape") set(false); });})();
+/* Rising diamonds */
+(function(){const box=document.getElementById("dmds"); if(!box||REDUCED) return;
+  const n=innerWidth<640?7:14; let h="";
+  for(let i=0;i<n;i++){ const sz=[14,18,24,32,44,60][i%6], left=(i*73)%100, dur=26+(i*7)%22, delay=-((i*11)%40);
+    const cls=i%4===0?"c":(i%3===0?"f":""); h+=`<span class="dmd ${cls}" style="width:${sz}px;height:${sz}px;left:${left}%;animation-duration:${dur}s;animation-delay:${delay}s"></span>`; }
+  box.innerHTML=h;})();
+/* Mouse-follow glow */
+(function(){const f=document.querySelector(".fx"); if(!f) return;
+  addEventListener("pointermove",ev=>{f.style.setProperty("--mx",ev.clientX+"px");f.style.setProperty("--my",ev.clientY+"px")},{passive:true});})();
+
+const dlg=document.getElementById("dlg");
+function openAward(id){
+  const a=AWARDS.find(x=>x.rank==+id); if(!a) return;
+  const S=[["Prestige","prestige"],["Relevance to center3","relevance"],["Chance of winning","chance"],["Cost & effort (5 = low)","cost"]];
+  dlg.innerHTML=`<div class="dlg-h"><button class="x" aria-label="Close" data-close>×</button>
+    <div class="grp">#${a.rank} · ${GROUPS[a.group].name}</div><h2 id="dlg-title">${esc(a.name)}</h2>
+    <div class="meta">${esc(a.place)}${a.organizer?" · Organizer: "+esc(a.organizer):""}</div>
+    <div class="chips">${priChip(a.priority)}${extraChips(a)}</div></div>
+  <div class="dlg-b">
+    <div><h4>Overview</h4><p>${esc(a.overview)}</p></div>
+    <div class="facts">
+      <div class="fact">Submission deadline${dateHtml(a.deadline)}</div>
+      <div class="fact">Ceremony${dateHtml(a.ceremony)}${a.ceremony&&a.ceremony.place?`<span>${esc(a.ceremony.place)}</span>`:""}</div>
+      <div class="fact">Submission fee<b style="font-size:13px;font-weight:600">${esc(a.fee)}</b></div>
+      ${a.opens?`<div class="fact">Submissions open${dateHtml(a.opens)}</div>`:""}
+    </div>
+    ${a.track?`<div class="track"><span>🏆</span><span><b>Track record:</b> ${esc(a.track)}</span></div>`:""}
+    <div><h4>Suggested lead team</h4><p class="lead-team"><i></i>${esc(LEAD[a.rank]||"MarCom")}</p></div>
+    <div><h4>Strength score</h4>
+      <div class="scorebig"><b>${a.total}/20</b><span>${a.total>=16?"High":a.total>=13?"Medium":"Lower"} strength</span></div>
+      <div class="sbreak">${S.map(([l,k])=>`<div class="sb"><div class="l"><span>${l}</span><b>${a.scores[k]}/5</b></div><div class="bar"><i style="--w:${a.scores[k]*20}%"></i></div></div>`).join("")}</div>
+    </div>
+    <div><h4>Why it matters for center3</h4><p>${esc(a.insight)}</p></div>
+    <div><h4>Recommended categories &amp; what we could submit</h4>
+      <table class="cats"><thead><tr><th>Category</th><th>Project / story to submit</th></tr></thead>
+      <tbody>${a.cats.map(c=>`<tr><td><span class="cat-n"><span class="cat-i">${ic(catIcon(c),18)}</span>${esc(c[0])}</span></td><td>${esc(c[1])}</td></tr>`).join("")}</tbody></table>
+    </div>
+    ${a.notes?`<div class="note"><b>Note:</b> ${esc(a.notes)}</div>`:""}
+    ${a.checked?`<div class="verify"><b>✓ Checked ${esc(CHECKED_ON)}</b><span>${esc(a.checked)}</span>${a.src?`<a href="${a.src}" target="_blank" rel="noopener">View source ↗</a>`:""}</div>`:""}
+    <div class="note">Stories are suggestions. Confirm each one, and its supporting data, with the project owner before submitting.</div>
+    <div class="btnrow"><a class="btn" href="${a.web}" target="_blank" rel="noopener">Open award website ↗</a><button class="btn ghost" data-close>Close</button></div>
+  </div>`;
+  dlg.showModal(); dlg.scrollTop=0; requestAnimationFrame(()=>requestAnimationFrame(()=>{const b=dlg.querySelector(".dlg-b"); if(b) b.classList.add("in");}));
+}
+function openMethod(){
+  dlg.innerHTML=`<div class="dlg-h"><button class="x" aria-label="Close" data-close>×</button>
+    <div class="grp">Method</div><h2 id="dlg-title">How the strength score works</h2>
+    <div class="meta">Each award is scored 1–5 on four criteria, for a total out of 20.</div></div>
+  <div class="dlg-b">
+    <div class="method-grid">
+      <div class="mg"><b>Prestige</b>How well-known and respected the award is in the industry and with customers.</div>
+      <div class="mg"><b>Relevance to center3</b>How closely the categories fit center3's business: data centers, subsea and connectivity.</div>
+      <div class="mg"><b>Chance of winning</b>Based on our past results, the competition and how strong our stories are.</div>
+      <div class="mg"><b>Cost &amp; effort</b>Entry fees plus the work needed. 5 means low cost and effort, 1 means high.</div>
+    </div>
+    <div><h4>Reading the total</h4><p><b>16–20</b> High · <b>13–15</b> Medium · <b>12 or below</b> Lower. The score supports the priority label (Must-enter, Strong, Optional) but doesn't replace it. The priority also considers strategic fit, such as Vision 2030 and alignment with stc.</p></div>
+    <div><h4>Dates</h4><p>Dates in red are confirmed for the 2027 cycle. Dates marked ~ are estimates based on the last cycle (2026 or earlier). TBA means not announced yet.</p></div>
+    <div class="btnrow"><button class="btn" data-close>Got it</button></div>
+  </div>`;
+  dlg.showModal();
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-tab]");
+  if(t){ state.tab=t.dataset.tab; try{history.replaceState(null,"","#"+state.tab);}catch(_){}
+    renderTabs(); renderView();
+    if(t.hasAttribute("data-jump")) jumpToList();
+    else t.scrollIntoView({block:"nearest",inline:"center"}); return; }
+  const tf=e.target.closest("[data-tlf]");
+  if(tf){ state.tlf=tf.dataset.tlf; renderView(); return; }
+  const vb=e.target.closest("[data-view]");
+  if(vb){ state.view=vb.dataset.view; try{localStorage.setItem("c3aw_view",state.view);}catch(_){} renderView(); return; }
+  if(e.target.closest("[data-close]")){ dlg.close(); return; }
+  const c=e.target.closest("[data-id]"); if(c){ openAward(c.dataset.id); return; }
+  if(e.target===dlg) dlg.close();
+});
+document.getElementById("methodBtn").addEventListener("click",openMethod);
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim(); renderView();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value; renderView();});
+
+/* Hero search */
+(function(){const inp=document.getElementById("hq"), box=document.getElementById("hres"); if(!inp) return;
+  const DOT={must:"var(--must)",strong:"var(--strong)",optional:"var(--optional)"}; let act=-1, hits=[];
+  const hay=a=>[a.name,a.place,a.overview,a.insight,a.fee,PRI[a.priority],a.organizer||"",...a.cats.flat()].join(" ").toLowerCase();
+  function show(){ const q=inp.value.trim().toLowerCase(); act=-1;
+    if(!q){ box.hidden=true; return; }
+    hits=AWARDS.filter(a=>q.split(/\s+/).every(w=>hay(a).includes(w))).sort((a,b)=>(b.name.toLowerCase().includes(q)-a.name.toLowerCase().includes(q))||a.rank-b.rank);
+    box.innerHTML = hits.length ? hits.slice(0,6).map((a,i)=>`<button class="hr-i" data-hid="${a.rank}"><span class="rk">#${a.rank}</span><span><b>${esc(a.name)}</b><small>${PRI[a.priority]} · Deadline ${esc(fmt(a.deadline))}</small></span><span class="dt" style="background:${DOT[a.priority]}"></span></button>`).join("")+`<button class="hr-all" data-hall>See all ${hits.length} result${hits.length>1?"s":""} in the list ↓</button>`
+      : `<div class="hr-none">No awards match “${esc(inp.value.trim())}”</div>`;
+    box.hidden=false; }
+  function all(){ const q=inp.value.trim(); state.q=q; state.tab="all"; document.getElementById("q").value=q; box.hidden=true;
+    renderTabs(); renderView(); jumpToList(); }
+  inp.addEventListener("input",show); inp.addEventListener("focus",show);
+  inp.addEventListener("keydown",e=>{ const its=[...box.querySelectorAll(".hr-i")];
+    if(e.key==="ArrowDown"||e.key==="ArrowUp"){ if(!its.length) return; e.preventDefault(); act=(act+(e.key==="ArrowDown"?1:-1)+its.length)%its.length; its.forEach((x,i)=>x.classList.toggle("act",i===act)); }
+    else if(e.key==="Enter"){ e.preventDefault(); if(act>=0&&its[act]){ box.hidden=true; openAward(its[act].dataset.hid);} else if(inp.value.trim()) all(); }
+    else if(e.key==="Escape"){ box.hidden=true; } });
+  box.addEventListener("click",e=>{ const h=e.target.closest("[data-hid]"); if(h){ e.stopPropagation(); box.hidden=true; openAward(h.dataset.hid); return; }
+    if(e.target.closest("[data-hall]")){ e.stopPropagation(); all(); } });
+  document.addEventListener("click",e=>{ if(!e.target.closest(".hsearch")) box.hidden=true; });
+})();
+renderKpis(); renderStrip(); renderUrgent(); reveal(document.getElementById("urgent")); renderTabs(); renderView(); countUp(); tick(); setInterval(tick,1000);
+</script>
+</body>
+</html>
