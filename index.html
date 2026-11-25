@@ -594,7 +594,7 @@ table.cats tbody tr:nth-child(even) td{background:#FCFAFE}
     <div>
       <div class="eyebrow"><i></i>2027 Awards roadmap · Nov 2026 – Dec 2027</div>
       <h1>Proposed <em>Awards</em><br>for center3</h1>
-      <p class="lead">A guide to the industry, global and Saudi awards center3 should enter in 2027. Each award has a priority label, a strength score out of 20, recommended categories with the story to submit, and its fees and dates.</p>
+      <p class="lead">The 15 international, regional and Saudi awards selected for center3's Marcom Plan 2027. Each award has a tier, a strength score out of 20, recommended categories with the story to submit, and its fees and dates.</p>
       <div class="upd" id="updated"></div>
     </div>
     <div class="hside">
@@ -616,7 +616,7 @@ table.cats tbody tr:nth-child(even) td{background:#FCFAFE}
 
 <main>
   <section class="strip">
-    <div class="wrap strip-h"><h2>All 30 awards <em>at a glance</em></h2></div>
+    <div class="wrap strip-h"><h2>All 15 awards <em>at a glance</em></h2></div>
     <div class="marquee"><div class="mtrack" id="mtrack"></div></div>
   </section>
   <section class="wrap urgent" aria-labelledby="urgent-h">
@@ -689,9 +689,10 @@ table.cats tbody tr:nth-child(even) td{background:#FCFAFE}
    Everything else (tabs, counts, timeline, "Open now") updates automatically.
    ===================================================================== */
 
-const LAST_UPDATED = "2026-11-16";
+const LAST_UPDATED = "2026-11-25";
 const CHECKED_ON = "16 Nov 2026";   /* date the award details were last checked against sources */
 const CHANGES = [
+  "25 Nov 2026: Updated to the 15 awards selected for the Marcom Plan 2027 (Tier 1–3; international, regional and local). Added W.Media Middle East and The Fast Mode Awards; removed marketing, HR, certification and executive-list awards. MENA Stevie entries filed.",
   "16 Nov 2026 (research update): Confirmed GCA night (20 Oct 2027), Stevie IBA (16 Jun / 14 Oct 2027, Paris), IABC Gold Quill deadlines and fees, DCS nominations (close 5 Feb 2027), Tech Capital move to 15 Nov 2027, and added published fees for Effie, Leading Lights and Network X.",
   "Nov 2026: First web version, built from the 2027 Awards Opportunities deck and Abu Layla's feedback.",
   "16 Nov 2026: Checked all 30 awards against official or published sources. Fixed the cycle for MENA Stevie (final deadline 26 Nov 2026), Great Place to Work KSA (certification deadline 30 Nov 2026), Effie KSA, Tech Capital, IABC and Gulf CX; corrected several award website links; added when submissions open and a source for each award.",
@@ -700,14 +701,11 @@ const CHANGES = [
 
 /* Groups */
 const GROUPS = {
-  industry:{name:"Top-tier industry awards", desc:"Specialist data center, subsea, connectivity and telecom awards",
-    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/><path d="M8 6.5h.01M8 17.5h.01"/></svg>'},
-  global:{name:"Global awards", desc:"Business, marketing, communications and CX awards across all industries",
-    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>'},
-  local:{name:"Local awards & recognition", desc:"Saudi national awards linked to Vision 2030",
-    icon:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>'}
+  intl:{name:"International awards", desc:"Global data center, subsea, connectivity and telecom awards"},
+  regional:{name:"Regional awards", desc:"Middle East and MENA awards"},
+  local:{name:"Local awards & recognition", desc:"Saudi national awards linked to Vision 2030"}
 };
-const PRI = {must:"Must-enter", strong:"Strong", optional:"Optional"};
+const PRI = {must:"Tier 1", strong:"Tier 2", optional:"Tier 3"};
 
 /* center3-style line icons (24px grid, coral square = logo accent) */
 const IC = {
@@ -745,15 +743,15 @@ function catIcon(c){
   for(const [r,n] of rules) if(r.test(nm)) return n;
   for(const [r,n] of rules) if(r.test(t)) return n; return "diamond";
 }
-const TAB_IC={all:"grid",must:"flag",strong:"trophy",optional:"diamond",free:"tag",open:"clock",saudi:"star",mkt:"mega",infra:"dc",timeline:"cal"};
+const TAB_IC={all:"grid",must:"trophy",strong:"flag",optional:"diamond",free:"tag",open:"clock",saudi:"star",mkt:"mega",infra:"dc",timeline:"cal"};
 
 /* Tags: infra = Data center, subsea & connectivity | mkt = Marketing & comms | saudi = Saudi & Vision 2030
    Scores (1–5): prestige, relevance (to center3), chance (of winning), cost (5 = low cost/effort) */
 const AWARDS = [
-{ rank:1, name:"Datacloud Global Awards", group:"industry", priority:"must", place:"Cannes", web:"https://awards.datacloudglobalcongress.com/",
+{ rank:1, name:"Datacloud Global Awards", group:"intl", priority:"must", place:"Cannes", web:"https://awards.datacloudglobalcongress.com/",
   deadline:{d:"2027-02",est:true}, ceremony:{d:"2027-06-01",est:true,label:"~1–2 Jun 2027",place:"Cannes (Congress 2–4 Jun)"}, opens:{d:"2027-01",est:true},
   src:"https://www.datacloudglobalcongress.com/", checked:"Datacloud Global Congress 2027 is confirmed for 2–4 Jun 2027 at the Palais des Festivals, Cannes; the awards night date is not final (1 or 2 Jun). 2026 entries closed 19 Feb 2026. 2027 entry window not open yet (waitlist).",
-  fee:"Entry fee not published. Ceremony seats and tables are paid separately.", free:false, tags:["infra","mkt"],
+  fee:"Entry fee not published. Ceremony seats and tables are paid separately.", free:false, tags:["infra"],
   scores:{prestige:5,relevance:5,chance:4,cost:3},
   overview:"The flagship awards of the European-led data center industry, presented at Datacloud Global Congress in Cannes.",
   insight:"center3 won Best Data Center in MEA in 2025 and 2026. The next step is the global title.",
@@ -763,61 +761,67 @@ const AWARDS = [
     ["Best Global Data Center (Global Providers)","The 1 GW by 2030 expansion plan (US$10bn) and the footprint across KSA, Bahrain and other markets."],
     ["Best Marketing Campaign","center3's strongest 2026 B2B campaign, with measurable results."]]},
 
-{ rank:2, name:"Global Connectivity Awards", group:"industry", priority:"must", place:"London", web:"https://globalconnectivityawards.com",
-  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-10-20",label:"20 Oct 2027",place:"Indigo at The O₂, London"}, opens:{d:"2027-04",est:true},
-  src:"https://globalconnectivityawards.com/", checked:"Official site: 'Save the date: 20 October 2027, Indigo at The O₂, London' (during Capacity Europe, 19–21 Oct 2027). 2026 entries closed around 7 Jul 2026 (partner listing). center3 was shortlisted for Best Sales Team in 2026.",
-  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra","mkt"],
-  scores:{prestige:4,relevance:5,chance:4,cost:5},
-  overview:"Global awards for subsea, data center and interconnection operators.",
-  insight:"stc also competes here, so agree on categories with stc before submitting.",
-  track:"Won Best Subsea Operator in 2025. Had 5 finalists in 2026. CMC Networks (owned by center3) won African Connectivity Provider of the Year in 2026.",
-  cats:[
-    ["Subsea Operator","EMC West, the subsea and terrestrial system linking KSA to Europe (with ASN), plus the 2Africa Pearls landing."],
-    ["Data Center Operator","Hyperscaler-ready capacity growth, with a target of 300 MW installed by 2027."],
-    ["Internet Exchange Provider","center3's interconnection and internet exchange platform in KSA (confirm scope with the product team)."],
-    ["Marketing Team","The MarCom team's full 2026 program and results."]]},
-
-{ rank:3, name:"DCD Global Awards", group:"industry", priority:"must", place:"London", web:"https://www.datacenterdynamics.com/en/industry-awards/global-awards/2026/",
+{ rank:2, name:"DCD Global Awards", group:"intl", priority:"must", place:"London", web:"https://www.datacenterdynamics.com/en/industry-awards/global-awards/2026/",
   deadline:{d:"2027-09",est:true}, ceremony:{d:"2027-12",est:true,place:"London"}, opens:{d:"2027-04",est:true},
   src:"https://www.datacenterdynamics.com/en/industry-awards/global-awards/2026/", checked:"2026 cycle: entries opened April 2026 and closed around 18 Sep 2026; ceremony 9 Dec 2026 at Grosvenor House, London. Projects must be completed within the eligibility year.",
   fee:"Free to enter. Ceremony tables are paid separately.", free:true, tags:["infra"],
   scores:{prestige:5,relevance:5,chance:3,cost:4},
   overview:"The leading global data center industry awards, run by DatacenterDynamics.",
+  track:"Finalist in the 2026 MEA Data Center Project of the Year category; result announced 9 Dec 2026.",
   insight:"No Saudi project won the MEA category in 2025. center3 can aim to be the first Saudi winner.",
   cats:[
     ["MEA Data Center Project of the Year","The newest center3 data center completed in 2026–27 (AI-ready build)."],
     ["Energy Impact","Renewable energy and energy-efficient cooling in the expansion program."],
     ["Mission Critical Tech Innovation","High-density AI and HPC design for training and inference."]]},
 
-{ rank:4, name:"King Khalid Sustainability Award", group:"local", priority:"must", place:"Riyadh", web:"https://kka.kkf.org.sa",
-  deadline:{d:null,label:"TBA (check KKA channels)"}, ceremony:{d:"2027-11",est:true,place:"Riyadh"}, opens:{d:"2027-01",est:true,label:"~Jan 2027 (Level 1)"},
-  src:"https://kka.kkf.org.sa/en/rci/Pages/faqs.aspx", checked:"KKA FAQ: free to enter; 2-year cycle; Level 1 applications open mid-January, gala in November; closing dates are announced on KKA social media.",
-  fee:"Free to enter.", free:true, tags:["saudi"],
-  scores:{prestige:4,relevance:4,chance:2,cost:4},
-  overview:"King Khalid Foundation's national award for corporate sustainability and ESG performance. It runs every two years, and the next round is in 2027.",
-  insight:"Confirm eligibility first. 1st-place winners can't apply in the next round, and stc won 1st place in 2025.",
-  organizer:"King Khalid Foundation",
-  cats:[["Sustainability Award (ESG performance)","center3's ESG record: renewable energy, efficient cooling, Saudization and community impact."]]},
-
-{ rank:5, name:"Great Place to Work KSA", group:"local", priority:"strong", place:"KSA", web:"https://www.greatplacetowork.me", status:"open",
-  deadline:{d:"2026-11-30",label:"30 Nov 2026 (certification)"}, ceremony:{d:"2027-04-01",label:"1 Apr 2027 (list published)"}, opens:{d:null,label:"Open now"},
-  src:"https://greatplacetowork.me/list-application-deadlines-2027/", checked:"Official 2027 deadlines page: Best Workplaces in KSA™ certification deadline 30 Nov 2026, list published 1 Apr 2027.",
-  fee:"Paid certification. Price on request.", free:false, tags:["saudi"],
-  scores:{prestige:4,relevance:3,chance:3,cost:2},
-  overview:"Certification and Best Workplaces list, based on an employee survey.",
-  insight:"Strengthens center3's employer brand. The certification deadline for the April 2027 KSA list is 30 Nov 2026, so HR needs to start the employee survey now.",
-  cats:[["Best Workplaces in KSA™","Employee survey results plus center3's culture and people story, led by HR."]]},
-
-{ rank:6, name:"MENA Effie Awards", group:"global", priority:"strong", place:"Riyadh", web:"https://menaeffie.com",
-  deadline:{d:"2027-09",est:true,label:"~Aug–Sep 2027"}, ceremony:{d:"2027-11",est:true,place:"Riyadh"}, opens:{d:"2027-05",est:true},
-  src:"https://menaeffie.com/how-to-enter/", checked:"2026 cycle: deadlines 21 Aug–22 Sep 2026; ceremony 26 Nov 2026 at Saraj Venue, Riyadh. 2027 dates not published.",
-  fee:"Per entry, lower for earlier deadlines. 2026: US$755 (21 Aug), US$1,135 (3 Sep), US$1,454 (12 Sep), US$2,562 (extended, 22 Sep).", free:false, tags:["mkt"],
-  scores:{prestige:4,relevance:3,chance:2,cost:2},
-  overview:"The region's main award for marketing effectiveness, judged on measurable results.",
-  insight:"Mobily and du won Silver in 2025. center3 needs a campaign with proven results.",
+{ rank:3, name:"Global Connectivity Awards", group:"intl", priority:"must", place:"London", web:"https://globalconnectivityawards.com",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-10-20",label:"20 Oct 2027",place:"Indigo at The O₂, London"}, opens:{d:"2027-04",est:true},
+  src:"https://globalconnectivityawards.com/", checked:"Official site: 'Save the date: 20 October 2027, Indigo at The O₂, London' (during Capacity Europe, 19–21 Oct 2027). 2026 entries closed around 7 Jul 2026 (partner listing). center3 was shortlisted for Best Sales Team in 2026.",
+  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra"],
+  scores:{prestige:4,relevance:5,chance:4,cost:5},
+  overview:"Global awards for subsea, data center and interconnection operators.",
+  insight:"Enter asset categories only (subsea, data center, interconnection) and avoid categories where stc competes.",
+  track:"Won Best Subsea Operator in 2025. Had 5 finalists in 2026. CMC Networks (owned by center3) won African Connectivity Provider of the Year in 2026.",
   cats:[
-    ["B2B","A center3 campaign with proven business results, such as leads, pipeline and awareness lift."],
-    ["Corporate Reputation","center3's brand building since its launch as a standalone company."]]},
+    ["Subsea Operator","EMC West, the subsea and terrestrial system linking KSA to Europe (with ASN), plus the 2Africa Pearls landing."],
+    ["Data Center Operator","Hyperscaler-ready capacity growth, with a target of 300 MW installed by 2027."],
+    ["Internet Exchange Provider","center3's interconnection and internet exchange platform in KSA (confirm scope with the product team)."]]},
+
+{ rank:4, name:"Telecom Review Excellence Awards", group:"regional", priority:"strong", place:"Dubai", web:"https://www.telecomreview.com/summit",
+  deadline:{d:"2027-09",est:true}, ceremony:{d:"2027-10",est:true,place:"Dubai"},
+  src:"https://www.telecomreview.com/articles/reports-and-coverage/30207-innovation-resilience-and-leadership-guide-the-2026-telecom-review-excellence-awards/", checked:"2026 cycle: nominations and fees due 18 Sep 2026; awards presented 21 Oct 2026 at The Ritz-Carlton Dubai JBR. Each category closes after six nominations per region, so enter early.",
+  fee:"Not confirmed (US$1,500 per category was quoted earlier). Extra trophies paid separately.", free:false, tags:["infra"],
+  scores:{prestige:2,relevance:4,chance:3,cost:2},
+  overview:"Regional telecom awards presented at the Telecom Review Leaders' Summit.",
+  track:"center3 won in 2024. du won in 2025 and 2026.",
+  insight:"A regional award we have won before. Regional competitors (du, Mobily, Zain) enter every year, so we need a strong new story.",
+  cats:[
+    ["Best Data Center Provider – Middle East","center3's data center portfolio."],
+    ["Best Subsea Cables","EMC West and 2Africa Pearls."]]},
+
+{ rank:5, name:"Carrier Community Global Awards", group:"intl", priority:"strong", place:"Berlin", web:"https://carriercommunity.com",
+  deadline:{d:"2027-03",est:true}, ceremony:{d:"2027-06",est:true,place:"Berlin"},
+  src:"https://www.acepeak.com/events/ccga-berlin/", checked:"Last cycle: 10th CC-Global Awards held 16 Jun 2026 at Metropol Berlin. Nomination deadline not published.",
+  fee:"Entry fee not published. Ceremony seats are paid separately.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:5,chance:3,cost:3},
+  overview:"Awards from the global wholesale carrier community.",
+  insight:"Wholesale-focused awards from the global carrier community. Attending the ceremony requires paid seats.",
+  cats:[
+    ["Subsea Cable Operator","EMC West and 2Africa Pearls."],
+    ["Regional Data Center Operator","center3's carrier-neutral data centers in KSA and Bahrain."],
+    ["Middle East Connectivity","KSA as the digital hub between Europe, Africa and Asia."]]},
+
+{ rank:6, name:"World Communication Awards", group:"intl", priority:"strong", place:"London", web:"https://www.terrapinn.com/awards/world-communication-awards/index.stm",
+  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"London"},
+  src:"https://totaltele.com/world-communication-awards-2026-your-chance-to-celebrate-excellence/", checked:"Last cycle: entries closed 19 Jun 2026; ceremony 25 Nov 2026 at the Grand Connaught Rooms, London.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:4,relevance:4,chance:3,cost:3},
+  overview:"Long-running global telecom industry awards organised by Terrapinn.",
+  insight:"A long-running global telecom award with a competitive field. No Saudi company won in 2025.",
+  cats:[
+    ["Submarine Networks","EMC West and the 2Africa Pearls landing in KSA."],
+    ["Infrastructure Award","The 1 GW by 2030 data center and connectivity expansion program."],
+    ["Best Wholesale Operator","Growth in center3's international wholesale and carrier services."]]},
 
 { rank:7, name:"Local Content Award (LCGPA)", group:"local", priority:"strong", place:"Riyadh", web:"https://lcaward.lcgpa.gov.sa",
   deadline:{d:null,label:"TBA (next edition)"}, ceremony:null, opens:{d:null,label:"TBA (last edition opened in Sep)"},
@@ -825,272 +829,102 @@ const AWARDS = [
   fee:"Not published.", free:false, tags:["saudi"],
   scores:{prestige:4,relevance:4,chance:3,cost:3},
   overview:"Run by the Local Content and Government Procurement Authority. The 3rd edition was held in Riyadh in 2025, and the next dates aren't announced yet.",
-  insight:"A core Vision 2030 award. In 2025, stc won the top Local Content Preference award and TAWAL (stc Group) won in the private sector.",
+  insight:"A core Vision 2030 award. Confirm that center3 is eligible for the private-sector track before preparing the entry.",
   organizer:"Local Content and Government Procurement Authority",
   cats:[["Private sector – large enterprises","Local content in center3's data center builds: Saudi suppliers, local supply chain spend and national talent."]]},
 
-{ rank:8, name:"Effie Awards Saudi Arabia", group:"local", priority:"strong", place:"Riyadh", web:"https://effiesaudi.com",
-  deadline:{d:"2027-02",est:true,label:"~Feb 2027 (final)"}, ceremony:{d:"2027-06",est:true,place:"Riyadh"}, opens:{d:"2026-11",est:true,label:"~mid-Nov 2026"},
-  src:"https://effiesaudi.com/", checked:"2026 cycle: portal opened 17 Nov 2025; deadlines 21 Jan, 4 Feb, 11 Feb, extended 26 Feb 2026; ceremony 11 Jun 2026. 2027 call not published yet.",
-  fee:"Per entry, lower for earlier deadlines. 2026: US$450 (21 Jan), US$550 (4 Feb), US$650 (11 Feb), US$750 (extended, 26 Feb).", free:false, tags:["mkt","saudi"],
-  scores:{prestige:3,relevance:3,chance:3,cost:3},
-  overview:"Saudi marketing effectiveness award run by Effie Worldwide with NordStella. The first edition was held in Riyadh in June 2026.",
-  insight:"Mobily won Most Effective Brand in 2026. Entering early helps center3 establish itself in a new Saudi award.",
-  organizer:"Effie Worldwide with NordStella",
-  cats:[["Marketing effectiveness (Saudi campaigns)","A Saudi-market center3 campaign with measurable results."]]},
-
-{ rank:9, name:"World Communication Awards", group:"industry", priority:"strong", place:"London", web:"https://www.terrapinn.com/awards/world-communication-awards/index.stm",
-  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"London"},
-  src:"https://totaltele.com/world-communication-awards-2026-your-chance-to-celebrate-excellence/", checked:"Last cycle: entries closed 19 Jun 2026; ceremony 25 Nov 2026 at the Grand Connaught Rooms, London.",
-  fee:"Not published.", free:false, tags:["infra"],
-  scores:{prestige:4,relevance:4,chance:3,cost:3},
-  overview:"Long-running global telecom industry awards organised by Terrapinn.",
-  insight:"No Saudi company won in 2025. center3 has an opening to lead in subsea and wholesale.",
-  cats:[
-    ["Submarine Networks","EMC West and the 2Africa Pearls landing in KSA."],
-    ["Infrastructure Award","The 1 GW by 2030 data center and connectivity expansion program."],
-    ["Best Wholesale Operator","Growth in center3's international wholesale and carrier services."]]},
-
-{ rank:10, name:"Labor Award (MHRSD)", group:"local", priority:"strong", place:"Riyadh", web:"https://www.laboraward.sa", status:"open",
-  deadline:{d:null,label:"Open now · closing date TBA"}, ceremony:{d:"2027-01",est:true,place:"Riyadh"}, opens:{d:"2026-09-14",label:"Opened 14 Sep 2026"},
-  src:"https://www.al-jazirahonline.com/2026/09/14/534684/", checked:"Registration for the 6th edition opened 14 Sep 2026. Closing date and fees not published; ask MHRSD via laboraward.sa.",
-  fee:"Not published.", free:false, tags:["saudi"],
-  scores:{prestige:4,relevance:3,chance:3,cost:3},
-  overview:"The Ministry of Human Resources' national award. Registration for the 6th edition opened 14 Sep 2026, with 34 awards across 5 tracks.",
-  insight:"Tied to Vision 2030 employment goals. Employees at nominated companies fill in a questionnaire, so HR should lead the entry.",
-  organizer:"Ministry of Human Resources and Social Development",
-  cats:[
-    ["Localization","Saudization in technical and data center operations roles."],
-    ["Work Environment","Employee wellbeing, inclusion and workplace programs."],
-    ["Skills & Training","Graduate and technical training programs for Saudi talent."],
-    ["CEO","Leadership of Abdullah Aldahmashi, CEO."]]},
-
-{ rank:11, name:"W.Media Global Cloud & Datacenter Awards", group:"industry", priority:"strong", place:"Regional (Middle East region)", web:"https://w.media/awards",
-  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-11",est:true,place:"Regional"}, opens:{d:"2027-06",est:true},
-  src:"https://w.media/awards/", checked:"Last cycle: entries 1 Jun–31 Jul 2026; Asia gala 27 Nov 2026 in Bangkok. w.media says the gala dinner does not apply to the South Asia & Middle East region, so confirm the Middle East format with w.media.",
+{ rank:8, name:"W.Media Middle East Cloud & Datacenter Awards", group:"regional", priority:"optional", place:"Dubai", web:"https://w.media/awards/",
+  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-09",est:true,place:"Dubai"}, opens:{d:"2027-06",est:true},
+  src:"https://old.w.media/?p=147636", checked:"2025 awards presented 11 Sep 2025 at the JW Marriott Marquis, Dubai, after the Dubai Cloud & Datacenter Convention. The 2026 convention was 24 Sep 2026. 2027 dates not published.",
   fee:"Not published.", free:false, tags:["infra"],
   scores:{prestige:3,relevance:5,chance:3,cost:3},
-  overview:"w.media's regional cloud and data center awards, focused on AI-ready and sustainable infrastructure. The Middle East is covered as a region.",
-  insight:"The categories focus on AI-ready and sustainable data centers, which matches center3's positioning.",
+  overview:"W.Media's Middle East awards, presented at the Dubai Cloud & Datacenter Convention, across three pillars: Projects, Planet and People.",
+  insight:"Regional peers such as Khazna and Gulf Data Hub win here, so it is a credible stage for center3 in the region.",
   cats:[
     ["AI-Ready Data Center Design","High-density halls designed for AI training and inference."],
     ["Sustainable Data Center Campus","Renewable energy and efficient cooling at a center3 campus."],
     ["Data Center Operations","center3's uptime and operational excellence record."]]},
 
-{ rank:12, name:"Carrier Community Global Awards", group:"industry", priority:"strong", place:"Berlin", web:"https://carriercommunity.com",
-  deadline:{d:"2027-03",est:true}, ceremony:{d:"2027-06",est:true,place:"Berlin"},
-  src:"https://www.acepeak.com/events/ccga-berlin/", checked:"Last cycle: 10th CC-Global Awards held 16 Jun 2026 at Metropol Berlin. Nomination deadline not published.",
-  fee:"Entry fee not published. Ceremony seats are paid separately.", free:false, tags:["infra"],
-  scores:{prestige:3,relevance:5,chance:3,cost:3},
-  overview:"Awards from the global wholesale carrier community.",
-  insight:"Regional competitors e& (2024) and Zain Omantel (2025) have won here. center3 can compete directly in wholesale and subsea.",
-  cats:[
-    ["Subsea Cable Operator","EMC West and 2Africa Pearls."],
-    ["Regional Data Center Operator","center3's carrier-neutral data centers in KSA and Bahrain."],
-    ["Middle East Connectivity","KSA as the digital hub between Europe, Africa and Asia."]]},
-
-{ rank:13, name:"The Tech Capital Global Awards", group:"industry", priority:"strong", place:"London", web:"https://awards.thetechcapital.com/",
+{ rank:9, name:"The Tech Capital Global Awards", group:"intl", priority:"optional", place:"London", web:"https://awards.thetechcapital.com/",
   deadline:{d:null,label:"TBA (2026 cycle: 19 Feb)"}, ceremony:{d:"2027-11-15",label:"15 Nov 2027",place:"One Great George Street, London"}, opens:{d:null,label:"TBA"},
   src:"https://thetechcapital.com/the-tech-capital-launches-sixth-international-finance-forum-for-november-2027-in-london/", checked:"2027 awards move to 15 Nov 2027 with the International Finance Forum, One Great George Street, London. 2026 deadline was 19 Feb 2026 (gala 11 May 2026). 2027 entry window not published.",
   fee:"Not published.", free:false, tags:["infra"],
   scores:{prestige:3,relevance:4,chance:3,cost:3},
   overview:"Awards for digital infrastructure investment and leadership, followed closely by investors.",
-  insight:"Raises center3's profile with investors. Khazna's CEO won EMEA Digital Infrastructure Leader in 2026.",
+  insight:"Best suited to leader or flagship project categories. Raises center3's profile with infrastructure investors.",
   cats:[
     ["Digital Infrastructure Project","A flagship center3 data center or cable project."],
     ["AI Infrastructure Investment","The US$10bn plan for 1 GW of capacity by 2030."],
     ["EMEA Digital Infrastructure Leader","Abdullah Aldahmashi, CEO."]]},
 
-{ rank:14, name:"MEPRA Awards", group:"global", priority:"strong", place:"Dubai", web:"https://www.mepra.org/awards",
-  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-11",est:true,place:"Dubai"}, opens:{d:"2027-04",est:true},
-  src:"https://www.mepra.org/knowledge/news/mepra-celebrates-25-years-of-industry-excellence-as-2026-awards-entries-open/", checked:"Last cycle: entries opened 23 Apr 2026; gala 26 Nov 2026 in Dubai. Deadline listed on mepra.org/awards.",
-  fee:"Not published. The 2026 deadline was 16 Jul.", free:false, tags:["mkt"],
-  scores:{prestige:3,relevance:3,chance:3,cost:3},
-  overview:"The region's leading PR and communications awards.",
-  insight:"Recognizes the MarCom team's own work.",
-  cats:[
-    ["In-house team","The center3 MarCom team and its 2026–27 output."],
-    ["PR campaign","PR for the expansion announcements and award wins."]]},
-
-{ rank:15, name:"MENA Stevie Awards", group:"global", priority:"strong", place:"UAE", web:"https://mena.stevieawards.com", status:"open",
-  deadline:{d:"2026-11-26",label:"26 Nov 2026 (final)"}, ceremony:{d:"2027-04-02",est:true,label:"~2 Apr 2027",place:"Ras Al Khaimah"}, opens:{d:"2026-09-23",label:"Opened 23 Sep 2026"},
-  src:"https://mena.stevieawards.com/Enter/winners-fees", checked:"Official 2027 calendar: final deadline 26 Nov 2026; winners fees due 16 Feb 2027; winners announced 18 Feb 2027; banquet April 2027 in Ras Al Khaimah (programme book: 2 Apr).",
-  fee:"No entry fee. Winners pay US$595 per win for entries submitted after 29 Oct 2026 (US$555 if submitted by then).", free:true, tags:["mkt"],
-  scores:{prestige:2,relevance:3,chance:4,cost:4},
-  overview:"Regional edition of the Stevie Awards, with 150+ categories.",
-  insight:"No entry fee, so it's a low-cost way to get recognition for marketing and CSR work.",
-  cats:[["Marketing, sales, innovation and CSR","Choose 2–3 of the strongest 2025–26 campaigns and initiatives (deadline 26 Nov 2026)."]]},
-
-{ rank:16, name:"King Abdulaziz Quality Award", group:"local", priority:"strong", place:"Riyadh", web:"https://kaqa.org.sa",
+{ rank:10, name:"King Abdulaziz Quality Award", group:"local", priority:"optional", place:"Riyadh", web:"https://kaqa.org.sa",
   deadline:{d:null,label:"8th cycle · dates TBA"}, ceremony:null,
   src:"https://twitter.com/kaqaorg", checked:"KAQA secretariat has issued an 8th-cycle preparation survey; registration dates and fees not published. Contact kaqa.org.sa.",
   fee:"Not confirmed (an earlier cycle charged SAR 1,800).", free:false, tags:["saudi"],
   scores:{prestige:4,relevance:3,chance:2,cost:2},
   overview:"Saudi Arabia's national business excellence award, run by SASO. The 8th round is being prepared.",
-  insight:"Linked to Vision 2030. center3 has to apply as a standalone entity.",
+  insight:"Requires an organisational excellence assessment, so start early with the quality team.",
   organizer:"SASO",
   cats:[["Private sector – large organizations","center3's quality and excellence management system as a standalone company."]]},
 
-{ rank:17, name:"DCS Awards", group:"industry", priority:"optional", place:"London", web:"https://dcsawards.com", status:"open",
-  deadline:{d:"2027-02-05",label:"5 Feb 2027 (provisional)"}, ceremony:{d:"2027-05-13",place:"London"}, opens:{d:"2026-09",label:"Open now (since Sep 2026)"},
-  src:"https://dcsawards.com/key-dates", checked:"Official key dates: nominations close 5 Feb 2027 (17:30 GMT, page layout ambiguous so treat as provisional); public voting 12 Mar–16 Apr 2027; ceremony 13 May 2027, London. Nomination appears free.",
-  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra"],
-  scores:{prestige:2,relevance:4,chance:4,cost:4},
-  overview:"UK-based data center solutions awards.",
-  insight:"center3 was a finalist in 2026 (Safety & Security Innovation), which is a strong basis to go for a win in 2027.",
-  track:"Shortlisted for Safety & Security Innovation at the 2026 DCS Awards.",
-  cats:[
-    ["Data Center of the Year","center3's flagship facility."],
-    ["Safety & Security Innovation","An updated version of the 2026 finalist entry, with new results."]]},
-
-{ rank:18, name:"Telecom Review Excellence Awards", group:"industry", priority:"optional", place:"Dubai", web:"https://www.telecomreview.com/summit",
-  deadline:{d:"2027-09",est:true}, ceremony:{d:"2027-10",est:true,place:"Dubai"},
-  src:"https://www.telecomreview.com/articles/reports-and-coverage/30207-innovation-resilience-and-leadership-guide-the-2026-telecom-review-excellence-awards/", checked:"2026 cycle: nominations and fees due 18 Sep 2026; awards presented 21 Oct 2026 at The Ritz-Carlton Dubai JBR. Each category closes after six nominations per region, so enter early.",
-  fee:"Not confirmed (US$1,500 per category was quoted earlier). Extra trophies paid separately.", free:false, tags:["infra"],
-  scores:{prestige:2,relevance:4,chance:3,cost:2},
-  overview:"Regional telecom awards presented at the Telecom Review Leaders' Summit.",
-  insight:"Regional competitors Mobily, du and Zain have won here. Useful for regional visibility.",
-  cats:[
-    ["Best Data Center Provider – Middle East","center3's data center portfolio."],
-    ["Best Subsea Cables","EMC West and 2Africa Pearls."]]},
-
-{ rank:19, name:"GSMA GLOMO Awards (MWC)", group:"industry", priority:"optional", place:"Barcelona", web:"https://www.mwcbarcelona.com/mobile-awards", status:"open",
-  deadline:{d:"2026-11-20",time:"16:00:00Z",label:"20 Nov 2026 · submit before 4pm GMT"}, ceremony:{d:"2027-03",label:"MWC week, 1–4 Mar 2027",place:"Barcelona"}, opens:{d:null,label:"Open now"},
-  src:"https://www.mwcbarcelona.com/mobile-awards/glomos-how-to-enter/rules-of-entry", checked:"Official rules: entries must be received and paid by Fri 20 Nov 2026. The page says both 5pm GMT and 17:00 CET, so submit before 4pm GMT to be safe. Ceremony at MWC27, Barcelona, 1–4 Mar 2027.",
-  fee:"£550 per entry for non-members (£500 for GSMA members). Tech4Good and eligible start-ups: £170. Card payment only; no refunds.", free:false, tags:["infra"],
-  scores:{prestige:5,relevance:3,chance:2,cost:3},
-  overview:"Global mobile industry awards presented at MWC Barcelona.",
-  insight:"2027 entries close 20 Nov 2026. If center3 misses this, target the next cycle (deadline ~Nov 2027).",
-  notes:"The official rules give the cut-off as both 5pm GMT and 17:00 CET, so submit before 4pm GMT on 20 Nov 2026. Payment must be made by card by the deadline; no refunds. Check the 2027 category list in the rules before you submit.",
-  cats:[
-    ["Best Cloud Solution","center3 cloud and colocation platform for hyperscalers in KSA."],
-    ["Best AI-Powered Network Solution","AI-ready infrastructure for training and inference workloads."],
-    ["Mobile Innovation for Climate Action","Energy-efficient cooling and renewable energy in data centers."]]},
-
-{ rank:20, name:"Leading Lights Awards (Light Reading)", group:"industry", priority:"optional", place:"Online", web:"https://www.lightreading.com/leading-lights",
-  deadline:{d:"2027-07",est:true}, ceremony:{d:"2027-09",est:true,label:"~Sep 2027 (winners announced)"}, opens:{d:"2027-04",est:true},
-  src:"https://tmt.knect365.com/leading-lights/faqs/", checked:"2026 cycle: opened 15 Apr; early deadline 15 May; final 26 Jun, extended to 3 Jul 2026; winners announced online 9 Sep 2026.",
-  fee:"2026: US$399 per entry (early) / US$499 (final).", free:false, tags:["infra"],
-  scores:{prestige:3,relevance:3,chance:2,cost:3},
-  overview:"Light Reading's telecom innovation awards.",
-  insight:"stc and e& were finalists in 2026, and no Middle East company won. Sustainability and optical transport are the openings.",
-  cats:[
-    ["Energy Efficiency & Sustainability","Renewable energy and efficient cooling across the portfolio."],
-    ["High-Capacity Transport & Optical Innovation","Subsea and terrestrial capacity (EMC West)."]]},
-
-{ rank:21, name:"Network X Awards", group:"industry", priority:"optional", place:"Europe (Vienna in 2026)", web:"https://www.networkxevent.com",
-  deadline:null, ceremony:{d:"2027-10",est:true,place:"Europe"},
-  src:"https://tmt.knect365.com/network-x-awards/purchase/select-package/", checked:"2026 cycle: winners announced 14 Oct 2026 at MAK, Vienna; entry fee €375 per submission. 2027 deadline and location not published.",
-  fee:"2026: €375 per submission.", free:false, tags:["infra"],
-  scores:{prestige:3,relevance:3,chance:2,cost:3},
-  overview:"Operator awards at the Network X event, run by Informa.",
-  insight:"stc won 2 operator awards in 2026, so agree on categories with stc.",
-  cats:[
-    ["AI-Native Infrastructure Innovation","AI-ready data center infrastructure."],
-    ["Outstanding Optical Transport Telco","Subsea and terrestrial transport capacity."]]},
-
-{ rank:22, name:"Stevie International Business Awards", group:"global", priority:"optional", place:"Venue TBA", web:"https://iba.stevieawards.com",
-  deadline:{d:"2027-06-16",label:"16 Jun 2027 (early-bird 7 Apr)"}, ceremony:{d:"2027-10-14",label:"14 Oct 2027",place:"Pullman Paris Montparnasse, Paris"}, opens:{d:"2027-02-09",label:"9 Feb 2027"},
-  src:"https://iba.stevieawards.com/about/calendar/", checked:"Official 2027 calendar: entries open 9 Feb 2027; early-bird 7 Apr; primary 5 May; final 16 Jun 2027; ceremony 14 Oct 2027 in Paris.",
-  fee:"Paid per entry (varies by category); Company of the Year entries free in 2026. Lower fee before 7 Apr 2027. No winners fee.", free:false, tags:["mkt"],
-  scores:{prestige:3,relevance:2,chance:3,cost:3},
-  overview:"Global business awards with a simple entry process. Winners are announced 1 Sep 2027.",
-  insight:"Entries open in February 2027. Earlier entries usually cost less, so prepare the story in advance.",
-  cats:[
-    ["Company of the Year – Telecoms","center3's growth story, from stc spin-off to a regional platform."],
-    ["Marketing","The strongest campaign of the year."]]},
-
-{ rank:23, name:"Fierce Network Innovation Awards", group:"industry", priority:"optional", place:"Online", web:"https://awards.fierce-network.com",
-  deadline:{d:"2027-10",est:true}, ceremony:{d:"2027-11",est:true,place:"USA (Broadband Nation Expo)"}, opens:{d:"2027-07",est:true},
-  src:"https://www.fierce-network.com/broadband/enter-2026-fierce-network-innovation-awards-oct-2-deadline", checked:"Last cycle: entries opened 22 Jul 2026; final deadline 2 Oct 2026; winners honoured 19 Nov 2026 at Broadband Nation Expo, New Orleans.",
-  fee:"Not published.", free:false, tags:["infra"],
-  scores:{prestige:3,relevance:3,chance:2,cost:3},
-  overview:"US-based network innovation awards. Winners are announced online.",
-  insight:"A new Data Center & AI Infrastructure category was added in 2026.",
-  cats:[
-    ["Data Center & AI Infrastructure Innovation","AI-ready, high-density data center design."],
-    ["Energy-Efficient Network Design","Cooling and power efficiency."],
-    ["Carrier of the Year","center3's connectivity business."]]},
-
-{ rank:24, name:"Gulf Business Awards", group:"global", priority:"optional", place:"Dubai", web:"https://gulfbusiness.com/en/awards/",
-  deadline:{d:"2027-08",est:true}, ceremony:{d:"2027-09",est:true,place:"Dubai"}, opens:{d:"2027-07",est:true},
-  src:"https://gulfbusiness.com/en/2026/awards/gulf-business-awards-2026-nominations-open-ahead-of-september-event/", checked:"Last cycle: nominations opened July 2026; ceremony 23 Sep 2026 in Dubai.",
-  fee:"Not published.", free:false, tags:[],
-  scores:{prestige:3,relevance:2,chance:3,cost:3},
-  overview:"Well-known regional business awards.",
-  insight:"There's no telecom or data center category, so center3 would enter as a technology company.",
-  cats:[
-    ["Technology Company of the Year","center3's growth and expansion plan."],
-    ["Sustainability Company of the Year","ESG and energy efficiency work."],
-    ["Technology Leader of the Year","Abdullah Aldahmashi, CEO."]]},
-
-{ rank:25, name:"MEED Projects Awards", group:"global", priority:"optional", place:"Dubai", web:"https://events.meed.com/event/meedprojectsawards",
-  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"Dubai"}, opens:{d:"2027-04",est:true},
-  src:"https://www.meed.com/entries-now-open-for-meed-projects-awards-2026", checked:"Last cycle: entries opened 21 Apr 2026. Sector categories (Building, Energy, Industrial, etc.); no dedicated data center/ICT category listed.",
-  fee:"Not published.", free:false, tags:["infra"],
-  scores:{prestige:3,relevance:2,chance:2,cost:3},
-  overview:"Regional awards for completed projects, across sectors.",
-  insight:"Only completed projects qualify, and there is no dedicated data center category, so a center3 build would enter a sector category such as Building or Industrial.",
-  cats:[["Sector project categories (e.g. Building, Energy)","A new center3 data center completed before the deadline."]]},
-
-{ rank:26, name:"Gulf Customer Experience Awards", group:"global", priority:"optional", place:"Dubai", web:"https://gulfcxawards.com",
-  deadline:{d:"2027-03",est:true}, ceremony:{d:"2027-06",est:true,place:"Dubai"}, opens:{d:"2026-12",est:true,label:"Late 2026"},
-  src:"https://cxm.world/customer-experience/the-gulf-customer-experience-awards-2026-winners-are-revealed/", checked:"Last cycle: ceremony 10 Jun 2026 in Dubai. Entries for the next edition open later in 2026; register interest at gulfcxawards.com.",
-  fee:"Not published.", free:false, tags:[],
-  scores:{prestige:2,relevance:2,chance:2,cost:3},
-  overview:"Customer experience awards open to all industries.",
-  insight:"Regional competitor e& won 2 Gold awards in 2026. Only relevant if center3 has a strong customer experience story.",
-  cats:[["Customer experience categories","Customer onboarding and service experience for enterprise and hyperscale clients."]]},
-
-{ rank:27, name:"IABC Gold Quill Awards", group:"global", priority:"optional", place:"TBA", web:"https://www.iabc.com/awards-and-recognition/gold-quill", status:"open",
-  deadline:{d:"2027-02-07",label:"7 Feb 2027 (early-bird 6 Dec)"}, ceremony:{d:"2027-04",label:"Apr 2027 (winners announced)"}, opens:{d:"2026-10-01",label:"Open now (since 1 Oct 2026)"},
-  src:"https://www.iabc.com/awards-and-recognition/gold-quill/rules-faq", checked:"Official 2027 rules: early-bird 6 Dec 2026, regular 24 Jan 2027, final 7 Feb 2027 (11:59pm CT); winners announced April 2027.",
-  fee:"Members: US$349 (early, 6 Dec) / $399 (24 Jan) / $589 (7 Feb). Non-members: $489 / $539 / $729.", free:false, tags:["mkt"],
-  scores:{prestige:3,relevance:2,chance:2,cost:3},
-  overview:"Global award for excellence in communication.",
-  insight:"Recognizes the MarCom team's strongest campaign.",
-  cats:[["Communication management and campaign categories","The MarCom team's strongest 2026 campaign."]]},
-
-{ rank:28, name:"HRSE KSA Awards", group:"local", priority:"optional", place:"Riyadh", web:"https://informaconnect.com/hrse-saudi/awards",
-  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-09",est:true,place:"The Arena Riyadh"},
-  src:"https://informaconnect.com/hrse-saudi/awards-faqs/", checked:"2026 cycle: deadline 26 Jun 2026; ceremony 1 Sep 2026 at The Arena Riyadh. HRSE KSA 2027 event is 15–16 Jun 2027; 2027 awards window not published. Contact MEenquiries@informa.com.",
-  fee:"Not published.", free:false, tags:["saudi"],
-  scores:{prestige:2,relevance:2,chance:3,cost:3},
-  overview:"Saudi HR excellence awards.",
-  insight:"Strengthens center3's employer brand. HR should lead the entry.",
-  cats:[["HR excellence categories","HR programs for Saudi talent, training and engagement."]]},
-
-{ rank:29, name:"SAMENA LEAD Awards", group:"industry", priority:"optional", place:"TBA", web:"https://www.samenacouncil.org/",
-  deadline:null, ceremony:null,
-  src:"https://www.samenacouncil.org/lead2024/", checked:"No LEAD Awards edition found after 2024; SAMENA's 2026 Leaders' Summit (1 Apr 2026, Dubai) showed no LEAD cycle.",
-  fee:"Not published.", free:false, tags:[],
-  scores:{prestige:3,relevance:3,chance:2,cost:3},
-  overview:"Awards from the SAMENA Telecommunications Council.",
-  insight:"Last edition found was LEAD 2024. No 2026 or 2027 edition announced, so it may not run in 2027. stc Group chairs the SAMENA board, so ask internally.",
-  cats:[
-    ["Business Excellence","center3's growth as a standalone digital infrastructure company."],
-    ["Innovation Excellence","AI-ready data center infrastructure."]]},
-
-{ rank:30, name:"DCCI Saudi Awards", group:"local", priority:"optional", place:"Riyadh", web:"https://saudi.dccisummit.com",
+{ rank:11, name:"DCCI Saudi Awards", group:"local", priority:"optional", place:"Riyadh", web:"https://saudi.dccisummit.com",
   deadline:null, ceremony:{d:"2027-09",est:true,place:"Riyadh"},
   src:"https://www.saudi.dccisummit.com/awards-2025/", checked:"Last cycle: DCCI Saudi 2025 held 3 Sep 2025 in Riyadh (run by Tradepass). 2026/2027 dates not published.",
   fee:"Not published.", free:false, tags:["infra","saudi"],
   scores:{prestige:2,relevance:3,chance:3,cost:3},
   overview:"Saudi data center industry awards, run by Tradepass (an industry event, not government). Held every September in Riyadh.",
-  insight:"Builds visibility with local regulators and customers.",
+  insight:"A new programme (first edition 2025). Verify the organiser and judging before entering.",
   organizer:"Tradepass",
   cats:[
     ["Data Center Design & Build Project","The newest center3 build in KSA."],
-    ["Digital Leader of the Year","Abdullah Aldahmashi, CEO."]]}
+    ["Digital Leader of the Year","Abdullah Aldahmashi, CEO."]]},
+
+{ rank:12, name:"MEED Projects Awards", group:"regional", priority:"optional", place:"Dubai", web:"https://events.meed.com/event/meedprojectsawards",
+  deadline:{d:"2027-06",est:true}, ceremony:{d:"2027-11",est:true,place:"Dubai"}, opens:{d:"2027-04",est:true},
+  src:"https://www.meed.com/entries-now-open-for-meed-projects-awards-2026", checked:"Last cycle: entries opened 21 Apr 2026. Sector categories (Building, Energy, Industrial, etc.); no dedicated data center/ICT category listed.",
+  fee:"Not published.", free:false, tags:["infra"],
+  scores:{prestige:3,relevance:2,chance:2,cost:3},
+  overview:"Regional awards for completed projects, across sectors.",
+  insight:"Only completed facility builds qualify, and there is no dedicated data center category.",
+  cats:[["Sector project categories (e.g. Building, Energy)","A new center3 data center completed before the deadline."]]},
+
+{ rank:13, name:"MENA Stevie Awards", group:"regional", priority:"optional", place:"UAE", web:"https://mena.stevieawards.com", status:"filed",
+  deadline:{d:null,label:"Entries filed (deadline was 26 Nov 2026)"}, ceremony:{d:"2027-04-02",est:true,label:"~2 Apr 2027",place:"Ras Al Khaimah"}, opens:{d:"2026-09-23",label:"Opened 23 Sep 2026"},
+  src:"https://mena.stevieawards.com/Enter/winners-fees", checked:"Official 2027 calendar: final deadline 26 Nov 2026; winners fees due 16 Feb 2027; winners announced 18 Feb 2027; banquet April 2027 in Ras Al Khaimah (programme book: 2 Apr).",
+  fee:"No entry fee. Winners pay US$595 per win for entries submitted after 29 Oct 2026 (US$555 if submitted by then).", free:true, tags:["mkt"],
+  scores:{prestige:2,relevance:3,chance:4,cost:4},
+  overview:"Regional edition of the Stevie Awards, with 150+ categories.",
+  track:"center3 entries filed for the 2027 MENA Stevie Awards.",
+  insight:"Entries have been filed. There is no entry fee, but a winners fee applies for each winning category.",
+  cats:[["Marketing, sales, innovation and CSR","Choose 2–3 of the strongest 2025–26 campaigns and initiatives (deadline 26 Nov 2026)."]]},
+
+{ rank:14, name:"DCS Awards", group:"intl", priority:"optional", place:"London", web:"https://dcsawards.com", status:"open",
+  deadline:{d:"2027-02-05",label:"5 Feb 2027 (provisional)"}, ceremony:{d:"2027-05-13",place:"London"}, opens:{d:"2026-09",label:"Open now (since Sep 2026)"},
+  src:"https://dcsawards.com/key-dates", checked:"Official key dates: nominations close 5 Feb 2027 (17:30 GMT, page layout ambiguous so treat as provisional); public voting 12 Mar–16 Apr 2027; ceremony 13 May 2027, London. Nomination appears free.",
+  fee:"Free to enter. Ceremony seats and tables are paid separately.", free:true, tags:["infra"],
+  scores:{prestige:2,relevance:4,chance:4,cost:4},
+  overview:"UK-based data center solutions awards.",
+  insight:"Winners are decided by public vote, so the team needs to drive votes. center3 was a finalist in 2026.",
+  track:"Shortlisted for Safety & Security Innovation at the 2026 DCS Awards.",
+  cats:[
+    ["Data Center of the Year","center3's flagship facility."],
+    ["Safety & Security Innovation","An updated version of the 2026 finalist entry, with new results."]]},
+
+{ rank:15, name:"The Fast Mode Awards", group:"intl", priority:"optional", place:"Online (in-person at LiveX)", web:"https://www.thefastmode.com/awards",
+  deadline:{d:"2027-10",est:true}, ceremony:{d:"2027-12",est:true,label:"~Dec 2027 (winners announced online)"}, opens:{d:"2027-08",est:true},
+  src:"https://tech-insider.org/fast-mode-awards-2026-data-center-winners-due-dec-1-2026/", checked:"2026 cycle: nominations 1 Aug–31 Oct 2026; winners announced by live webcast on 1 Dec 2026. The 2025 winners were also honoured in person at LiveX Kuala Lumpur (6 Feb 2026).",
+  fee:"Not published. Winner benefits (badge, listing, press release) are free.", free:false, tags:["infra"],
+  scores:{prestige:2,relevance:3,chance:4,cost:4},
+  overview:"Telecom and digital infrastructure awards from The Fast Mode, an independent media and research platform, covering telecoms, satellite, data centers and leadership.",
+  insight:"Up to four winners per category, which improves our chances. Data Center Operators is a relevant category.",
+  cats:[
+    ["Data Center Operators","center3's data center portfolio and 2027 capacity growth."],
+    ["Connectivity / wholesale categories","EMC West and the 2Africa Pearls landing in KSA."]]}
+
 ];
 
 /* Suggested lead team for each award (by rank) */
-const LEAD = {1:"MarCom + Data Center Operations",2:"MarCom + Connectivity (align with stc)",3:"Data Center Engineering + Sustainability",
- 4:"Sustainability / ESG",5:"Human Resources",6:"MarCom",7:"Procurement & Supply Chain",8:"MarCom",9:"Connectivity & Wholesale",
- 10:"Human Resources",11:"Data Center Engineering",12:"Connectivity & Wholesale",13:"Strategy + CEO Office",14:"MarCom (PR)",
- 15:"MarCom",16:"Quality & Excellence",17:"Data Center Security",18:"MarCom",19:"Product (Cloud & AI)",20:"Network Engineering",
- 21:"Network Engineering (align with stc)",22:"MarCom",23:"Data Center Engineering",24:"MarCom + CEO Office",25:"Projects & Construction",
- 26:"Customer Experience",27:"MarCom",28:"Human Resources",29:"Strategy",30:"Data Center Engineering + CEO Office"};
+const LEAD = {"1": "MarCom + Data Center Operations", "2": "Data Center Engineering + Sustainability", "3": "MarCom + Connectivity (align with stc)", "4": "MarCom", "5": "Connectivity & Wholesale", "6": "Connectivity & Wholesale", "7": "Procurement & Supply Chain", "8": "Data Center Engineering", "9": "Strategy + CEO Office", "10": "Quality & Excellence", "11": "Data Center Engineering + CEO Office", "12": "Projects & Construction", "13": "MarCom", "14": "Data Center Security", "15": "MarCom + Connectivity"};
 
 /* ===================== Do not edit below this line ===================== */
 const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -1120,15 +954,13 @@ function urgency(a){
 AWARDS.forEach(a=>{ a.urg=urgency(a); a.total=total(a); });
 
 const TABS = [
-  {id:"all", label:"All awards", f:()=>true, intro:"All <b>30 awards</b>, grouped into three categories. Each award has a priority label. Select <b>Full details</b> on any card to see everything about it."},
-  {id:"must", label:"Must-enter", f:a=>a.priority==="must", intro:"The <b>4 awards center3 should definitely enter</b> in 2027, based on prestige, relevance and our track record."},
-  {id:"strong", label:"Strong", hidden:true, f:a=>a.priority==="strong", intro:"<b>Strong</b> awards: recommended entries that add clear value for center3 after the must-enter list."},
-  {id:"optional", label:"Optional", hidden:true, f:a=>a.priority==="optional", intro:"<b>Optional</b> awards: worth entering if the team has capacity and a strong story ready."},
+  {id:"all", label:"All awards", f:()=>true, intro:"The <b>15 awards</b> selected for the Marcom Plan 2027, grouped into international, regional and local awards. Each award has a tier. Select <b>Full details</b> on any card to see everything about it."},
+  {id:"must", label:"Tier 1", f:a=>a.priority==="must", intro:"<b>Tier 1:</b> the 3 awards center3 should prioritise in 2027, based on prestige, relevance and our track record."},
+  {id:"strong", label:"Tier 2", f:a=>a.priority==="strong", intro:"<b>Tier 2:</b> strong awards that add clear value for center3 after Tier 1."},
+  {id:"optional", label:"Tier 3", f:a=>a.priority==="optional", intro:"<b>Tier 3:</b> awards to enter when the team has capacity and a strong story ready."},
   {id:"free", label:"Free to enter", f:a=>a.free, intro:"Awards with <b>no entry fee</b>. Ceremony seats, or a fee charged only if we win, may still apply. Details are on each card."},
   {id:"open", label:"Open now", f:a=>!!a.urg, intro:"Awards with <b>registration open now</b>, or a deadline in the next 3 months. Estimated deadlines (~) should be confirmed on the award's website."},
-  {id:"saudi", label:"Saudi & Vision 2030", f:a=>a.tags.includes("saudi"), intro:"<b>Saudi national awards</b> and recognition linked to Vision 2030: sustainability, local content, Saudization, quality and digital infrastructure."},
-  {id:"mkt", label:"Marketing & comms", f:a=>a.tags.includes("mkt"), intro:"Awards where the <b>MarCom team's campaigns and communications</b> can be submitted."},
-  {id:"infra", label:"Data center, subsea & connectivity", f:a=>a.tags.includes("infra"), intro:"Awards for center3's <b>core business</b>: data centers, subsea cables and connectivity."},
+  {id:"saudi", label:"Saudi awards", f:a=>a.group==="local", intro:"<b>Saudi national awards</b> linked to Vision 2030: local content, quality and digital infrastructure."},
   {id:"timeline", label:"Timeline", f:()=>true, intro:"Month by month from <b>November 2026</b>: submission deadlines and award ceremonies."}
 ];
 
@@ -1140,6 +972,7 @@ function extraChips(a){
   let h="";
   if(a.urg==="open") h+=`<span class="chip c-open">Open now</span>`;
   else if(a.urg==="soon") h+=`<span class="chip c-soon">Closing soon</span>`;
+  if(a.status==="filed") h+=`<span class="chip c-free">Entries filed</span>`;
   if(a.free) h+=`<span class="chip c-free">Free to enter</span>`;
   return h;
 }
@@ -1245,7 +1078,7 @@ function renderView(){
   v.innerHTML = Object.keys(GROUPS).map(g=>{
     const items=sorted(list.filter(a=>a.group===g)); if(!items.length) return "";
     const G=GROUPS[g];
-    return `<section class="group"><div class="group-h"><div class="ico">${ic({industry:"dc",global:"globe",local:"star"}[g],22)}</div>
+    return `<section class="group"><div class="group-h"><div class="ico">${ic({intl:"globe",regional:"conn",local:"star"}[g],22)}</div>
       <div><h2>${G.name}</h2><p>${G.desc}</p></div><span class="cnt">${items.length} award${items.length>1?"s":""}</span></div>
       ${state.view==="full"?`<div class="plist">${items.map(panel).join("")}</div>`:`<div class="grid">${items.map(card).join("")}</div>`}</section>`;
   }).join("");
@@ -1291,7 +1124,7 @@ function timeline(list){
   const nowKey=`${TODAY.getFullYear()}-${TODAY.getMonth()}`;
   let h=`<div class="tlbar"><div class="vt" role="group" aria-label="Timeline filter">
       <button data-tlf="all" aria-pressed="${f==="all"}">All dates</button><button data-tlf="dl" aria-pressed="${f==="dl"}">${ic("flag",14)} Deadlines</button><button data-tlf="cer" aria-pressed="${f==="cer"}">${ic("trophy",14)} Ceremonies</button></div>
-      <div class="legend"><span class="lg"><span class="chip p-must">Must-enter</span></span><span class="lg"><span class="chip p-strong">Strong</span></span><span class="lg"><span class="chip p-optional">Optional</span></span><span class="lg">~ = estimated</span></div></div><div class="tl2">`;
+      <div class="legend"><span class="lg"><span class="chip p-must">Tier 1</span></span><span class="lg"><span class="chip p-strong">Tier 2</span></span><span class="lg"><span class="chip p-optional">Tier 3</span></span><span class="lg">~ = estimated</span></div></div><div class="tl2">`;
   months.forEach(m=>{
     const k=`${m.getFullYear()}-${m.getMonth()}`, mo=m.getMonth();
     const q = (k===`${TL_START.getFullYear()}-${TL_START.getMonth()}` || mo%3===0) ? `Q${Math.floor(mo/3)+1} ${m.getFullYear()}` : "";
@@ -1342,15 +1175,15 @@ function renderUrgent(){
 
 function renderKpis(){
   const cnt=f=>AWARDS.filter(f).length;
-  const k=[[AWARDS.length,"Total awards","Nov 2026 – Dec 2027","all"],[cnt(a=>a.priority==="must"),"Must-enter","top priority","must"],
-    [cnt(a=>a.priority==="strong"),"Strong","recommended","strong"],[cnt(a=>a.priority==="optional"),"Optional","if capacity allows","optional"],
+  const k=[[AWARDS.length,"Total awards","Nov 2026 – Dec 2027","all"],[cnt(a=>a.priority==="must"),"Tier 1","top priority","must"],
+    [cnt(a=>a.priority==="strong"),"Tier 2","strong value","strong"],[cnt(a=>a.priority==="optional"),"Tier 3","if capacity allows","optional"],
     [cnt(a=>a.free),"Free to enter","no entry fee","free"],[cnt(a=>a.urg==="open"),"Open now","register today","open"]];
   document.getElementById("kpis").innerHTML=k.map(x=>`<button class="kb" data-tab="${x[3]}" data-jump><b data-count="${x[0]}">0</b><span>${x[1]}</span><small>${x[2]} →</small></button>`).join("");
   const nOpen=cnt(a=>a.urg==="open"), nSoon=cnt(a=>a.urg==="soon");
   const q=[["open","Open now",`${nOpen} open · ${nSoon} closing soon`,cnt(a=>!!a.urg),"clock",1],
-    ["must","Must-enter","Top priority",cnt(a=>a.priority==="must"),"flag"],
+    ["must","Tier 1","Top priority",cnt(a=>a.priority==="must"),"trophy"],
     ["free","Free to enter","No entry fee",cnt(a=>a.free),"tag"],
-    ["saudi","Saudi awards","Vision 2030",cnt(a=>a.tags.includes("saudi")),"star"],
+    ["saudi","Saudi awards","Vision 2030",cnt(a=>a.group==="local"),"star"],
     ["timeline","Timeline","Month by month","","cal"]];
   document.getElementById("qchips").innerHTML=q.map(x=>`<button class="qt ${x[5]?"hot":""}" data-tab="${x[0]}" data-jump>
       <span class="qt-i">${ic(x[4],20)}</span>
@@ -1453,7 +1286,7 @@ function openMethod(){
       <div class="mg"><b>Chance of winning</b>Based on our past results, the competition and how strong our stories are.</div>
       <div class="mg"><b>Cost &amp; effort</b>Entry fees plus the work needed. 5 means low cost and effort, 1 means high.</div>
     </div>
-    <div><h4>Reading the total</h4><p><b>16–20</b> High · <b>13–15</b> Medium · <b>12 or below</b> Lower. The score supports the priority label (Must-enter, Strong, Optional) but doesn't replace it. The priority also considers strategic fit, such as Vision 2030 and alignment with stc.</p></div>
+    <div><h4>Reading the total</h4><p><b>16–20</b> High · <b>13–15</b> Medium · <b>12 or below</b> Lower. The score supports the tier (Tier 1, 2 or 3) but doesn't replace it. The priority also considers strategic fit, such as Vision 2030 and alignment with stc.</p></div>
     <div><h4>Dates</h4><p>Dates in red are confirmed for the 2027 cycle. Dates marked ~ are estimates based on the last cycle (2026 or earlier). TBA means not announced yet.</p></div>
     <div class="btnrow"><button class="btn" data-close>Got it</button></div>
   </div>`;
